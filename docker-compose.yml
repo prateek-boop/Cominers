@@ -1,0 +1,77 @@
+version: '3.8'
+
+services:
+  # ---------------------------------------
+  # PostgreSQL Database
+  # ---------------------------------------
+  db:
+    image: postgres:15
+    environment:
+      POSTGRES_USER: combiners
+      POSTGRES_PASSWORD: combiners_pass
+      POSTGRES_DB: cyber_graph_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U combiners -d cyber_graph_db"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  # ---------------------------------------
+  # API / Backend Service (Local or Demo)
+  # ---------------------------------------
+  api:
+    build: .
+    container_name: cyber_api
+    command: uvicorn backend.main:app --host 0.0.0.0 --port 8000 --reload
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+    environment:
+      - DATABASE_URL=postgresql+asyncpg://combiners:combiners_pass@db:5432/cyber_graph_db
+    depends_on:
+      db:
+        condition: service_healthy
+    # Uncomment to attach GPU to the API/inference
+    # deploy:
+    #   resources:
+    #     reservations:
+    #       devices:
+    #         - driver: nvidia
+    #           count: all
+    #           capabilities: [gpu]
+
+  # ---------------------------------------
+  # Training Profile (For External System)
+  # ---------------------------------------
+  trainer:
+    build: .
+    container_name: cyber_trainer
+    # Runs the training pipeline by default
+    command: python scripts/train_tgn.py
+    volumes:
+      - .:/app
+      # Map the external system's dataset location
+      - ./data:/app/data
+    environment:
+      - DATABASE_URL=postgresql+asyncpg://combiners:combiners_pass@db:5432/cyber_graph_db
+    depends_on:
+      db:
+        condition: service_healthy
+    profiles:
+      - training
+    # Requires NVIDIA Container Toolkit on the training host
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+
+volumes:
+  postgres_data:

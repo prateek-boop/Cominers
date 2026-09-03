@@ -1,0 +1,18 @@
+drop_protocols:
+  - arp
+  - ntp
+  - mdns
+  - ssdp
+  - nbns
+
+keep_ports:
+  - 445 # SMB
+  - 3389 # RDP
+  - 22 # SSH
+  - 21 # FTP
+  - 80 # HTTP
+  - 443 # HTTPS
+
+thresholds:
+  failed_auth_window_sec: 60
+  failed_auth_count: 5

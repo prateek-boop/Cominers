@@ -1,0 +1,25 @@
+reconnaissance:
+  - portscan
+  - infiltration-portscan
+credential_access:
+  - ssh-bruteforce
+  - ftp-patator
+  - ssh-patator
+  - brute force -web
+  - brute force -xss
+initial_access:
+  - sql injection
+  - infiltration
+lateral_movement:
+  - infiltration-cooldisk
+command_and_control:
+  - botnet
+  - irc-botnet
+exfiltration:
+  - infiltration-dropbox
+impact:
+  - ddos
+  - dos-hulk
+  - dos-slowhttptest
+  - dos-slowloris
+  - dos-goldeneye

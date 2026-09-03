@@ -1,0 +1,9 @@
+thresholds:
+  allow_max: 0.3
+  alert_max: 0.6
+  block_min: 0.85
+
+mitre_critical_stages:
+  - lateral_movement
+  - command_and_control
+  - impact
