@@ -18,11 +18,11 @@ RUN pip install --no-cache-dir \
     torch_scatter torch_sparse torch_cluster torch_spline_conv \
     -f https://data.pyg.org/whl/torch-2.1.2+cu121.html
 
-# Copy project requirements
-COPY requirements.txt .
+# Copy project configuration
+COPY pyproject.toml .
 
 # Install Python dependencies
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install --no-cache-dir .
 
 # Copy the rest of the application
 COPY . .
