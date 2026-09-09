@@ -13,7 +13,7 @@ class AttackProbabilityHead(nn.Module):
     def forward(self, z_src: torch.Tensor, z_dst: torch.Tensor) -> torch.Tensor:
         z = torch.cat([z_src, z_dst], dim=-1)
         out = self.mlp(z)
-        return torch.sigmoid(out).squeeze(-1)
+        return out.squeeze(-1)
 
 class MitreStageClassifier(nn.Module):
     def __init__(self, in_channels: int, num_classes: int = 8):

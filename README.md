@@ -1,33 +1,26 @@
-# Cyber Attack Forecasting System
+# CyberTGN model application
 
-A Temporal Graph Neural Network (TGN) system for real-time cyber attack prediction, MITRE ATT&CK classification, and automated response.
+Run the retained best checkpoint through a local CLI or FastAPI service.
 
-## Architecture
-
-This project processes raw PCAP or NetFlow data into a continuous-time dynamic graph, then uses a Temporal Graph Network (TGN) via PyTorch Geometric to predict future network states and classify attack stages based on the MITRE ATT&CK framework.
-
-## Requirements
-* Docker and Docker Compose
-* NVIDIA Container Toolkit (for GPU-accelerated training)
-
-## How to Run
-
-### Development & API (Local)
-To start the database and the FastAPI backend without running the heavy training loop:
 ```bash
-docker-compose up api db
+venv/bin/python app.py
+# Interactive API: http://127.0.0.1:8000/docs
+
+venv/bin/python app.py --input examples/flows.json --output predictions.json
 ```
 
-### Training (External System / GPU Server)
-This project is containerized for seamless training on external GPU systems. Transfer this repository to the target machine and run:
-```bash
-# This uses the "training" profile to run the GPU-enabled trainer service
-docker-compose --profile training up trainer
-```
+For a fresh installation, use Python 3.12 and install `requirements-inference.txt`
+in a virtual environment. See [MODEL_USAGE.md](MODEL_USAGE.md) for input format,
+API usage, temporal behavior, and known model limitations.
 
-### Structure
-* `ingestion/`: PCAP/CSV parsers and data normalizers
-* `graph/`: Temporal network graph builder
-* `models/`: PyTorch Geometric TGN implementation
-* `forecasting/`: GRU-based delta predictor
-* `scripts/`: Training and evaluation scripts
+- `checkpoints/tgn_best.pt`: retained best model, unchanged.
+- `models/`: the three model components required for inference.
+- `api.py`, `app.py`, `model_runtime.py`: application and inference runtime.
+- `examples/`: sample request.
+- `tests/`: service checks using the real checkpoint.
+- `reports/`: historical evaluation scores and limitations.
+- `venv/`: existing local Python environment.
+
+Training scripts, datasets, archives, and unused demo components have been
+removed. The saved dataset evaluation scores cannot be reproduced without
+restoring the evaluation code and data.

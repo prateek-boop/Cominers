@@ -1,0 +1,4017 @@
+{
+  "checkpoint": "/home/lucifer/Projects/combiners/tgn_training_rtx4070/data/processed/tgn_final.pt",
+  "checkpoint_sha256": "0320c20622f905a0010e1ec09dd59a8a6c062eaa6d4bcd72d6d0f241045a3faf",
+  "recorded_checkpoint_metrics": {
+    "epoch": 11,
+    "train_loss": 6.691082889499545,
+    "val_loss": 0.014955168080566022,
+    "val_acc": 0.9968170020353376,
+    "precision": 0.6628936628936629,
+    "recall": 0.9937665935588134,
+    "f1": 0.7952886836027714,
+    "best_f1": 0.9562436889936048,
+    "num_nodes": 34668
+  },
+  "protocol": {
+    "split": "Reconstructed training default: chunks >= min_chunk, first 80% of attack/benign chunks train",
+    "min_chunk": 59,
+    "batch_size": 200,
+    "threshold": 0.5,
+    "state": "Clear memory and neighbors before each validation chunk; predict then update, no labels supplied",
+    "max_events_per_chunk": null,
+    "train_files": [
+      "temporal_data_59.pt",
+      "temporal_data_60.pt",
+      "temporal_data_61.pt",
+      "temporal_data_62.pt",
+      "temporal_data_63.pt",
+      "temporal_data_64.pt",
+      "temporal_data_65.pt",
+      "temporal_data_66.pt",
+      "temporal_data_67.pt",
+      "temporal_data_68.pt",
+      "temporal_data_69.pt",
+      "temporal_data_70.pt",
+      "temporal_data_220.pt",
+      "temporal_data_221.pt",
+      "temporal_data_71.pt",
+      "temporal_data_72.pt",
+      "temporal_data_73.pt",
+      "temporal_data_74.pt",
+      "temporal_data_75.pt",
+      "temporal_data_76.pt",
+      "temporal_data_77.pt",
+      "temporal_data_78.pt",
+      "temporal_data_79.pt",
+      "temporal_data_80.pt",
+      "temporal_data_81.pt",
+      "temporal_data_82.pt",
+      "temporal_data_83.pt",
+      "temporal_data_84.pt",
+      "temporal_data_85.pt",
+      "temporal_data_86.pt",
+      "temporal_data_87.pt",
+      "temporal_data_88.pt",
+      "temporal_data_89.pt",
+      "temporal_data_90.pt",
+      "temporal_data_91.pt",
+      "temporal_data_92.pt",
+      "temporal_data_93.pt",
+      "temporal_data_94.pt",
+      "temporal_data_95.pt",
+      "temporal_data_96.pt",
+      "temporal_data_97.pt",
+      "temporal_data_98.pt",
+      "temporal_data_99.pt",
+      "temporal_data_100.pt",
+      "temporal_data_101.pt",
+      "temporal_data_102.pt",
+      "temporal_data_103.pt",
+      "temporal_data_104.pt",
+      "temporal_data_105.pt",
+      "temporal_data_106.pt",
+      "temporal_data_107.pt",
+      "temporal_data_108.pt",
+      "temporal_data_109.pt",
+      "temporal_data_110.pt",
+      "temporal_data_111.pt",
+      "temporal_data_112.pt",
+      "temporal_data_113.pt",
+      "temporal_data_114.pt",
+      "temporal_data_115.pt",
+      "temporal_data_116.pt",
+      "temporal_data_117.pt",
+      "temporal_data_118.pt",
+      "temporal_data_119.pt",
+      "temporal_data_120.pt",
+      "temporal_data_121.pt",
+      "temporal_data_122.pt",
+      "temporal_data_123.pt",
+      "temporal_data_124.pt",
+      "temporal_data_125.pt",
+      "temporal_data_126.pt",
+      "temporal_data_127.pt",
+      "temporal_data_128.pt",
+      "temporal_data_129.pt",
+      "temporal_data_130.pt",
+      "temporal_data_131.pt",
+      "temporal_data_132.pt",
+      "temporal_data_133.pt",
+      "temporal_data_134.pt",
+      "temporal_data_135.pt",
+      "temporal_data_136.pt",
+      "temporal_data_137.pt",
+      "temporal_data_138.pt",
+      "temporal_data_139.pt",
+      "temporal_data_140.pt",
+      "temporal_data_141.pt",
+      "temporal_data_142.pt",
+      "temporal_data_143.pt",
+      "temporal_data_144.pt",
+      "temporal_data_145.pt",
+      "temporal_data_146.pt",
+      "temporal_data_147.pt",
+      "temporal_data_148.pt",
+      "temporal_data_149.pt",
+      "temporal_data_150.pt",
+      "temporal_data_151.pt",
+      "temporal_data_152.pt",
+      "temporal_data_153.pt",
+      "temporal_data_154.pt",
+      "temporal_data_155.pt",
+      "temporal_data_156.pt",
+      "temporal_data_157.pt",
+      "temporal_data_158.pt",
+      "temporal_data_159.pt",
+      "temporal_data_160.pt",
+      "temporal_data_161.pt",
+      "temporal_data_162.pt",
+      "temporal_data_163.pt",
+      "temporal_data_164.pt",
+      "temporal_data_165.pt",
+      "temporal_data_166.pt",
+      "temporal_data_167.pt",
+      "temporal_data_168.pt",
+      "temporal_data_169.pt",
+      "temporal_data_170.pt",
+      "temporal_data_171.pt",
+      "temporal_data_172.pt",
+      "temporal_data_173.pt",
+      "temporal_data_174.pt",
+      "temporal_data_175.pt",
+      "temporal_data_176.pt",
+      "temporal_data_177.pt",
+      "temporal_data_178.pt",
+      "temporal_data_179.pt",
+      "temporal_data_180.pt",
+      "temporal_data_181.pt",
+      "temporal_data_182.pt",
+      "temporal_data_183.pt",
+      "temporal_data_184.pt",
+      "temporal_data_185.pt",
+      "temporal_data_186.pt",
+      "temporal_data_187.pt",
+      "temporal_data_188.pt",
+      "temporal_data_189.pt",
+      "temporal_data_190.pt"
+    ],
+    "validation_files": [
+      "temporal_data_222.pt",
+      "temporal_data_224.pt",
+      "temporal_data_225.pt",
+      "temporal_data_226.pt",
+      "temporal_data_191.pt",
+      "temporal_data_192.pt",
+      "temporal_data_193.pt",
+      "temporal_data_194.pt",
+      "temporal_data_195.pt",
+      "temporal_data_196.pt",
+      "temporal_data_197.pt",
+      "temporal_data_198.pt",
+      "temporal_data_199.pt",
+      "temporal_data_200.pt",
+      "temporal_data_201.pt",
+      "temporal_data_202.pt",
+      "temporal_data_203.pt",
+      "temporal_data_204.pt",
+      "temporal_data_205.pt",
+      "temporal_data_206.pt",
+      "temporal_data_207.pt",
+      "temporal_data_208.pt",
+      "temporal_data_209.pt",
+      "temporal_data_210.pt",
+      "temporal_data_211.pt",
+      "temporal_data_212.pt",
+      "temporal_data_213.pt",
+      "temporal_data_214.pt",
+      "temporal_data_215.pt",
+      "temporal_data_216.pt",
+      "temporal_data_217.pt",
+      "temporal_data_218.pt",
+      "temporal_data_219.pt",
+      "temporal_data_223.pt"
+    ]
+  },
+  "limitations": [
+    "Validation split selected best checkpoint; not an independent test set.",
+    "Original command, random training chunk order and split manifest were not saved; defaults inferred from archived script.",
+    "Cold chunk state differs from original validation, which retained shuffled training history.",
+    "Batch size changes temporal context. API defaults to batch size 200; batch size 1 is an explicit experimental option.",
+    "Preprocessor compacts missing feature columns, lacks source manifest, rounds Unix seconds to float32 and maps unknown labels to class 1.",
+    "Only class IDs 0-7 are mapped by supplied code; output has 14 classes.",
+    "Model predicts from previous interactions; current flow features enter memory only after prediction."
+  ],
+  "metrics": {
+    "events": 1392398,
+    "attacks": 8663,
+    "benign": 1383735,
+    "accuracy": 0.9852139977219158,
+    "majority_baseline_accuracy": 0.9937783593484047,
+    "balanced_accuracy": 0.9479382244234931,
+    "precision": 0.28470843112475175,
+    "recall": 0.9101927738658663,
+    "f1": 0.4337422300456571,
+    "roc_auc": 0.9933846923040583,
+    "average_precision": 0.5695196140362506,
+    "brier_score": 0.01313698247963649,
+    "false_positive_rate": 0.01431632501888006,
+    "confusion_matrix": {
+      "tn": 1363925,
+      "fp": 19810,
+      "fn": 778,
+      "tp": 7885
+    },
+    "stage_macro_f1": 0.42446965132629644,
+    "stage_report": {
+      "0": {
+        "precision": 0.997252450971522,
+        "recall": 0.9957101612664274,
+        "f1-score": 0.9964807093547605,
+        "support": 1383735.0
+      },
+      "1": {
+        "precision": 0.9235294117647059,
+        "recall": 0.5654042750929368,
+        "f1-score": 0.7013978959504251,
+        "support": 8608.0
+      },
+      "2": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 55.0
+      },
+      "7": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 0.0
+      },
+      "accuracy": 0.9930106190902314,
+      "macro avg": {
+        "precision": 0.480195465684057,
+        "recall": 0.390278609089841,
+        "f1-score": 0.42446965132629644,
+        "support": 1392398.0
+      },
+      "weighted avg": {
+        "precision": 0.996757293117018,
+        "recall": 0.9930106190902314,
+        "f1-score": 0.9946171047698653,
+        "support": 1392398.0
+      }
+    }
+  },
+  "per_chunk": [
+    {
+      "file": "temporal_data_222.pt",
+      "events": 17487,
+      "attacks": 8632,
+      "benign": 8855,
+      "accuracy": 0.912106135986733,
+      "majority_baseline_accuracy": 0.5063761651512553,
+      "balanced_accuracy": 0.9120911108273602,
+      "precision": 0.9110184219673271,
+      "recall": 0.9109128822984245,
+      "f1": 0.9109656490760586,
+      "roc_auc": 0.9602304780081101,
+      "average_precision": 0.9565852440703132,
+      "brier_score": 0.08951888305723692,
+      "false_positive_rate": 0.08673066064370412,
+      "confusion_matrix": {
+        "tn": 8087,
+        "fp": 768,
+        "fn": 769,
+        "tp": 7863
+      },
+      "stage_macro_f1": 0.5096072679861373,
+      "stage_report": {
+        "0": {
+          "precision": 0.6971791368641003,
+          "recall": 0.9796725014116319,
+          "f1-score": 0.8146304817353742,
+          "support": 8855.0
+        },
+        "1": {
+          "precision": 0.964314036478985,
+          "recall": 0.5670980529322607,
+          "f1-score": 0.7141913222230379,
+          "support": 8577.0
+        },
+        "2": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 55.0
+        },
+        "accuracy": 0.7742322868416538,
+        "macro avg": {
+          "precision": 0.5538310577810285,
+          "recall": 0.5155901847812975,
+          "f1-score": 0.5096072679861373,
+          "support": 17487.0
+        },
+        "weighted avg": {
+          "precision": 0.8260103361246561,
+          "recall": 0.7742322868416538,
+          "f1-score": 0.762805048691813,
+          "support": 17487.0
+        }
+      }
+    },
+    {
+      "file": "temporal_data_224.pt",
+      "events": 1437,
+      "attacks": 4,
+      "benign": 1433,
+      "accuracy": 0.9958246346555324,
+      "majority_baseline_accuracy": 0.9972164231036882,
+      "balanced_accuracy": 0.6239532449406839,
+      "precision": 0.25,
+      "recall": 0.25,
+      "f1": 0.25,
+      "roc_auc": 0.9567341242149338,
+      "average_precision": 0.5040485829959513,
+      "brier_score": 0.034000479155552585,
+      "false_positive_rate": 0.00209351011863224,
+      "confusion_matrix": {
+        "tn": 1430,
+        "fp": 3,
+        "fn": 3,
+        "tp": 1
+      },
+      "stage_macro_f1": 0.699477169745556,
+      "stage_report": {
+        "0": {
+          "precision": 0.9979108635097493,
+          "recall": 1.0,
+          "f1-score": 0.9989543394911119,
+          "support": 1433.0
+        },
+        "1": {
+          "precision": 1.0,
+          "recall": 0.25,
+          "f1-score": 0.4,
+          "support": 4.0
+        },
+        "accuracy": 0.9979123173277662,
+        "macro avg": {
+          "precision": 0.9989554317548747,
+          "recall": 0.625,
+          "f1-score": 0.699477169745556,
+          "support": 1437.0
+        },
+        "weighted avg": {
+          "precision": 0.9979166787818169,
+          "recall": 0.9979123173277662,
+          "f1-score": 0.9972871040297586,
+          "support": 1437.0
+        }
+      }
+    },
+    {
+      "file": "temporal_data_225.pt",
+      "events": 7361,
+      "attacks": 21,
+      "benign": 7340,
+      "accuracy": 0.9525879635919032,
+      "majority_baseline_accuracy": 0.997147126749083,
+      "balanced_accuracy": 0.9762261580381472,
+      "precision": 0.05675675675675676,
+      "recall": 1.0,
+      "f1": 0.10741687979539642,
+      "roc_auc": 0.970169975347087,
+      "average_precision": 0.05939449830642189,
+      "brier_score": 0.0485923536360322,
+      "false_positive_rate": 0.04754768392370572,
+      "confusion_matrix": {
+        "tn": 6991,
+        "fp": 349,
+        "fn": 0,
+        "tp": 21
+      },
+      "stage_macro_f1": 0.505957469211939,
+      "stage_report": {
+        "0": {
+          "precision": 0.9973651365968659,
+          "recall": 0.9798365122615804,
+          "f1-score": 0.9885231255583808,
+          "support": 7340.0
+        },
+        "1": {
+          "precision": 0.013333333333333334,
+          "recall": 0.09523809523809523,
+          "f1-score": 0.023391812865497075,
+          "support": 21.0
+        },
+        "accuracy": 0.9773128650998506,
+        "macro avg": {
+          "precision": 0.5053492349650996,
+          "recall": 0.5375373037498379,
+          "f1-score": 0.505957469211939,
+          "support": 7361.0
+        },
+        "weighted avg": {
+          "precision": 0.9945578185872836,
+          "recall": 0.9773128650998506,
+          "f1-score": 0.985769728252777,
+          "support": 7361.0
+        }
+      }
+    },
+    {
+      "file": "temporal_data_226.pt",
+      "events": 2618,
+      "attacks": 6,
+      "benign": 2612,
+      "accuracy": 0.9965622612681436,
+      "majority_baseline_accuracy": 0.9977081741787625,
+      "balanced_accuracy": 0.49942572741194485,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "roc_auc": 0.46835119959162835,
+      "average_precision": 0.0036741180477766282,
+      "brier_score": 0.018530439276855513,
+      "false_positive_rate": 0.0011485451761102604,
+      "confusion_matrix": {
+        "tn": 2609,
+        "fp": 3,
+        "fn": 6,
+        "tp": 0
+      },
+      "stage_macro_f1": 0.499330655957162,
+      "stage_report": {
+        "0": {
+          "precision": 0.9977072984333206,
+          "recall": 0.9996171516079633,
+          "f1-score": 0.998661311914324,
+          "support": 2612.0
+        },
+        "1": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 6.0
+        },
+        "accuracy": 0.9973262032085561,
+        "macro avg": {
+          "precision": 0.4988536492166603,
+          "recall": 0.49980857580398164,
+          "f1-score": 0.499330655957162,
+          "support": 2618.0
+        },
+        "weighted avg": {
+          "precision": 0.995420727084734,
+          "recall": 0.9973262032085561,
+          "f1-score": 0.9963725541330077,
+          "support": 2618.0
+        }
+      }
+    },
+    {
+      "file": "temporal_data_191.pt",
+      "events": 50000,
+      "attacks": 0,
+      "benign": 50000,
+      "accuracy": 0.99058,
+      "majority_baseline_accuracy": 1.0,
+      "balanced_accuracy": 0.99058,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "roc_auc": null,
+      "average_precision": null,
+      "brier_score": 0.008373689749317346,
+      "false_positive_rate": 0.00942,
+      "confusion_matrix": {
+        "tn": 49529,
+        "fp": 471,
+        "fn": 0,
+        "tp": 0
+      },
+      "stage_macro_f1": 0.4995445855728713,
+      "stage_report": {
+        "0": {
+          "precision": 1.0,
+          "recall": 0.99818,
+          "f1-score": 0.9990891711457426,
+          "support": 50000.0
+        },
+        "7": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 0.0
+        },
+        "accuracy": 0.99818,
+        "macro avg": {
+          "precision": 0.5,
+          "recall": 0.49909,
+          "f1-score": 0.4995445855728713,
+          "support": 50000.0
+        },
+        "weighted avg": {
+          "precision": 1.0,
+          "recall": 0.99818,
+          "f1-score": 0.9990891711457426,
+          "support": 50000.0
+        }
+      }
+    },
+    {
+      "file": "temporal_data_192.pt",
+      "events": 50000,
+      "attacks": 0,
+      "benign": 50000,
+      "accuracy": 0.99222,
+      "majority_baseline_accuracy": 1.0,
+      "balanced_accuracy": 0.99222,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "roc_auc": null,
+      "average_precision": null,
+      "brier_score": 0.006720231933261664,
+      "false_positive_rate": 0.00778,
+      "confusion_matrix": {
+        "tn": 49611,
+        "fp": 389,
+        "fn": 0,
+        "tp": 0
+      },
+      "stage_macro_f1": 0.49948446900307314,
+      "stage_report": {
+        "0": {
+          "precision": 1.0,
+          "recall": 0.99794,
+          "f1-score": 0.9989689380061463,
+          "support": 50000.0
+        },
+        "7": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 0.0
+        },
+        "accuracy": 0.99794,
+        "macro avg": {
+          "precision": 0.5,
+          "recall": 0.49897,
+          "f1-score": 0.49948446900307314,
+          "support": 50000.0
+        },
+        "weighted avg": {
+          "precision": 1.0,
+          "recall": 0.99794,
+          "f1-score": 0.9989689380061464,
+          "support": 50000.0
+        }
+      }
+    },
+    {
+      "file": "temporal_data_193.pt",
+      "events": 50000,
+      "attacks": 0,
+      "benign": 50000,
+      "accuracy": 0.9866,
+      "majority_baseline_accuracy": 1.0,
+      "balanced_accuracy": 0.9866,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "roc_auc": null,
+      "average_precision": null,
+      "brier_score": 0.010397067089002697,
+      "false_positive_rate": 0.0134,
+      "confusion_matrix": {
+        "tn": 49330,
+        "fp": 670,
+        "fn": 0,
+        "tp": 0
+      },
+      "stage_macro_f1": 0.49923884304142296,
+      "stage_report": {
+        "0": {
+          "precision": 1.0,
+          "recall": 0.99696,
+          "f1-score": 0.9984776860828459,
+          "support": 50000.0
+        },
+        "7": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 0.0
+        },
+        "accuracy": 0.99696,
+        "macro avg": {
+          "precision": 0.5,
+          "recall": 0.49848,
+          "f1-score": 0.49923884304142296,
+          "support": 50000.0
+        },
+        "weighted avg": {
+          "precision": 1.0,
+          "recall": 0.99696,
+          "f1-score": 0.9984776860828459,
+          "support": 50000.0
+        }
+      }
+    },
+    {
+      "file": "temporal_data_194.pt",
+      "events": 50000,
+      "attacks": 0,
+      "benign": 50000,
+      "accuracy": 0.99154,
+      "majority_baseline_accuracy": 1.0,
+      "balanced_accuracy": 0.99154,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "roc_auc": null,
+      "average_precision": null,
+      "brier_score": 0.007682177380552573,
+      "false_positive_rate": 0.00846,
+      "confusion_matrix": {
+        "tn": 49577,
+        "fp": 423,
+        "fn": 0,
+        "tp": 0
+      },
+      "stage_macro_f1": 0.4994293494583826,
+      "stage_report": {
+        "0": {
+          "precision": 1.0,
+          "recall": 0.99772,
+          "f1-score": 0.9988586989167652,
+          "support": 50000.0
+        },
+        "7": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 0.0
+        },
+        "accuracy": 0.99772,
+        "macro avg": {
+          "precision": 0.5,
+          "recall": 0.49886,
+          "f1-score": 0.4994293494583826,
+          "support": 50000.0
+        },
+        "weighted avg": {
+          "precision": 1.0,
+          "recall": 0.99772,
+          "f1-score": 0.9988586989167652,
+          "support": 50000.0
+        }
+      }
+    },
+    {
+      "file": "temporal_data_195.pt",
+      "events": 50000,
+      "attacks": 0,
+      "benign": 50000,
+      "accuracy": 0.9901,
+      "majority_baseline_accuracy": 1.0,
+      "balanced_accuracy": 0.9901,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "roc_auc": null,
+      "average_precision": null,
+      "brier_score": 0.008449393720919693,
+      "false_positive_rate": 0.0099,
+      "confusion_matrix": {
+        "tn": 49505,
+        "fp": 495,
+        "fn": 0,
+        "tp": 0
+      },
+      "stage_macro_f1": 0.4995746384426763,
+      "stage_report": {
+        "0": {
+          "precision": 1.0,
+          "recall": 0.9983,
+          "f1-score": 0.9991492768853526,
+          "support": 50000.0
+        },
+        "7": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 0.0
+        },
+        "accuracy": 0.9983,
+        "macro avg": {
+          "precision": 0.5,
+          "recall": 0.49915,
+          "f1-score": 0.4995746384426763,
+          "support": 50000.0
+        },
+        "weighted avg": {
+          "precision": 1.0,
+          "recall": 0.9983,
+          "f1-score": 0.9991492768853526,
+          "support": 50000.0
+        }
+      }
+    },
+    {
+      "file": "temporal_data_196.pt",
+      "events": 50000,
+      "attacks": 0,
+      "benign": 50000,
+      "accuracy": 0.99328,
+      "majority_baseline_accuracy": 1.0,
+      "balanced_accuracy": 0.99328,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "roc_auc": null,
+      "average_precision": null,
+      "brier_score": 0.005839455063282553,
+      "false_positive_rate": 0.00672,
+      "confusion_matrix": {
+        "tn": 49664,
+        "fp": 336,
+        "fn": 0,
+        "tp": 0
+      },
+      "stage_macro_f1": 0.49964474777091733,
+      "stage_report": {
+        "0": {
+          "precision": 1.0,
+          "recall": 0.99858,
+          "f1-score": 0.9992894955418347,
+          "support": 50000.0
+        },
+        "7": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 0.0
+        },
+        "accuracy": 0.99858,
+        "macro avg": {
+          "precision": 0.5,
+          "recall": 0.49929,
+          "f1-score": 0.49964474777091733,
+          "support": 50000.0
+        },
+        "weighted avg": {
+          "precision": 1.0,
+          "recall": 0.99858,
+          "f1-score": 0.9992894955418347,
+          "support": 50000.0
+        }
+      }
+    },
+    {
+      "file": "temporal_data_197.pt",
+      "events": 50000,
+      "attacks": 0,
+      "benign": 50000,
+      "accuracy": 0.98268,
+      "majority_baseline_accuracy": 1.0,
+      "balanced_accuracy": 0.98268,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "roc_auc": null,
+      "average_precision": null,
+      "brier_score": 0.013936676695816335,
+      "false_positive_rate": 0.01732,
+      "confusion_matrix": {
+        "tn": 49134,
+        "fp": 866,
+        "fn": 0,
+        "tp": 0
+      },
+      "stage_macro_f1": 0.49904317245939744,
+      "stage_report": {
+        "0": {
+          "precision": 1.0,
+          "recall": 0.99618,
+          "f1-score": 0.9980863449187949,
+          "support": 50000.0
+        },
+        "7": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 0.0
+        },
+        "accuracy": 0.99618,
+        "macro avg": {
+          "precision": 0.5,
+          "recall": 0.49809,
+          "f1-score": 0.49904317245939744,
+          "support": 50000.0
+        },
+        "weighted avg": {
+          "precision": 1.0,
+          "recall": 0.99618,
+          "f1-score": 0.9980863449187949,
+          "support": 50000.0
+        }
+      }
+    },
+    {
+      "file": "temporal_data_198.pt",
+      "events": 50000,
+      "attacks": 0,
+      "benign": 50000,
+      "accuracy": 0.98392,
+      "majority_baseline_accuracy": 1.0,
+      "balanced_accuracy": 0.98392,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "roc_auc": null,
+      "average_precision": null,
+      "brier_score": 0.014938037141607111,
+      "false_positive_rate": 0.01608,
+      "confusion_matrix": {
+        "tn": 49196,
+        "fp": 804,
+        "fn": 0,
+        "tp": 0
+      },
+      "stage_macro_f1": 0.49756318142993516,
+      "stage_report": {
+        "0": {
+          "precision": 1.0,
+          "recall": 0.9903,
+          "f1-score": 0.9951263628598703,
+          "support": 50000.0
+        },
+        "7": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 0.0
+        },
+        "accuracy": 0.9903,
+        "macro avg": {
+          "precision": 0.5,
+          "recall": 0.49515,
+          "f1-score": 0.49756318142993516,
+          "support": 50000.0
+        },
+        "weighted avg": {
+          "precision": 1.0,
+          "recall": 0.9903,
+          "f1-score": 0.9951263628598703,
+          "support": 50000.0
+        }
+      }
+    },
+    {
+      "file": "temporal_data_199.pt",
+      "events": 50000,
+      "attacks": 0,
+      "benign": 50000,
+      "accuracy": 0.95466,
+      "majority_baseline_accuracy": 1.0,
+      "balanced_accuracy": 0.95466,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "roc_auc": null,
+      "average_precision": null,
+      "brier_score": 0.04474283405587329,
+      "false_positive_rate": 0.04534,
+      "confusion_matrix": {
+        "tn": 47733,
+        "fp": 2267,
+        "fn": 0,
+        "tp": 0
+      },
+      "stage_macro_f1": 0.4895354772843287,
+      "stage_report": {
+        "0": {
+          "precision": 1.0,
+          "recall": 0.959,
+          "f1-score": 0.9790709545686574,
+          "support": 50000.0
+        },
+        "7": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 0.0
+        },
+        "accuracy": 0.959,
+        "macro avg": {
+          "precision": 0.5,
+          "recall": 0.4795,
+          "f1-score": 0.4895354772843287,
+          "support": 50000.0
+        },
+        "weighted avg": {
+          "precision": 1.0,
+          "recall": 0.959,
+          "f1-score": 0.9790709545686574,
+          "support": 50000.0
+        }
+      }
+    },
+    {
+      "file": "temporal_data_200.pt",
+      "events": 50000,
+      "attacks": 0,
+      "benign": 50000,
+      "accuracy": 0.99114,
+      "majority_baseline_accuracy": 1.0,
+      "balanced_accuracy": 0.99114,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "roc_auc": null,
+      "average_precision": null,
+      "brier_score": 0.007907885930822098,
+      "false_positive_rate": 0.00886,
+      "confusion_matrix": {
+        "tn": 49557,
+        "fp": 443,
+        "fn": 0,
+        "tp": 0
+      },
+      "stage_macro_f1": 0.4995445855728713,
+      "stage_report": {
+        "0": {
+          "precision": 1.0,
+          "recall": 0.99818,
+          "f1-score": 0.9990891711457426,
+          "support": 50000.0
+        },
+        "7": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 0.0
+        },
+        "accuracy": 0.99818,
+        "macro avg": {
+          "precision": 0.5,
+          "recall": 0.49909,
+          "f1-score": 0.4995445855728713,
+          "support": 50000.0
+        },
+        "weighted avg": {
+          "precision": 1.0,
+          "recall": 0.99818,
+          "f1-score": 0.9990891711457426,
+          "support": 50000.0
+        }
+      }
+    },
+    {
+      "file": "temporal_data_201.pt",
+      "events": 50000,
+      "attacks": 0,
+      "benign": 50000,
+      "accuracy": 0.9766,
+      "majority_baseline_accuracy": 1.0,
+      "balanced_accuracy": 0.9766,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "roc_auc": null,
+      "average_precision": null,
+      "brier_score": 0.01988580109676443,
+      "false_positive_rate": 0.0234,
+      "confusion_matrix": {
+        "tn": 48830,
+        "fp": 1170,
+        "fn": 0,
+        "tp": 0
+      },
+      "stage_macro_f1": 0.4982639934172236,
+      "stage_report": {
+        "0": {
+          "precision": 1.0,
+          "recall": 0.99308,
+          "f1-score": 0.9965279868344472,
+          "support": 50000.0
+        },
+        "7": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 0.0
+        },
+        "accuracy": 0.99308,
+        "macro avg": {
+          "precision": 0.5,
+          "recall": 0.49654,
+          "f1-score": 0.4982639934172236,
+          "support": 50000.0
+        },
+        "weighted avg": {
+          "precision": 1.0,
+          "recall": 0.99308,
+          "f1-score": 0.9965279868344472,
+          "support": 50000.0
+        }
+      }
+    },
+    {
+      "file": "temporal_data_202.pt",
+      "events": 50000,
+      "attacks": 0,
+      "benign": 50000,
+      "accuracy": 0.99146,
+      "majority_baseline_accuracy": 1.0,
+      "balanced_accuracy": 0.99146,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "roc_auc": null,
+      "average_precision": null,
+      "brier_score": 0.0069273399627683375,
+      "false_positive_rate": 0.00854,
+      "confusion_matrix": {
+        "tn": 49573,
+        "fp": 427,
+        "fn": 0,
+        "tp": 0
+      },
+      "stage_macro_f1": 0.49974486988364064,
+      "stage_report": {
+        "0": {
+          "precision": 1.0,
+          "recall": 0.99898,
+          "f1-score": 0.9994897397672813,
+          "support": 50000.0
+        },
+        "7": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 0.0
+        },
+        "accuracy": 0.99898,
+        "macro avg": {
+          "precision": 0.5,
+          "recall": 0.49949,
+          "f1-score": 0.49974486988364064,
+          "support": 50000.0
+        },
+        "weighted avg": {
+          "precision": 1.0,
+          "recall": 0.99898,
+          "f1-score": 0.9994897397672813,
+          "support": 50000.0
+        }
+      }
+    },
+    {
+      "file": "temporal_data_203.pt",
+      "events": 50000,
+      "attacks": 0,
+      "benign": 50000,
+      "accuracy": 0.99178,
+      "majority_baseline_accuracy": 1.0,
+      "balanced_accuracy": 0.99178,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "roc_auc": null,
+      "average_precision": null,
+      "brier_score": 0.007313502746799644,
+      "false_positive_rate": 0.00822,
+      "confusion_matrix": {
+        "tn": 49589,
+        "fp": 411,
+        "fn": 0,
+        "tp": 0
+      },
+      "stage_macro_f1": 0.49962471853890417,
+      "stage_report": {
+        "0": {
+          "precision": 1.0,
+          "recall": 0.9985,
+          "f1-score": 0.9992494370778083,
+          "support": 50000.0
+        },
+        "7": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 0.0
+        },
+        "accuracy": 0.9985,
+        "macro avg": {
+          "precision": 0.5,
+          "recall": 0.49925,
+          "f1-score": 0.49962471853890417,
+          "support": 50000.0
+        },
+        "weighted avg": {
+          "precision": 1.0,
+          "recall": 0.9985,
+          "f1-score": 0.9992494370778084,
+          "support": 50000.0
+        }
+      }
+    },
+    {
+      "file": "temporal_data_204.pt",
+      "events": 50000,
+      "attacks": 0,
+      "benign": 50000,
+      "accuracy": 0.98402,
+      "majority_baseline_accuracy": 1.0,
+      "balanced_accuracy": 0.98402,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "roc_auc": null,
+      "average_precision": null,
+      "brier_score": 0.012251322495457032,
+      "false_positive_rate": 0.01598,
+      "confusion_matrix": {
+        "tn": 49201,
+        "fp": 799,
+        "fn": 0,
+        "tp": 0
+      },
+      "stage_macro_f1": 0.4992990186260765,
+      "stage_report": {
+        "0": {
+          "precision": 1.0,
+          "recall": 0.9972,
+          "f1-score": 0.998598037252153,
+          "support": 50000.0
+        },
+        "7": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 0.0
+        },
+        "accuracy": 0.9972,
+        "macro avg": {
+          "precision": 0.5,
+          "recall": 0.4986,
+          "f1-score": 0.4992990186260765,
+          "support": 50000.0
+        },
+        "weighted avg": {
+          "precision": 1.0,
+          "recall": 0.9972,
+          "f1-score": 0.998598037252153,
+          "support": 50000.0
+        }
+      }
+    },
+    {
+      "file": "temporal_data_205.pt",
+      "events": 50000,
+      "attacks": 0,
+      "benign": 50000,
+      "accuracy": 0.98764,
+      "majority_baseline_accuracy": 1.0,
+      "balanced_accuracy": 0.98764,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "roc_auc": null,
+      "average_precision": null,
+      "brier_score": 0.010478651215321854,
+      "false_positive_rate": 0.01236,
+      "confusion_matrix": {
+        "tn": 49382,
+        "fp": 618,
+        "fn": 0,
+        "tp": 0
+      },
+      "stage_macro_f1": 0.4991736365002254,
+      "stage_report": {
+        "0": {
+          "precision": 1.0,
+          "recall": 0.9967,
+          "f1-score": 0.9983472730004508,
+          "support": 50000.0
+        },
+        "7": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 0.0
+        },
+        "accuracy": 0.9967,
+        "macro avg": {
+          "precision": 0.5,
+          "recall": 0.49835,
+          "f1-score": 0.4991736365002254,
+          "support": 50000.0
+        },
+        "weighted avg": {
+          "precision": 1.0,
+          "recall": 0.9967,
+          "f1-score": 0.9983472730004508,
+          "support": 50000.0
+        }
+      }
+    },
+    {
+      "file": "temporal_data_206.pt",
+      "events": 50000,
+      "attacks": 0,
+      "benign": 50000,
+      "accuracy": 0.9924,
+      "majority_baseline_accuracy": 1.0,
+      "balanced_accuracy": 0.9924,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "roc_auc": null,
+      "average_precision": null,
+      "brier_score": 0.00739635447273617,
+      "false_positive_rate": 0.0076,
+      "confusion_matrix": {
+        "tn": 49620,
+        "fp": 380,
+        "fn": 0,
+        "tp": 0
+      },
+      "stage_macro_f1": 0.4995596124589639,
+      "stage_report": {
+        "0": {
+          "precision": 1.0,
+          "recall": 0.99824,
+          "f1-score": 0.9991192249179278,
+          "support": 50000.0
+        },
+        "7": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 0.0
+        },
+        "accuracy": 0.99824,
+        "macro avg": {
+          "precision": 0.5,
+          "recall": 0.49912,
+          "f1-score": 0.4995596124589639,
+          "support": 50000.0
+        },
+        "weighted avg": {
+          "precision": 1.0,
+          "recall": 0.99824,
+          "f1-score": 0.9991192249179278,
+          "support": 50000.0
+        }
+      }
+    },
+    {
+      "file": "temporal_data_207.pt",
+      "events": 50000,
+      "attacks": 0,
+      "benign": 50000,
+      "accuracy": 0.9915,
+      "majority_baseline_accuracy": 1.0,
+      "balanced_accuracy": 0.9915,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "roc_auc": null,
+      "average_precision": null,
+      "brier_score": 0.007336176291731176,
+      "false_positive_rate": 0.0085,
+      "confusion_matrix": {
+        "tn": 49575,
+        "fp": 425,
+        "fn": 0,
+        "tp": 0
+      },
+      "stage_macro_f1": 0.499659768642677,
+      "stage_report": {
+        "0": {
+          "precision": 1.0,
+          "recall": 0.99864,
+          "f1-score": 0.999319537285354,
+          "support": 50000.0
+        },
+        "7": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 0.0
+        },
+        "accuracy": 0.99864,
+        "macro avg": {
+          "precision": 0.5,
+          "recall": 0.49932,
+          "f1-score": 0.499659768642677,
+          "support": 50000.0
+        },
+        "weighted avg": {
+          "precision": 1.0,
+          "recall": 0.99864,
+          "f1-score": 0.999319537285354,
+          "support": 50000.0
+        }
+      }
+    },
+    {
+      "file": "temporal_data_208.pt",
+      "events": 50000,
+      "attacks": 0,
+      "benign": 50000,
+      "accuracy": 0.98824,
+      "majority_baseline_accuracy": 1.0,
+      "balanced_accuracy": 0.98824,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "roc_auc": null,
+      "average_precision": null,
+      "brier_score": 0.009538974000740464,
+      "false_positive_rate": 0.01176,
+      "confusion_matrix": {
+        "tn": 49412,
+        "fp": 588,
+        "fn": 0,
+        "tp": 0
+      },
+      "stage_macro_f1": 0.4993140602625597,
+      "stage_report": {
+        "0": {
+          "precision": 1.0,
+          "recall": 0.99726,
+          "f1-score": 0.9986281205251194,
+          "support": 50000.0
+        },
+        "7": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 0.0
+        },
+        "accuracy": 0.99726,
+        "macro avg": {
+          "precision": 0.5,
+          "recall": 0.49863,
+          "f1-score": 0.4993140602625597,
+          "support": 50000.0
+        },
+        "weighted avg": {
+          "precision": 1.0,
+          "recall": 0.99726,
+          "f1-score": 0.9986281205251194,
+          "support": 50000.0
+        }
+      }
+    },
+    {
+      "file": "temporal_data_209.pt",
+      "events": 50000,
+      "attacks": 0,
+      "benign": 50000,
+      "accuracy": 0.98796,
+      "majority_baseline_accuracy": 1.0,
+      "balanced_accuracy": 0.98796,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "roc_auc": null,
+      "average_precision": null,
+      "brier_score": 0.00900335423983035,
+      "false_positive_rate": 0.01204,
+      "confusion_matrix": {
+        "tn": 49398,
+        "fp": 602,
+        "fn": 0,
+        "tp": 0
+      },
+      "stage_macro_f1": 0.499584655263869,
+      "stage_report": {
+        "0": {
+          "precision": 1.0,
+          "recall": 0.99834,
+          "f1-score": 0.999169310527738,
+          "support": 50000.0
+        },
+        "7": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 0.0
+        },
+        "accuracy": 0.99834,
+        "macro avg": {
+          "precision": 0.5,
+          "recall": 0.49917,
+          "f1-score": 0.499584655263869,
+          "support": 50000.0
+        },
+        "weighted avg": {
+          "precision": 1.0,
+          "recall": 0.99834,
+          "f1-score": 0.9991693105277379,
+          "support": 50000.0
+        }
+      }
+    },
+    {
+      "file": "temporal_data_210.pt",
+      "events": 50000,
+      "attacks": 0,
+      "benign": 50000,
+      "accuracy": 0.98744,
+      "majority_baseline_accuracy": 1.0,
+      "balanced_accuracy": 0.98744,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "roc_auc": null,
+      "average_precision": null,
+      "brier_score": 0.010126948177853617,
+      "false_positive_rate": 0.01256,
+      "confusion_matrix": {
+        "tn": 49372,
+        "fp": 628,
+        "fn": 0,
+        "tp": 0
+      },
+      "stage_macro_f1": 0.4995195387572069,
+      "stage_report": {
+        "0": {
+          "precision": 1.0,
+          "recall": 0.99808,
+          "f1-score": 0.9990390775144138,
+          "support": 50000.0
+        },
+        "7": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 0.0
+        },
+        "accuracy": 0.99808,
+        "macro avg": {
+          "precision": 0.5,
+          "recall": 0.49904,
+          "f1-score": 0.4995195387572069,
+          "support": 50000.0
+        },
+        "weighted avg": {
+          "precision": 1.0,
+          "recall": 0.99808,
+          "f1-score": 0.9990390775144138,
+          "support": 50000.0
+        }
+      }
+    },
+    {
+      "file": "temporal_data_211.pt",
+      "events": 50000,
+      "attacks": 0,
+      "benign": 50000,
+      "accuracy": 0.98766,
+      "majority_baseline_accuracy": 1.0,
+      "balanced_accuracy": 0.98766,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "roc_auc": null,
+      "average_precision": null,
+      "brier_score": 0.010073956807480121,
+      "false_positive_rate": 0.01234,
+      "confusion_matrix": {
+        "tn": 49383,
+        "fp": 617,
+        "fn": 0,
+        "tp": 0
+      },
+      "stage_macro_f1": 0.4995746384426763,
+      "stage_report": {
+        "0": {
+          "precision": 1.0,
+          "recall": 0.9983,
+          "f1-score": 0.9991492768853526,
+          "support": 50000.0
+        },
+        "7": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 0.0
+        },
+        "accuracy": 0.9983,
+        "macro avg": {
+          "precision": 0.5,
+          "recall": 0.49915,
+          "f1-score": 0.4995746384426763,
+          "support": 50000.0
+        },
+        "weighted avg": {
+          "precision": 1.0,
+          "recall": 0.9983,
+          "f1-score": 0.9991492768853526,
+          "support": 50000.0
+        }
+      }
+    },
+    {
+      "file": "temporal_data_212.pt",
+      "events": 50000,
+      "attacks": 0,
+      "benign": 50000,
+      "accuracy": 0.9887,
+      "majority_baseline_accuracy": 1.0,
+      "balanced_accuracy": 0.9887,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "roc_auc": null,
+      "average_precision": null,
+      "brier_score": 0.008693922806152127,
+      "false_positive_rate": 0.0113,
+      "confusion_matrix": {
+        "tn": 49435,
+        "fp": 565,
+        "fn": 0,
+        "tp": 0
+      },
+      "stage_macro_f1": 0.4995546035972015,
+      "stage_report": {
+        "0": {
+          "precision": 1.0,
+          "recall": 0.99822,
+          "f1-score": 0.999109207194403,
+          "support": 50000.0
+        },
+        "7": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 0.0
+        },
+        "accuracy": 0.99822,
+        "macro avg": {
+          "precision": 0.5,
+          "recall": 0.49911,
+          "f1-score": 0.4995546035972015,
+          "support": 50000.0
+        },
+        "weighted avg": {
+          "precision": 1.0,
+          "recall": 0.99822,
+          "f1-score": 0.999109207194403,
+          "support": 50000.0
+        }
+      }
+    },
+    {
+      "file": "temporal_data_213.pt",
+      "events": 50000,
+      "attacks": 0,
+      "benign": 50000,
+      "accuracy": 0.98914,
+      "majority_baseline_accuracy": 1.0,
+      "balanced_accuracy": 0.98914,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "roc_auc": null,
+      "average_precision": null,
+      "brier_score": 0.009436160485681229,
+      "false_positive_rate": 0.01086,
+      "confusion_matrix": {
+        "tn": 49457,
+        "fp": 543,
+        "fn": 0,
+        "tp": 0
+      },
+      "stage_macro_f1": 0.49962471853890417,
+      "stage_report": {
+        "0": {
+          "precision": 1.0,
+          "recall": 0.9985,
+          "f1-score": 0.9992494370778083,
+          "support": 50000.0
+        },
+        "7": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 0.0
+        },
+        "accuracy": 0.9985,
+        "macro avg": {
+          "precision": 0.5,
+          "recall": 0.49925,
+          "f1-score": 0.49962471853890417,
+          "support": 50000.0
+        },
+        "weighted avg": {
+          "precision": 1.0,
+          "recall": 0.9985,
+          "f1-score": 0.9992494370778084,
+          "support": 50000.0
+        }
+      }
+    },
+    {
+      "file": "temporal_data_214.pt",
+      "events": 50000,
+      "attacks": 0,
+      "benign": 50000,
+      "accuracy": 0.98484,
+      "majority_baseline_accuracy": 1.0,
+      "balanced_accuracy": 0.98484,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "roc_auc": null,
+      "average_precision": null,
+      "brier_score": 0.012653085418000556,
+      "false_positive_rate": 0.01516,
+      "confusion_matrix": {
+        "tn": 49242,
+        "fp": 758,
+        "fn": 0,
+        "tp": 0
+      },
+      "stage_macro_f1": 0.49894276924310293,
+      "stage_report": {
+        "0": {
+          "precision": 1.0,
+          "recall": 0.99578,
+          "f1-score": 0.9978855384862059,
+          "support": 50000.0
+        },
+        "7": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 0.0
+        },
+        "accuracy": 0.99578,
+        "macro avg": {
+          "precision": 0.5,
+          "recall": 0.49789,
+          "f1-score": 0.49894276924310293,
+          "support": 50000.0
+        },
+        "weighted avg": {
+          "precision": 1.0,
+          "recall": 0.99578,
+          "f1-score": 0.9978855384862059,
+          "support": 50000.0
+        }
+      }
+    },
+    {
+      "file": "temporal_data_215.pt",
+      "events": 50000,
+      "attacks": 0,
+      "benign": 50000,
+      "accuracy": 0.98976,
+      "majority_baseline_accuracy": 1.0,
+      "balanced_accuracy": 0.98976,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "roc_auc": null,
+      "average_precision": null,
+      "brier_score": 0.008687313611038647,
+      "false_positive_rate": 0.01024,
+      "confusion_matrix": {
+        "tn": 49488,
+        "fp": 512,
+        "fn": 0,
+        "tp": 0
+      },
+      "stage_macro_f1": 0.49953456714744715,
+      "stage_report": {
+        "0": {
+          "precision": 1.0,
+          "recall": 0.99814,
+          "f1-score": 0.9990691342948943,
+          "support": 50000.0
+        },
+        "7": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 0.0
+        },
+        "accuracy": 0.99814,
+        "macro avg": {
+          "precision": 0.5,
+          "recall": 0.49907,
+          "f1-score": 0.49953456714744715,
+          "support": 50000.0
+        },
+        "weighted avg": {
+          "precision": 1.0,
+          "recall": 0.99814,
+          "f1-score": 0.9990691342948943,
+          "support": 50000.0
+        }
+      }
+    },
+    {
+      "file": "temporal_data_216.pt",
+      "events": 50000,
+      "attacks": 0,
+      "benign": 50000,
+      "accuracy": 0.98454,
+      "majority_baseline_accuracy": 1.0,
+      "balanced_accuracy": 0.98454,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "roc_auc": null,
+      "average_precision": null,
+      "brier_score": 0.011160665396207064,
+      "false_positive_rate": 0.01546,
+      "confusion_matrix": {
+        "tn": 49227,
+        "fp": 773,
+        "fn": 0,
+        "tp": 0
+      },
+      "stage_macro_f1": 0.4997148374573507,
+      "stage_report": {
+        "0": {
+          "precision": 1.0,
+          "recall": 0.99886,
+          "f1-score": 0.9994296749147014,
+          "support": 50000.0
+        },
+        "7": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 0.0
+        },
+        "accuracy": 0.99886,
+        "macro avg": {
+          "precision": 0.5,
+          "recall": 0.49943,
+          "f1-score": 0.4997148374573507,
+          "support": 50000.0
+        },
+        "weighted avg": {
+          "precision": 1.0,
+          "recall": 0.99886,
+          "f1-score": 0.9994296749147014,
+          "support": 50000.0
+        }
+      }
+    },
+    {
+      "file": "temporal_data_217.pt",
+      "events": 48748,
+      "attacks": 0,
+      "benign": 48748,
+      "accuracy": 0.9779683269057192,
+      "majority_baseline_accuracy": 1.0,
+      "balanced_accuracy": 0.9779683269057192,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "roc_auc": null,
+      "average_precision": null,
+      "brier_score": 0.01839682333828218,
+      "false_positive_rate": 0.02203167309428079,
+      "confusion_matrix": {
+        "tn": 47674,
+        "fp": 1074,
+        "fn": 0,
+        "tp": 0
+      },
+      "stage_macro_f1": 0.332510761975268,
+      "stage_report": {
+        "0": {
+          "precision": 1.0,
+          "recall": 0.9950767210962501,
+          "f1-score": 0.9975322859258041,
+          "support": 48748.0
+        },
+        "1": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 0.0
+        },
+        "7": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 0.0
+        },
+        "accuracy": 0.9950767210962501,
+        "macro avg": {
+          "precision": 0.3333333333333333,
+          "recall": 0.3316922403654167,
+          "f1-score": 0.332510761975268,
+          "support": 48748.0
+        },
+        "weighted avg": {
+          "precision": 1.0,
+          "recall": 0.9950767210962501,
+          "f1-score": 0.9975322859258041,
+          "support": 48748.0
+        }
+      }
+    },
+    {
+      "file": "temporal_data_218.pt",
+      "events": 3404,
+      "attacks": 0,
+      "benign": 3404,
+      "accuracy": 0.9885428907168038,
+      "majority_baseline_accuracy": 1.0,
+      "balanced_accuracy": 0.9885428907168038,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "roc_auc": null,
+      "average_precision": null,
+      "brier_score": 0.03691256641502444,
+      "false_positive_rate": 0.011457109283196239,
+      "confusion_matrix": {
+        "tn": 3365,
+        "fp": 39,
+        "fn": 0,
+        "tp": 0
+      },
+      "stage_macro_f1": 0.4998530708198648,
+      "stage_report": {
+        "0": {
+          "precision": 1.0,
+          "recall": 0.999412455934195,
+          "f1-score": 0.9997061416397296,
+          "support": 3404.0
+        },
+        "7": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 0.0
+        },
+        "accuracy": 0.999412455934195,
+        "macro avg": {
+          "precision": 0.5,
+          "recall": 0.4997062279670975,
+          "f1-score": 0.4998530708198648,
+          "support": 3404.0
+        },
+        "weighted avg": {
+          "precision": 1.0,
+          "recall": 0.999412455934195,
+          "f1-score": 0.9997061416397297,
+          "support": 3404.0
+        }
+      }
+    },
+    {
+      "file": "temporal_data_219.pt",
+      "events": 8728,
+      "attacks": 0,
+      "benign": 8728,
+      "accuracy": 0.9373281393217232,
+      "majority_baseline_accuracy": 1.0,
+      "balanced_accuracy": 0.9373281393217232,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "roc_auc": null,
+      "average_precision": null,
+      "brier_score": 0.07647815345646056,
+      "false_positive_rate": 0.0626718606782768,
+      "confusion_matrix": {
+        "tn": 8181,
+        "fp": 547,
+        "fn": 0,
+        "tp": 0
+      },
+      "stage_macro_f1": 0.49879407373377743,
+      "stage_report": {
+        "0": {
+          "precision": 1.0,
+          "recall": 0.9951879010082493,
+          "f1-score": 0.9975881474675549,
+          "support": 8728.0
+        },
+        "1": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 0.0
+        },
+        "accuracy": 0.9951879010082493,
+        "macro avg": {
+          "precision": 0.5,
+          "recall": 0.49759395050412464,
+          "f1-score": 0.49879407373377743,
+          "support": 8728.0
+        },
+        "weighted avg": {
+          "precision": 1.0,
+          "recall": 0.9951879010082493,
+          "f1-score": 0.9975881474675549,
+          "support": 8728.0
+        }
+      }
+    },
+    {
+      "file": "temporal_data_223.pt",
+      "events": 2615,
+      "attacks": 0,
+      "benign": 2615,
+      "accuracy": 0.9820267686424474,
+      "majority_baseline_accuracy": 1.0,
+      "balanced_accuracy": 0.9820267686424474,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "roc_auc": null,
+      "average_precision": null,
+      "brier_score": 0.032092843663708605,
+      "false_positive_rate": 0.01797323135755258,
+      "confusion_matrix": {
+        "tn": 2568,
+        "fp": 47,
+        "fn": 0,
+        "tp": 0
+      },
+      "stage_macro_f1": 0.49701865743412194,
+      "stage_report": {
+        "0": {
+          "precision": 1.0,
+          "recall": 0.9881453154875717,
+          "f1-score": 0.9940373148682439,
+          "support": 2615.0
+        },
+        "1": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 0.0
+        },
+        "accuracy": 0.9881453154875717,
+        "macro avg": {
+          "precision": 0.5,
+          "recall": 0.49407265774378584,
+          "f1-score": 0.49701865743412194,
+          "support": 2615.0
+        },
+        "weighted avg": {
+          "precision": 1.0,
+          "recall": 0.9881453154875717,
+          "f1-score": 0.9940373148682439,
+          "support": 2615.0
+        }
+      }
+    }
+  ],
+  "data_audit": [
+    {
+      "file": "temporal_data_59.pt",
+      "events": 50000,
+      "attacks": 49927,
+      "labels": {
+        "0": 73,
+        "7": 49927
+      },
+      "zero_feature_rows": 0,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519115520.0,
+      "timestamp_max": 1519122304.0
+    },
+    {
+      "file": "temporal_data_60.pt",
+      "events": 50000,
+      "attacks": 49991,
+      "labels": {
+        "0": 9,
+        "7": 49991
+      },
+      "zero_feature_rows": 0,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519122048.0,
+      "timestamp_max": 1519122944.0
+    },
+    {
+      "file": "temporal_data_61.pt",
+      "events": 50000,
+      "attacks": 49991,
+      "labels": {
+        "0": 9,
+        "7": 49991
+      },
+      "zero_feature_rows": 0,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519121664.0,
+      "timestamp_max": 1519123584.0
+    },
+    {
+      "file": "temporal_data_62.pt",
+      "events": 50000,
+      "attacks": 49985,
+      "labels": {
+        "0": 15,
+        "7": 49985
+      },
+      "zero_feature_rows": 0,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519121664.0,
+      "timestamp_max": 1519123968.0
+    },
+    {
+      "file": "temporal_data_63.pt",
+      "events": 50000,
+      "attacks": 49979,
+      "labels": {
+        "0": 21,
+        "7": 49979
+      },
+      "zero_feature_rows": 0,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519121792.0,
+      "timestamp_max": 1519124352.0
+    },
+    {
+      "file": "temporal_data_64.pt",
+      "events": 50000,
+      "attacks": 49982,
+      "labels": {
+        "0": 18,
+        "7": 49982
+      },
+      "zero_feature_rows": 0,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519122176.0,
+      "timestamp_max": 1519124608.0
+    },
+    {
+      "file": "temporal_data_65.pt",
+      "events": 50000,
+      "attacks": 49986,
+      "labels": {
+        "0": 14,
+        "7": 49986
+      },
+      "zero_feature_rows": 0,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519122432.0,
+      "timestamp_max": 1519124992.0
+    },
+    {
+      "file": "temporal_data_66.pt",
+      "events": 50000,
+      "attacks": 49968,
+      "labels": {
+        "0": 32,
+        "7": 49968
+      },
+      "zero_feature_rows": 0,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519122816.0,
+      "timestamp_max": 1519125248.0
+    },
+    {
+      "file": "temporal_data_67.pt",
+      "events": 50000,
+      "attacks": 49170,
+      "labels": {
+        "0": 830,
+        "7": 49170
+      },
+      "zero_feature_rows": 0,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088512.0,
+      "timestamp_max": 1519131520.0
+    },
+    {
+      "file": "temporal_data_68.pt",
+      "events": 50000,
+      "attacks": 49770,
+      "labels": {
+        "0": 230,
+        "7": 49770
+      },
+      "zero_feature_rows": 0,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088512.0,
+      "timestamp_max": 1519131392.0
+    },
+    {
+      "file": "temporal_data_69.pt",
+      "events": 50000,
+      "attacks": 49775,
+      "labels": {
+        "0": 225,
+        "7": 49775
+      },
+      "zero_feature_rows": 0,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088512.0,
+      "timestamp_max": 1519131392.0
+    },
+    {
+      "file": "temporal_data_70.pt",
+      "events": 50000,
+      "attacks": 27667,
+      "labels": {
+        "0": 22333,
+        "7": 27667
+      },
+      "zero_feature_rows": 168,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_71.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 265,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_72.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 263,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_73.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 362,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_74.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 336,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_75.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 331,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_76.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 273,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_77.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 271,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_78.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 299,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_79.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 259,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_80.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 264,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_81.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 263,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_82.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 257,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_83.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 334,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_84.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 291,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_85.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 243,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_86.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 310,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_87.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 249,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_88.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 366,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_89.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 291,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_90.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 320,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_91.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 190,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_92.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 315,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_93.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 313,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_94.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 247,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_95.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 307,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_96.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 321,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_97.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 498,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_98.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 315,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_99.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 490,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_100.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 431,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_101.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 515,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_102.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 481,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_103.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 539,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_104.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 399,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_105.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 470,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_106.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 389,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_107.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 509,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_108.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 486,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_109.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 436,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_110.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 471,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131520.0
+    },
+    {
+      "file": "temporal_data_111.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 556,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_112.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 400,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_113.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 484,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_114.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 609,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_115.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 335,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_116.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 508,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_117.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 540,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131520.0
+    },
+    {
+      "file": "temporal_data_118.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 555,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_119.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 411,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_120.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 421,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_121.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 492,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_122.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 555,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_123.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 476,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_124.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 554,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_125.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 507,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_126.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 530,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_127.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 437,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_128.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 579,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_129.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 583,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_130.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 517,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_131.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 441,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_132.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 539,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_133.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 516,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_134.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 476,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_135.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 425,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_136.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 508,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_137.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 514,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_138.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 578,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_139.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 480,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_140.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 502,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_141.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 359,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_142.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 589,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_143.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 514,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_144.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 496,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_145.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 466,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_146.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 627,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_147.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 567,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_148.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 491,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_149.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 661,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_150.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 559,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_151.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 572,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_152.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 533,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_153.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 520,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_154.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 584,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_155.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 376,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131520.0
+    },
+    {
+      "file": "temporal_data_156.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 612,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_157.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 667,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_158.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 482,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_159.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 566,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_160.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 486,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_161.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 520,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_162.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 448,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_163.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 473,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_164.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 593,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_165.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 476,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_166.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 548,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_167.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 552,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_168.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 539,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_169.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 578,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_170.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 608,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_171.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 499,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_172.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 522,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_173.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 560,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_174.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 566,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_175.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 539,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_176.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 430,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_177.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 575,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_178.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 469,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_179.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 312,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_180.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 251,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_181.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 382,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_182.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 328,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_183.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 324,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_184.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 408,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_185.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 243,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_186.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 266,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_187.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 280,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_188.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 356,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_189.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 405,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_190.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 259,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_191.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 268,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_192.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 292,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_193.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 354,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_194.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 331,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_195.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 325,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_196.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 275,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_197.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 285,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_198.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 370,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_199.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 417,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131520.0
+    },
+    {
+      "file": "temporal_data_200.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 379,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_201.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 430,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_202.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 285,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_203.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 92,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_204.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 45,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_205.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 106,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_206.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 204,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_207.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 230,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_208.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 51,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_209.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 44,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_210.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 46,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_211.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 66,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_212.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 118,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_213.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 142,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_214.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 77,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_215.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 127,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_216.pt",
+      "events": 50000,
+      "attacks": 0,
+      "labels": {
+        "0": 50000
+      },
+      "zero_feature_rows": 110,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_217.pt",
+      "events": 48748,
+      "attacks": 0,
+      "labels": {
+        "0": 48748
+      },
+      "zero_feature_rows": 4,
+      "nonfinite_features": 0,
+      "timestamp_min": 1519088384.0,
+      "timestamp_max": 1519131648.0
+    },
+    {
+      "file": "temporal_data_218.pt",
+      "events": 3404,
+      "attacks": 0,
+      "labels": {
+        "0": 3404
+      },
+      "zero_feature_rows": 0,
+      "nonfinite_features": 0,
+      "timestamp_min": 1563198976.0,
+      "timestamp_max": 1563224960.0
+    },
+    {
+      "file": "temporal_data_219.pt",
+      "events": 8728,
+      "attacks": 0,
+      "labels": {
+        "0": 8728
+      },
+      "zero_feature_rows": 0,
+      "nonfinite_features": 0,
+      "timestamp_min": 1563198336.0,
+      "timestamp_max": 1563226240.0
+    },
+    {
+      "file": "temporal_data_220.pt",
+      "events": 9685,
+      "attacks": 137,
+      "labels": {
+        "0": 9548,
+        "1": 137
+      },
+      "zero_feature_rows": 0,
+      "nonfinite_features": 0,
+      "timestamp_min": 1563449600.0,
+      "timestamp_max": 1563485440.0
+    },
+    {
+      "file": "temporal_data_221.pt",
+      "events": 29242,
+      "attacks": 11865,
+      "labels": {
+        "0": 17377,
+        "1": 11865
+      },
+      "zero_feature_rows": 0,
+      "nonfinite_features": 0,
+      "timestamp_min": 1563277824.0,
+      "timestamp_max": 1563311744.0
+    },
+    {
+      "file": "temporal_data_222.pt",
+      "events": 17487,
+      "attacks": 8632,
+      "labels": {
+        "0": 8855,
+        "1": 8577,
+        "2": 55
+      },
+      "zero_feature_rows": 0,
+      "nonfinite_features": 0,
+      "timestamp_min": 1563373952.0,
+      "timestamp_max": 1563403520.0
+    },
+    {
+      "file": "temporal_data_223.pt",
+      "events": 2615,
+      "attacks": 0,
+      "labels": {
+        "0": 2615
+      },
+      "zero_feature_rows": 0,
+      "nonfinite_features": 0,
+      "timestamp_min": 1563277824.0,
+      "timestamp_max": 1563311872.0
+    },
+    {
+      "file": "temporal_data_224.pt",
+      "events": 1437,
+      "attacks": 4,
+      "labels": {
+        "0": 1433,
+        "1": 4
+      },
+      "zero_feature_rows": 0,
+      "nonfinite_features": 0,
+      "timestamp_min": 1563374080.0,
+      "timestamp_max": 1563403648.0
+    },
+    {
+      "file": "temporal_data_225.pt",
+      "events": 7361,
+      "attacks": 21,
+      "labels": {
+        "0": 7340,
+        "1": 21
+      },
+      "zero_feature_rows": 0,
+      "nonfinite_features": 0,
+      "timestamp_min": 1563539712.0,
+      "timestamp_max": 1563575296.0
+    },
+    {
+      "file": "temporal_data_226.pt",
+      "events": 2618,
+      "attacks": 6,
+      "labels": {
+        "0": 2612,
+        "1": 6
+      },
+      "zero_feature_rows": 0,
+      "nonfinite_features": 0,
+      "timestamp_min": 1563539712.0,
+      "timestamp_max": 1563575424.0
+    }
+  ],
+  "elapsed_seconds": 113.49891180199984
+}

@@ -1,0 +1,7 @@
+# CPU inference, CLI and API. Use a torch wheel appropriate for your platform.
+torch>=2.6,<3
+torch-geometric>=2.5,<3
+numpy>=1.26,<3
+fastapi>=0.110,<1
+pydantic>=2.6,<3
+uvicorn>=0.29,<1
