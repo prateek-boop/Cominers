@@ -1,9 +1,10 @@
 import torch
 from torch_geometric.nn import TGNMemory
 from torch_geometric.nn.models.tgn import LastAggregator, IdentityMessage
+from models.time_features import TransformedTimeEncoder
 
 class MemoryModule(torch.nn.Module):
-    def __init__(self, num_nodes: int, raw_msg_dim: int, memory_dim: int, time_dim: int):
+    def __init__(self, num_nodes: int, raw_msg_dim: int, memory_dim: int, time_dim: int, time_transform='identity'):
         super().__init__()
         self.memory = TGNMemory(
             num_nodes=num_nodes,
@@ -13,6 +14,7 @@ class MemoryModule(torch.nn.Module):
             message_module=IdentityMessage(raw_msg_dim, memory_dim, time_dim),
             aggregator_module=LastAggregator()
         )
+        self.memory.time_enc = TransformedTimeEncoder(self.memory.time_enc,time_transform)
         
     def forward(self, n_id):
         return self.memory(n_id)

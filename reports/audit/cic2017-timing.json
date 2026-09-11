@@ -1,0 +1,28 @@
+{
+  "purpose": "Throughput pilot only, first 8192 usable Tuesday rows; weights discarded; excludes full preparation and population graph complexity",
+  "results": [
+    {
+      "batch_sizes": [
+        32,
+        200
+      ],
+      "events": 8192,
+      "train_seconds": 1.191822623994085,
+      "train_events_per_second": 6873.506036113522,
+      "evaluation_batch_size": 32,
+      "evaluation_seconds": 1.4731605439956184
+    },
+    {
+      "batch_sizes": [
+        1,
+        32,
+        200
+      ],
+      "events": 8192,
+      "train_seconds": 2.087994321002043,
+      "train_events_per_second": 3923.382318429201,
+      "evaluation_batch_size": 32,
+      "evaluation_seconds": 1.4884486399969319
+    }
+  ]
+}

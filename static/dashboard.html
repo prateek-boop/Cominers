@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CyberTGN SOC Operations & Defense Dashboard</title>
+  <style>
+    :root {
+      --bg-dark: #0a0e17;
+      --panel-bg: #111827;
+      --card-bg: #1f2937;
+      --border-color: #374151;
+      --text-main: #f3f4f6;
+      --text-muted: #9ca3af;
+      --accent-blue: #38bdf8;
+      --accent-cyan: #06b6d4;
+      --danger-red: #ef4444;
+      --warning-amber: #f59e0b;
+      --success-green: #10b981;
+      --purple-graph: #a855f7;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif; }
+    body { background-color: var(--bg-dark); color: var(--text-main); min-height: 100vh; display: flex; flex-direction: column; }
+    
+    header {
+      background-color: var(--panel-bg);
+      border-bottom: 1px solid var(--border-color);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .brand { display: flex; align-items: center; gap: 0.75rem; }
+    .brand-icon { width: 36px; height: 36px; background: linear-gradient(135deg, var(--accent-cyan), var(--purple-graph)); border-radius: 8px; display: grid; place-items: center; font-weight: bold; font-size: 1.2rem; }
+    .brand-text h1 { font-size: 1.25rem; font-weight: 700; letter-spacing: 0.5px; }
+    .brand-text p { font-size: 0.75rem; color: var(--text-muted); }
+    .header-actions { display: flex; align-items: center; gap: 1rem; }
+
+    .status-badge {
+      display: inline-flex; align-items: center; gap: 0.4rem; padding: 0.35rem 0.75rem; border-radius: 9999px; font-size: 0.75rem; font-weight: 600; text-transform: uppercase;
+    }
+    .badge-live { background-color: rgba(16, 185, 129, 0.15); color: var(--success-green); border: 1px solid rgba(16, 185, 129, 0.3); }
+    .badge-live::before { content: ""; width: 8px; height: 8px; background-color: var(--success-green); border-radius: 50%; box-shadow: 0 0 8px var(--success-green); }
+    .badge-stopped { background-color: rgba(239, 68, 68, 0.15); color: var(--danger-red); border: 1px solid rgba(239, 68, 68, 0.3); }
+    .badge-stopped::before { content: ""; width: 8px; height: 8px; background-color: var(--danger-red); border-radius: 50%; }
+
+    .btn {
+      background-color: var(--card-bg); color: var(--text-main); border: 1px solid var(--border-color); padding: 0.5rem 1rem; border-radius: 6px; font-size: 0.85rem; font-weight: 600; cursor: pointer; transition: all 0.2s;
+    }
+    .btn:hover { background-color: var(--border-color); }
+    .btn-primary { background: linear-gradient(135deg, #0284c7, #0369a1); border: none; }
+    .btn-primary:hover { opacity: 0.9; }
+    .btn-danger { background-color: rgba(239, 68, 68, 0.2); color: #fca5a5; border-color: rgba(239, 68, 68, 0.4); }
+    .btn-danger:hover { background-color: var(--danger-red); color: white; }
+
+    main { padding: 1.5rem 2rem; flex: 1; display: grid; grid-template-columns: repeat(12, 1fr); gap: 1.5rem; }
+
+    .kpi-row { grid-column: span 12; display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; }
+    .kpi-card { background-color: var(--panel-bg); border: 1px solid var(--border-color); border-radius: 8px; padding: 1.25rem; display: flex; flex-direction: column; gap: 0.5rem; }
+    .kpi-title { font-size: 0.8rem; color: var(--text-muted); font-weight: 600; text-transform: uppercase; }
+    .kpi-val { font-size: 1.8rem; font-weight: 700; color: var(--text-main); }
+    .kpi-sub { font-size: 0.75rem; color: var(--text-muted); }
+
+    .panel { background-color: var(--panel-bg); border: 1px solid var(--border-color); border-radius: 8px; overflow: hidden; display: flex; flex-direction: column; }
+    .panel-header { padding: 1rem 1.25rem; border-bottom: 1px solid var(--border-color); display: flex; justify-content: space-between; align-items: center; }
+    .panel-header h2 { font-size: 1rem; font-weight: 600; }
+    .panel-body { padding: 1.25rem; flex: 1; overflow-y: auto; }
+
+    .table-container { width: 100%; border-collapse: collapse; font-size: 0.85rem; }
+    .table-container th { text-align: left; padding: 0.75rem; color: var(--text-muted); border-bottom: 1px solid var(--border-color); font-weight: 600; }
+    .table-container td { padding: 0.75rem; border-bottom: 1px solid rgba(55, 65, 81, 0.5); }
+    .table-container tr:hover td { background-color: rgba(31, 41, 55, 0.5); }
+
+    .threat-tag { display: inline-block; padding: 0.2rem 0.5rem; border-radius: 4px; font-size: 0.75rem; font-weight: 600; }
+    .tag-attack { background-color: rgba(239, 68, 68, 0.2); color: #fca5a5; }
+    .tag-benign { background-color: rgba(16, 185, 129, 0.2); color: #86efac; }
+    .tag-dual { background-color: rgba(168, 85, 247, 0.2); color: #d8b4fe; }
+
+    .dropzone {
+      border: 2px dashed var(--border-color); border-radius: 8px; padding: 2rem; text-align: center; cursor: pointer; transition: border-color 0.2s;
+    }
+    .dropzone:hover { border-color: var(--accent-blue); }
+    .dropzone p { color: var(--text-muted); font-size: 0.9rem; margin-top: 0.5rem; }
+
+    .col-8 { grid-column: span 8; }
+    .col-4 { grid-column: span 4; }
+    .col-12 { grid-column: span 12; }
+
+    .score-meter { display: flex; align-items: center; gap: 0.5rem; font-weight: 600; font-size: 0.8rem; }
+    .meter-bar { flex: 1; height: 6px; background-color: #374151; border-radius: 3px; overflow: hidden; }
+    .meter-fill { height: 100%; border-radius: 3px; }
+    html { scrollbar-gutter: stable; scrollbar-color: var(--border-color) var(--bg-dark); }
+    :focus-visible { outline: 2px solid var(--accent-blue); outline-offset: 3px; }
+    .btn:disabled { opacity: .6; cursor: wait; }
+    .panel { min-width: 0; }
+    .panel-body { overflow-x: auto; }
+    .dropzone { width: 100%; background: transparent; color: inherit; }
+    dialog { margin: auto; max-width: min(32rem, 90vw); padding: 1.5rem; background: var(--panel-bg); color: var(--text-main); border: 1px solid var(--border-color); border-radius: 8px; }
+    dialog::backdrop { background: #0009; }
+    dialog p { margin: 1rem 0; }
+    #operationStatus { padding: .5rem 2rem; min-height: 2rem; }
+    @media (max-width: 760px) {
+      header, .header-actions { flex-wrap: wrap; gap: 1rem; }
+      header, main { padding: 1rem; }
+      .col-8, .col-4 { grid-column: span 12; }
+      .kpi-row { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+    @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="brand">
+      <div class="brand-icon">🛡️</div>
+      <div class="brand-text">
+        <h1>CyberTGN Operations Center</h1>
+        <p>Temporal Graph Network & Fast-Path Real-Time Threat Mitigation</p>
+      </div>
+    </div>
+    <div class="header-actions">
+      <span id="snifferStatusBadge" class="status-badge badge-stopped">Sniffer Stopped</span>
+      <button id="toggleSnifferBtn" class="btn btn-primary" onclick="toggleSniffer()">Start Sniffing</button>
+      <button class="btn" onclick="triggerStateReset()">Flush Graph Memory</button>
+    </div>
+  </header>
+
+  <p id="operationStatus" role="status" aria-live="polite"></p>
+  <main>
+    <!-- KPIs -->
+    <div class="kpi-row">
+      <div class="kpi-card">
+        <span class="kpi-title">Active Threats</span>
+        <span id="kpiThreats" class="kpi-val" style="color: var(--danger-red);">0</span>
+        <span class="kpi-sub">Flagged by Dual Engine</span>
+      </div>
+      <div class="kpi-card">
+        <span class="kpi-title">Active Blocklist</span>
+        <span id="kpiBlocked" class="kpi-val" style="color: var(--warning-amber);">0</span>
+        <span class="kpi-sub">Enforced Firewall Droprules</span>
+      </div>
+      <div class="kpi-card">
+        <span class="kpi-title">Total Flows Analyzed</span>
+        <span id="kpiFlows" class="kpi-val" style="color: var(--accent-cyan);">0</span>
+        <span class="kpi-sub">Bidirectional 5-Tuples</span>
+      </div>
+      <div class="kpi-card">
+        <span class="kpi-title">Graph Node Memory</span>
+        <span id="kpiNodes" class="kpi-val" style="color: var(--purple-graph);">Active</span>
+        <span class="kpi-sub">Persistent Sliding Window</span>
+      </div>
+    </div>
+
+    <!-- Live Event Feed -->
+    <div class="panel col-8" style="min-height: 420px;">
+      <div class="panel-header">
+        <h2>Real-Time Flow & Attack Feed</h2>
+        <span id="feedCounter" style="font-size: 0.8rem; color: var(--text-muted);">0 events</span>
+      </div>
+      <div class="panel-body">
+        <table class="table-container">
+          <thead>
+            <tr>
+              <th>Timestamp</th>
+              <th>Source IP</th>
+              <th>Target IP</th>
+              <th>Protocol / Port</th>
+              <th>Detection Source</th>
+              <th>Threat Classification</th>
+              <th>Risk Score</th>
+            </tr>
+          </thead>
+          <tbody id="flowTableBody">
+            <tr>
+              <td colspan="7" style="text-align: center; color: var(--text-muted); padding: 3rem;">
+                No flows ingested yet. Start the live sniffer or upload a PCAP file below.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- PCAP Upload & Firewall Blocks -->
+    <div class="col-4" style="display: flex; flex-direction: column; gap: 1.5rem;">
+      <!-- PCAP Uploader -->
+      <div class="panel">
+        <div class="panel-header">
+          <h2>Offline PCAP Forensic Analysis</h2>
+        </div>
+        <div class="panel-body">
+            <input type="file" id="pcapInput" accept=".pcap,.pcapng" style="display: none;" onchange="uploadPcap(event)" />
+          <button type="button" class="dropzone" id="uploadButton" onclick="document.getElementById('pcapInput').click()">
+            <span style="display:block; font-size:2rem;" aria-hidden="true">📁</span>
+            <strong style="color:var(--accent-blue);">Choose or drop a .pcap file</strong>
+            <span style="display:block; margin-top:.5rem;">Analyze network flows. Maximum 64 MiB.</span>
+          </button>
+          <div id="uploadStatus" role="status" aria-live="polite" style="margin-top: 1rem; font-size: 0.85rem; text-align: center; color: var(--text-muted);"></div>
+        </div>
+      </div>
+
+      <!-- Active Blocklist -->
+      <div class="panel" style="flex: 1;">
+        <div class="panel-header">
+          <h2>Active Firewall Blocks (TTL)</h2>
+          <button class="btn btn-sm" onclick="refreshBlocks()">Refresh</button>
+        </div>
+        <div class="panel-body">
+          <table class="table-container">
+            <thead>
+              <tr>
+                <th>Attacker IP</th>
+                <th>Threat</th>
+                <th>Score</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody id="blockListBody">
+              <tr>
+                <td colspan="4" style="text-align: center; color: var(--text-muted); padding: 1.5rem;">
+                  No active firewall blocks.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <dialog id="resetDialog" aria-labelledby="resetTitle">
+    <form method="dialog" novalidate>
+      <h2 id="resetTitle">Flush graph memory?</h2>
+      <p>This clears host history and heuristic state. New traffic will start without that history.</p>
+      <button class="btn" value="cancel" autofocus>Cancel</button>
+      <button class="btn btn-danger" value="reset">Flush graph memory</button>
+    </form>
+  </dialog>
+  <script>
+    let snifferRunning = false;
+    let totalThreats = 0;
+    let totalFlows = 0;
+    let displayedFlows = [];
+    function showStatus(message) { document.getElementById('operationStatus').textContent = message; }
+    function escapeHtml(value) {
+      return String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+    }
+    async function checkedFetch(url, options = {}) {
+      const response = await fetch(url, {...options, signal: AbortSignal.timeout(120000)});
+      if (!response.ok) throw new Error(`Request failed (${response.status}). Retry the operation.`);
+      return response;
+    }
+
+    async function pollStatus() {
+      try {
+        const res = await checkedFetch('/sniff/status');
+        if (res.ok) {
+          const data = await res.json();
+          snifferRunning = data.is_running;
+          const badge = document.getElementById('snifferStatusBadge');
+          const btn = document.getElementById('toggleSnifferBtn');
+          if (snifferRunning) {
+            badge.className = 'status-badge badge-live';
+            badge.innerText = `Sniffing (${data.interface || 'default'})`;
+            btn.className = 'btn btn-danger';
+            btn.innerText = 'Stop Sniffing';
+          } else {
+            badge.className = 'status-badge badge-stopped';
+            badge.innerText = data.last_error ? 'Capture failed' : 'Sniffer Stopped';
+            if (data.last_error) showStatus('Capture failed: ' + data.last_error);
+            btn.className = 'btn btn-primary';
+            btn.innerText = 'Start Sniffing';
+          }
+        }
+      } catch (err) {
+        showStatus("Service unavailable. Check the service and retry.");
+      }
+      refreshBlocks();
+    }
+
+    async function toggleSniffer() {
+      const button = document.getElementById('toggleSnifferBtn');
+      button.disabled = true;
+      const endpoint = snifferRunning ? '/sniff/stop' : '/sniff/start';
+      try {
+        await checkedFetch(endpoint, { method: 'POST' });
+        await pollStatus();
+      } catch (e) {
+        showStatus('Failed to toggle sniffer: ' + e.message);
+      } finally {
+        button.disabled = false;
+      }
+    }
+
+    async function refreshBlocks() {
+      try {
+        const res = await checkedFetch('/alerts');
+        if (res.ok) {
+          const data = await res.json();
+          const blocks = data.blocked_ips || [];
+          document.getElementById('kpiBlocked').innerText = blocks.length;
+          const tbody = document.getElementById('blockListBody');
+          if (blocks.length === 0) {
+            tbody.innerHTML = '<tr><td colspan="4" style="text-align: center; color: var(--text-muted); padding: 1.5rem;">No active firewall blocks.</td></tr>';
+            return;
+          }
+          tbody.innerHTML = blocks.map(b => `
+            <tr>
+              <td><code>${escapeHtml(b.ip)}</code></td>
+              <td><span class="threat-tag tag-attack">${escapeHtml(b.threat_type)}</span></td>
+              <td>${(b.score * 100).toFixed(0)}%</td>
+              <td><button class="btn btn-sm btn-danger" data-unblock="${escapeHtml(b.ip)}">Unblock</button></td>
+            </tr>
+          `).join('');
+        }
+      } catch (e) {
+        showStatus("Could not refresh blocks. Check the service and retry.");
+      }
+    }
+
+    document.getElementById('blockListBody').addEventListener('click', async event => {
+      const button = event.target.closest('[data-unblock]');
+      if (!button) return;
+      button.disabled = true;
+      try {
+        const response = await checkedFetch('/mitigation/unblock', {
+          method: 'POST', headers: {'Content-Type': 'application/json'},
+          body: JSON.stringify({ip: button.dataset.unblock})
+        });
+        const result = await response.json();
+        showStatus(result.unblocked ? 'Host unblocked.' : 'Host could not be unblocked; refresh its status.');
+        await refreshBlocks();
+      } catch (error) { showStatus(error.message); }
+      finally { button.disabled = false; }
+    });
+    function triggerStateReset() { document.getElementById('resetDialog').showModal(); }
+    document.getElementById('resetDialog').addEventListener('close', async event => {
+      if (event.target.returnValue !== 'reset') return;
+      try {
+        await checkedFetch('/model/reset', {method: 'POST'});
+        showStatus('Graph state reset to baseline.');
+      } catch (error) { showStatus(error.message); }
+    });
+
+    async function uploadPcap(e) {
+      const file = e.target.files[0];
+      if (!file || document.getElementById('uploadButton').disabled) return;
+      const button = document.getElementById('uploadButton');
+      const input = document.getElementById('pcapInput');
+      if (!/\.pcap(ng)?$/i.test(file.name) || file.size > 64 * 1024 * 1024) {
+        document.getElementById('uploadStatus').textContent = 'Choose a .pcap or .pcapng file up to 64 MiB.';
+        input.value = '';
+        return;
+      }
+      button.disabled = input.disabled = true;
+
+      const status = document.getElementById('uploadStatus');
+      status.innerText = `Analyzing ${file.name}... (Parsing packets & scoring GNN)`;
+
+      const formData = new FormData();
+      formData.append('file', file);
+
+      try {
+        const res = await checkedFetch('/analyze/pcap', { method: 'POST', body: formData });
+        if (!res.ok) throw new Error(await res.text());
+        const data = await res.json();
+
+        status.innerText = `Complete: Ingested ${data.flows_analyzed} flows, flagged ${data.threats_detected} threats.`;
+        if (data.results) {
+          renderFlows(data.results, true);
+        }
+        refreshBlocks();
+      } catch (err) {
+        status.innerText = 'Error: ' + err.message;
+      } finally {
+        button.disabled = input.disabled = false;
+        input.value = '';
+      }
+    }
+
+    function renderFlows(results, replace = false) {
+      const tbody = document.getElementById('flowTableBody');
+      if (!results) return;
+
+      if (replace) { totalFlows = 0; totalThreats = 0; displayedFlows = []; }
+      totalFlows += results.length;
+      totalThreats += results.filter(r => r.is_attack).length;
+      displayedFlows = [...results, ...displayedFlows].slice(0, 100);
+      document.getElementById('kpiFlows').innerText = totalFlows;
+
+      const rows = displayedFlows.map(r => {
+        const tagClass = r.detection_source === 'DUAL_CONFIRMED' ? 'tag-dual' : (r.is_attack ? 'tag-attack' : 'tag-benign');
+        const fillCol = r.final_score > 0.8 ? 'var(--danger-red)' : (r.final_score > 0.5 ? 'var(--warning-amber)' : 'var(--success-green)');
+        const timeStr = new Date(r.timestamp * 1000).toISOString().substr(11, 8);
+
+        return `
+          <tr>
+            <td>${timeStr}</td>
+            <td><code>${escapeHtml(r.src_ip)}</code></td>
+            <td><code>${escapeHtml(r.dst_ip)}</code></td>
+            <td>${escapeHtml((r.protocol || 'tcp').toUpperCase())}:${r.dst_port || 0}</td>
+            <td><span class="threat-tag ${tagClass}">${escapeHtml(r.detection_source)}</span></td>
+            <td><strong>${escapeHtml(r.threat_type)}</strong></td>
+            <td>
+              <div class="score-meter">
+                <div class="meter-bar">
+                  <div class="meter-fill" style="width: ${(r.final_score * 100)}%; background-color: ${fillCol};"></div>
+                </div>
+                <span>${(r.final_score * 100).toFixed(0)}%</span>
+              </div>
+            </td>
+          </tr>
+        `;
+      }).join('');
+
+      tbody.innerHTML = rows || '<tr><td colspan="7">No flows found in this capture.</td></tr>';
+      document.getElementById('kpiThreats').innerText = totalThreats;
+      document.getElementById('feedCounter').innerText = `${displayedFlows.length} events displayed`;
+    }
+
+    // Connect WebSocket for live streaming
+    function connectWebSocket() {
+      const proto = window.location.protocol === 'https:' ? 'wss:' : 'ws:';
+      const ws = new WebSocket(`${proto}//${window.location.host}/ws/traffic`);
+
+      ws.onmessage = (event) => {
+        const msg = JSON.parse(event.data);
+        if (msg.type === 'ALERT' && msg.data) {
+          renderFlows([msg.data]);
+          refreshBlocks();
+        }
+      };
+
+      ws.onclose = () => {
+        setTimeout(connectWebSocket, 3000);
+      };
+    }
+
+    const dropzone = document.getElementById('uploadButton');
+    dropzone.addEventListener('dragover', event => event.preventDefault());
+    dropzone.addEventListener('drop', event => {
+      event.preventDefault();
+      uploadPcap({target: {files: event.dataTransfer.files}});
+    });
+
+    // Initial setup
+    pollStatus();
+    setInterval(pollStatus, 5000);
+    connectWebSocket();
+  </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+{
+  "controller_drop_ttl_unblock": {
+    "passed": true,
+    "details": "Real UDP delivery -> drop -> TTL delivery -> manual unblock delivery"
+  },
+  "soar_iptables_drop": {
+    "passed": true,
+    "details": "Real iptables rule blocked packets"
+  },
+  "soar_nft_drop": {
+    "passed": true,
+    "details": "Real nftables rule blocked packets"
+  },
+  "live_capture_score_dispatch_shutdown": {
+    "passed": true,
+    "details": {
+      "is_running": false,
+      "last_error": null,
+      "interface": "lo",
+      "uptime_seconds": 0.0,
+      "packets_captured": 52,
+      "flows_scored": 1,
+      "threats_detected": 1,
+      "active_flows_in_memory": 0
+    }
+  },
+  "raw_capture_shared_buffer_shutdown": {
+    "passed": true,
+    "details": {
+      "packets": 2,
+      "stopped_without_extra_packet": true
+    }
+  },
+  "forwarding_quarantine_and_decoy": {
+    "passed": true,
+    "details": [
+      "iptables quarantine blocks forwarded packets",
+      "nft quarantine blocks forwarded packets",
+      "iptables redirect delivers to decoy port",
+      "nft redirect delivers to decoy port"
+    ]
+  }
+}

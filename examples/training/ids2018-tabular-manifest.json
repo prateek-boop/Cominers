@@ -1,0 +1,50 @@
+{
+  "sources": [
+    {
+      "group": "ids2018-Friday-02-03-2018",
+      "split": "train",
+      "path": "../../cic-ids2018-processed/Friday-02-03-2018_TrafficForML_CICFlowMeter.csv"
+    },
+    {
+      "group": "ids2018-Friday-16-02-2018",
+      "split": "train",
+      "path": "../../cic-ids2018-processed/Friday-16-02-2018_TrafficForML_CICFlowMeter.csv"
+    },
+    {
+      "group": "ids2018-Friday-23-02-2018",
+      "split": "validation",
+      "path": "../../cic-ids2018-processed/Friday-23-02-2018_TrafficForML_CICFlowMeter.csv"
+    },
+    {
+      "group": "ids2018-Thursday-01-03-2018",
+      "split": "validation",
+      "path": "../../cic-ids2018-processed/Thursday-01-03-2018_TrafficForML_CICFlowMeter.csv"
+    },
+    {
+      "group": "ids2018-Thursday-15-02-2018",
+      "split": "train",
+      "path": "../../cic-ids2018-processed/Thursday-15-02-2018_TrafficForML_CICFlowMeter.csv"
+    },
+    {
+      "group": "ids2018-Thursday-22-02-2018",
+      "split": "train",
+      "path": "../../cic-ids2018-processed/Thursday-22-02-2018_TrafficForML_CICFlowMeter.csv"
+    },
+    {
+      "group": "ids2018-Wednesday-14-02-2018",
+      "split": "train",
+      "path": "../../cic-ids2018-processed/Wednesday-14-02-2018_TrafficForML_CICFlowMeter.csv"
+    },
+    {
+      "group": "ids2018-Wednesday-21-02-2018",
+      "split": "train",
+      "path": "../../cic-ids2018-processed/Wednesday-21-02-2018_TrafficForML_CICFlowMeter.csv"
+    },
+    {
+      "group": "ids2018-Wednesday-28-02-2018",
+      "split": "train",
+      "path": "../../cic-ids2018-processed/Wednesday-28-02-2018_TrafficForML_CICFlowMeter.csv"
+    }
+  ],
+  "note": "Separate feature-only baseline. No graph endpoints inferred. Incomplete 20 February copies excluded. Combined with original prepared CIC2017 splits by trainer."
+}

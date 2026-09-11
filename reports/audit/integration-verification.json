@@ -1,0 +1,32 @@
+{
+  "reviewed": "2026-09-11",
+  "scope": "Experimental pipeline integration; API hybrid path remains separate",
+  "changes": [
+    "DNS retained in pipeline",
+    "Bounded flow reorder buffer and idle tick",
+    "Fixed single-flow scoring and closed 15-second memory windows",
+    "PCAP latent-window exporter and causal forecast trainer",
+    "Kalman correction matched to observed windows; gap resets",
+    "Checkpoint/protocol-bound calibration artifacts",
+    "Critical stage-set and stage-validation SOAR gate",
+    "Frozen-context permutation Shapley and PyG GNNExplainer"
+  ],
+  "validation": {
+    "full_suite_tests": 96,
+    "full_suite_passed": true,
+    "focused_integration_tests": 9,
+    "synthetic_checks_only": true,
+    "full_suite_log": "reports/audit/code-cleanup-tests.log",
+    "cleanup_note": "Removed one obsolete rule-explainer test; model-explanation coverage retained"
+  },
+  "remaining": [
+    "No real-data forecast model trained or accepted",
+    "CIC2017 candidate has zero supervised stage labels",
+    "32-edge-feature and role-node graph not integrated with current 16-feature checkpoints",
+    "New pipeline results are not wired into the API dashboard",
+    "Changed serving protocol needs independent detection/calibration evaluation",
+    "Real enforcement and operational throughput remain unverified"
+  ],
+  "deployment_approved": false,
+  "checkpoint_sha256": "710e6d00265fe2c2de2f7a6a38f1045c483b80a718ba9aec588e3bf526507a79"
+}

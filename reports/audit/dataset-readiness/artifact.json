@@ -1,0 +1,158 @@
+{
+  "surface": "report",
+  "manifest": {
+    "version": 1,
+    "surface": "report",
+    "title": "Dataset files are present, but preparation is blocked",
+    "description": "Local schema and bounded data readiness audit",
+    "generatedAt": "2026-09-10T09:22:27.197827+00:00",
+    "cards": [],
+    "charts": [
+      {
+        "id": "file-counts",
+        "title": "Files inspected by folder",
+        "type": "bar",
+        "dataset": "files",
+        "sourceId": "inventory",
+        "encodings": {
+          "x": {
+            "field": "folder",
+            "type": "nominal",
+            "label": "Folder"
+          },
+          "y": {
+            "field": "files",
+            "type": "quantitative",
+            "label": "Files",
+            "format": "number"
+          }
+        },
+        "source": {
+          "id": "inventory",
+          "label": "Local bounded dataset audit",
+          "path": "inventory.json",
+          "query": {
+            "sql": "SELECT folder, COUNT(*) AS files FROM inventory GROUP BY folder ORDER BY folder",
+            "language": "sql",
+            "engine": "SQLite in-memory projection of inventory.json",
+            "description": "Count inspected files by folder from the saved bounded inventory. Includes temporary download copies.",
+            "tables_used": [
+              "inventory"
+            ],
+            "executed_at": "2026-09-10T09:22:27.197827+00:00"
+          }
+        }
+      }
+    ],
+    "tables": [],
+    "sources": [
+      {
+        "id": "inventory",
+        "label": "Local bounded dataset audit",
+        "path": "inventory.json",
+        "query": {
+          "sql": "SELECT folder, COUNT(*) AS files FROM inventory GROUP BY folder ORDER BY folder",
+          "language": "sql",
+          "engine": "SQLite in-memory projection of inventory.json",
+          "description": "Count inspected files by folder from the saved bounded inventory. Includes temporary download copies.",
+          "tables_used": [
+            "inventory"
+          ],
+          "executed_at": "2026-09-10T09:22:27.197827+00:00"
+        }
+      }
+    ],
+    "blocks": [
+      {
+        "id": "title",
+        "type": "markdown",
+        "body": "# Dataset files are present, but preparation is blocked"
+      },
+      {
+        "id": "summary",
+        "type": "markdown",
+        "sourceId": "inventory",
+        "body": "## Technical summary\n\nThe workspace contains 8 TrafficLabelling files, 8 MachineLearningCVE files and 11 CIC-IDS2018 files, including two unfinished-looking copies. These are file counts, not distinct datasets or verified complete releases. None is connected to a usable four-split training manifest."
+      },
+      {
+        "id": "counts",
+        "type": "chart",
+        "chartId": "file-counts"
+      },
+      {
+        "id": "2017",
+        "type": "markdown",
+        "sourceId": "inventory",
+        "body": "## CIC-IDS2017 has the right flow fields\n\nAll eight TrafficLabelling files contain IP endpoints, timestamps, labels and the 16 required features. Each has a duplicate Fwd Header Length column, which the current strict importer rejects even though that field is not used. The first 5,000 rows per file contain 102 invalid required numeric cells across 40,000 sampled rows. Audit invalid values and produce a clean canonical export; preserve originals. The eight MachineLearningCVE files lack source IP, destination IP and timestamp, so they cannot directly train this graph model."
+      },
+      {
+        "id": "2018",
+        "type": "markdown",
+        "sourceId": "inventory",
+        "body": "## CIC-IDS2018 is not a complete usable graph input\n\nNine finalized CSV files lack source and destination IPs. The two 20 February copies have non-CSV suffixes and incomplete final records. Their headers include endpoints, but neither can be treated as a complete download. The first 5,000 rows from each of the 11 files contain 630 invalid required numeric cells. Finish and verify downloads; obtain endpoint-bearing flow exports or raw captures for the files without IPs."
+      },
+      {
+        "id": "scope",
+        "type": "markdown",
+        "sourceId": "inventory",
+        "body": "## Scope and method\n\nThe audit inspected all 27 files in the three dataset folders. It checked column presence, duplicate headers, file sizes and final record shape, then sampled the first 5,000 rows per file: 135,000 rows in total. Numeric errors count cells, not unique bad rows. Required numeric values must be finite and nonnegative. File headers and tails alone cannot establish completeness."
+      },
+      {
+        "id": "limits",
+        "type": "markdown",
+        "sourceId": "inventory",
+        "body": "## What remains unverified\n\nNo full-file checksum, full row scan, label-ground-truth audit or cross-file duplicate check was performed. The first-row samples are not representative estimates of error rates or attack prevalence. Corrected-release provenance, timestamp timezone and dataset extraction semantics remain unverified. MachineLearningCVE must not be assumed independent of the parallel TrafficLabelling exports."
+      },
+      {
+        "id": "next",
+        "type": "markdown",
+        "sourceId": "inventory",
+        "body": "## Next steps\n\nFinish and verify the 20 February download; retain endpoint-bearing labeled exports; resolve duplicate headers and invalid values through an audited conversion; confirm dates, timezones and label mappings; then assign complete captures to train, validation, calibration and test. All four example manifest paths currently do not exist. Training has not been started."
+      },
+      {
+        "id": "questions",
+        "type": "markdown",
+        "sourceId": "inventory",
+        "body": "## Evidence still needed\n\nWhich download release and source supplied these files, and what checksums validate them? Is the 20 February download still active? Which independently labeled target-network captures will be used for final evaluation?"
+      }
+    ]
+  },
+  "snapshot": {
+    "version": 1,
+    "generatedAt": "2026-09-10T09:22:27.197827+00:00",
+    "status": "ready",
+    "datasets": {
+      "files": [
+        {
+          "folder": "MachineLearningCVE",
+          "files": 8
+        },
+        {
+          "folder": "TrafficLabelling",
+          "files": 8
+        },
+        {
+          "folder": "cic-ids2018-processed",
+          "files": 11
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "inventory",
+      "label": "Local bounded dataset audit",
+      "path": "inventory.json",
+      "query": {
+        "sql": "SELECT folder, COUNT(*) AS files FROM inventory GROUP BY folder ORDER BY folder",
+        "language": "sql",
+        "engine": "SQLite in-memory projection of inventory.json",
+        "description": "Count inspected files by folder from the saved bounded inventory. Includes temporary download copies.",
+        "tables_used": [
+          "inventory"
+        ],
+        "executed_at": "2026-09-10T09:22:27.197827+00:00"
+      }
+    }
+  ]
+}

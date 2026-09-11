@@ -1,0 +1,1 @@
+src_ip,dst_ip,timestamp,label,Flow Duration,Total Fwd Packet,Total Bwd packets,Total Length of Fwd Packet,Total Length of Bwd Packet,Fwd Packet Length Mean,Bwd Packet Length Mean,Flow Bytes/s,Flow Packets/s,Flow IAT Mean,Fwd IAT Mean,Bwd IAT Mean,Fwd Packets/s,Bwd Packets/s,Average Packet Size,Down/Up Ratio

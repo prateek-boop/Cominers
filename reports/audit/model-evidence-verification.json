@@ -1,0 +1,61 @@
+{
+  "checkpoint_sha256": "710e6d00265fe2c2de2f7a6a38f1045c483b80a718ba9aec588e3bf526507a79",
+  "reports": [
+    {
+      "file": "model_evaluation.json",
+      "matches_retained_checkpoint": true,
+      "inconsistent_metrics": [],
+      "chunk_counts_match": true,
+      "train_validation_file_overlap": [],
+      "events": 1392398,
+      "precision": 0.7634664712348845,
+      "recall": 0.9620223940898073,
+      "f1": 0.8513202921497522,
+      "batch_size": 200,
+      "stage_macro_f1": 0.24920125781405636
+    },
+    {
+      "file": "model_evaluation_batched_sample.json",
+      "matches_retained_checkpoint": true,
+      "inconsistent_metrics": [],
+      "chunk_counts_match": true,
+      "train_validation_file_overlap": [],
+      "events": 34000,
+      "precision": 0.14576271186440679,
+      "recall": 0.8472906403940886,
+      "f1": 0.24873463485177152,
+      "batch_size": 200,
+      "stage_macro_f1": 0.24859509020999704
+    },
+    {
+      "file": "model_evaluation_final.json",
+      "matches_retained_checkpoint": false,
+      "inconsistent_metrics": [],
+      "chunk_counts_match": true,
+      "train_validation_file_overlap": [],
+      "events": 1392398,
+      "precision": 0.28470843112475175,
+      "recall": 0.9101927738658663,
+      "f1": 0.4337422300456571,
+      "batch_size": 200,
+      "stage_macro_f1": 0.42446965132629644
+    },
+    {
+      "file": "model_evaluation_sequential_sample.json",
+      "matches_retained_checkpoint": true,
+      "inconsistent_metrics": [],
+      "chunk_counts_match": true,
+      "train_validation_file_overlap": [],
+      "events": 34000,
+      "precision": 0.01288404360753221,
+      "recall": 0.12807881773399016,
+      "f1": 0.02341287708239532,
+      "batch_size": 1,
+      "stage_macro_f1": 0.2422445947175304
+    }
+  ],
+  "fresh_accuracy_evaluation": false,
+  "reason": "Labeled dataset and source evaluator are absent.",
+  "auc_and_average_precision_recomputed": false,
+  "limitation": "Aggregate count consistency does not establish dataset provenance or independent accuracy."
+}

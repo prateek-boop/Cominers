@@ -1,0 +1,14 @@
+{
+  "labels": {
+    "BENIGN": {"attack": 0, "stage": 0},
+    "DoS Hulk": {"attack": 1, "stage": null},
+    "DDoS": {"attack": 1, "stage": null},
+    "PortScan": {"attack": 1, "stage": null}
+  },
+  "sources": [
+    {"group": "train-capture", "split": "train", "path": "../../data/labeled/train.csv", "timestamp_kind": "end"},
+    {"group": "validation-capture", "split": "validation", "path": "../../data/labeled/validation.csv", "timestamp_kind": "end"},
+    {"group": "calibration-capture", "split": "calibration", "path": "../../data/labeled/calibration.csv", "timestamp_kind": "end"},
+    {"group": "test-capture", "split": "test", "path": "../../data/labeled/test.csv", "timestamp_kind": "end"}
+  ]
+}

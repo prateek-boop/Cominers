@@ -1,0 +1,1439 @@
+{
+  "scope": "Uniform priority reservoir, up to 512 rows per family/capture/split, seed 42. Train and validation only. No label truth verification or blanket row correction.",
+  "feature_order": [
+    "Flow Duration",
+    "Total Fwd Packet",
+    "Total Bwd packets",
+    "Total Length of Fwd Packet",
+    "Total Length of Bwd Packet",
+    "Fwd Packet Length Mean",
+    "Bwd Packet Length Mean",
+    "Flow Bytes/s",
+    "Flow Packets/s",
+    "Flow IAT Mean",
+    "Fwd IAT Mean",
+    "Bwd IAT Mean",
+    "Fwd Packets/s",
+    "Bwd Packets/s",
+    "Average Packet Size",
+    "Down/Up Ratio"
+  ],
+  "records": [
+    {
+      "split": "train",
+      "group": "ids2018-Friday-02-03-2018",
+      "family": "benign",
+      "population_rows": 758334,
+      "sample_rows": 512,
+      "feature_medians": [
+        62280.49937298683,
+        2.0000000595022636,
+        1.0000000038093086,
+        47.99999481709434,
+        108.0000211064956,
+        39.68749783304463,
+        80.00000642624462,
+        1327.074547451908,
+        61.71806548910277,
+        23705.33200788491,
+        16784.832959464038,
+        0.0,
+        36.02247132763436,
+        4.171682601884562,
+        75.99999949864964,
+        0.0
+      ],
+      "algebra_checks": {
+        "forward_mean": {
+          "eligible": 512,
+          "mismatches": 0
+        },
+        "backward_mean": {
+          "eligible": 395,
+          "mismatches": 0
+        },
+        "flow_bytes_rate": {
+          "eligible": 512,
+          "mismatches": 0
+        },
+        "flow_packets_rate": {
+          "eligible": 512,
+          "mismatches": 0
+        }
+      }
+    },
+    {
+      "split": "train",
+      "group": "ids2018-Friday-02-03-2018",
+      "family": "bot",
+      "population_rows": 286191,
+      "sample_rows": 512,
+      "feature_medians": [
+        709.5000368591891,
+        2.0000000595022636,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        2818.887573338825,
+        709.5000368591891,
+        468.0000230227983,
+        0.0,
+        2818.887573338825,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "algebra_checks": {
+        "forward_mean": {
+          "eligible": 512,
+          "mismatches": 0
+        },
+        "backward_mean": {
+          "eligible": 248,
+          "mismatches": 0
+        },
+        "flow_bytes_rate": {
+          "eligible": 512,
+          "mismatches": 0
+        },
+        "flow_packets_rate": {
+          "eligible": 512,
+          "mismatches": 0
+        }
+      }
+    },
+    {
+      "split": "train",
+      "group": "ids2018-Friday-16-02-2018",
+      "family": "benign",
+      "population_rows": 446772,
+      "sample_rows": 512,
+      "feature_medians": [
+        4274820.390574893,
+        5.000000130432452,
+        3.0000000152372346,
+        935.0001875765629,
+        351.999963215628,
+        187.00002373516344,
+        115.83333714603818,
+        302.30787659093755,
+        1.8943212881939684,
+        603086.9194700394,
+        1071514.8712628488,
+        31569.99072236834,
+        1.166572296806337,
+        0.7124324453033702,
+        160.2499809037883,
+        0.0
+      ],
+      "algebra_checks": {
+        "forward_mean": {
+          "eligible": 512,
+          "mismatches": 0
+        },
+        "backward_mean": {
+          "eligible": 510,
+          "mismatches": 0
+        },
+        "flow_bytes_rate": {
+          "eligible": 512,
+          "mismatches": 0
+        },
+        "flow_packets_rate": {
+          "eligible": 512,
+          "mismatches": 0
+        }
+      }
+    },
+    {
+      "split": "train",
+      "group": "ids2018-Friday-16-02-2018",
+      "family": "dosattacksslowhttptest",
+      "population_rows": 139890,
+      "sample_rows": 512,
+      "feature_medians": [
+        3.0000000152372346,
+        1.0000000038093086,
+        1.0000000038093086,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        666666.4183987596,
+        3.0000000152372346,
+        0.0,
+        0.0,
+        333333.1854025303,
+        333333.1854025303,
+        0.0,
+        1.0000000038093086
+      ],
+      "algebra_checks": {
+        "forward_mean": {
+          "eligible": 512,
+          "mismatches": 0
+        },
+        "backward_mean": {
+          "eligible": 512,
+          "mismatches": 0
+        },
+        "flow_bytes_rate": {
+          "eligible": 512,
+          "mismatches": 0
+        },
+        "flow_packets_rate": {
+          "eligible": 512,
+          "mismatches": 0
+        }
+      }
+    },
+    {
+      "split": "train",
+      "group": "ids2018-Friday-16-02-2018",
+      "family": "dosattackshulk",
+      "population_rows": 461912,
+      "sample_rows": 512,
+      "feature_medians": [
+        10542.998360985392,
+        2.0000000595022636,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        199.43181906597817,
+        9065.50365104468,
+        9469.500444461715,
+        0.0,
+        189.79933866549496,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "algebra_checks": {
+        "forward_mean": {
+          "eligible": 512,
+          "mismatches": 0
+        },
+        "backward_mean": {
+          "eligible": 25,
+          "mismatches": 0
+        },
+        "flow_bytes_rate": {
+          "eligible": 512,
+          "mismatches": 0
+        },
+        "flow_packets_rate": {
+          "eligible": 512,
+          "mismatches": 0
+        }
+      }
+    },
+    {
+      "split": "train",
+      "group": "ids2018-Thursday-15-02-2018",
+      "family": "benign",
+      "population_rows": 988050,
+      "sample_rows": 512,
+      "feature_medians": [
+        20918.503728491058,
+        2.0000000595022636,
+        1.0000000038093086,
+        44.0000031382532,
+        110.00001543532878,
+        37.99999752099087,
+        68.00000248970443,
+        1053.6850012698274,
+        158.65064528311524,
+        9975.833624553727,
+        202.24998605219994,
+        0.0,
+        79.32531822997666,
+        5.565021157950487,
+        72.29546671118297,
+        1.0000000038093086
+      ],
+      "algebra_checks": {
+        "forward_mean": {
+          "eligible": 512,
+          "mismatches": 0
+        },
+        "backward_mean": {
+          "eligible": 395,
+          "mismatches": 0
+        },
+        "flow_bytes_rate": {
+          "eligible": 512,
+          "mismatches": 0
+        },
+        "flow_packets_rate": {
+          "eligible": 512,
+          "mismatches": 0
+        }
+      }
+    },
+    {
+      "split": "train",
+      "group": "ids2018-Thursday-15-02-2018",
+      "family": "dosattacksgoldeneye",
+      "population_rows": 41508,
+      "sample_rows": 512,
+      "feature_medians": [
+        6791452.809819447,
+        4.000000150353914,
+        3.0000000152372346,
+        350.00007529737593,
+        662.0001061550665,
+        80.75001713989764,
+        220.6666208482471,
+        119.0600014995693,
+        1.0238287152207568,
+        1634549.908084568,
+        1912922.2203705143,
+        1668681.8626152314,
+        0.733272773748578,
+        0.34437322136428955,
+        144.8819340719253,
+        0.0
+      ],
+      "algebra_checks": {
+        "forward_mean": {
+          "eligible": 512,
+          "mismatches": 0
+        },
+        "backward_mean": {
+          "eligible": 347,
+          "mismatches": 0
+        },
+        "flow_bytes_rate": {
+          "eligible": 512,
+          "mismatches": 0
+        },
+        "flow_packets_rate": {
+          "eligible": 512,
+          "mismatches": 0
+        }
+      }
+    },
+    {
+      "split": "train",
+      "group": "ids2018-Thursday-15-02-2018",
+      "family": "dosattacksslowloris",
+      "population_rows": 10990,
+      "sample_rows": 512,
+      "feature_medians": [
+        103263128.94703382,
+        3.0000000152372346,
+        2.0000000595022636,
+        15.999999749402482,
+        0.0,
+        8.000000357013583,
+        0.0,
+        22.014954103186234,
+        0.16721449101104946,
+        6332128.28578973,
+        7692274.524390072,
+        53167484.66857444,
+        0.1392863425227926,
+        0.027524839622323556,
+        8.000000357013583,
+        0.0
+      ],
+      "algebra_checks": {
+        "forward_mean": {
+          "eligible": 512,
+          "mismatches": 0
+        },
+        "backward_mean": {
+          "eligible": 395,
+          "mismatches": 0
+        },
+        "flow_bytes_rate": {
+          "eligible": 512,
+          "mismatches": 0
+        },
+        "flow_packets_rate": {
+          "eligible": 512,
+          "mismatches": 0
+        }
+      }
+    },
+    {
+      "split": "train",
+      "group": "ids2018-Thursday-22-02-2018",
+      "family": "benign",
+      "population_rows": 1042594,
+      "sample_rows": 512,
+      "feature_medians": [
+        79420.0180790006,
+        2.0000000595022636,
+        1.0000000038093086,
+        46.49999793340496,
+        115.5000065090178,
+        36.0454516096213,
+        63.00000073138725,
+        805.2552278560859,
+        67.86355868338009,
+        25468.333314765583,
+        20703.336624268384,
+        0.0,
+        33.511402176297764,
+        3.0998000492267095,
+        71.00000326751402,
+        0.0
+      ],
+      "algebra_checks": {
+        "forward_mean": {
+          "eligible": 512,
+          "mismatches": 0
+        },
+        "backward_mean": {
+          "eligible": 371,
+          "mismatches": 0
+        },
+        "flow_bytes_rate": {
+          "eligible": 512,
+          "mismatches": 0
+        },
+        "flow_packets_rate": {
+          "eligible": 512,
+          "mismatches": 0
+        }
+      }
+    },
+    {
+      "split": "train",
+      "group": "ids2018-Thursday-22-02-2018",
+      "family": "bruteforceweb",
+      "population_rows": 249,
+      "sample_rows": 249,
+      "feature_medians": [
+        5005257.61846987,
+        4.000000150353914,
+        3.0000000152372346,
+        646.000007341035,
+        364.00008095552215,
+        129.2000300338559,
+        91.00000184532621,
+        201.66076059659744,
+        4.545245707265202,
+        220869.57684922407,
+        21672.337151526466,
+        1593.000192041498,
+        2.70507223068921,
+        0.5993986870263848,
+        126.25001026702284,
+        0.0
+      ],
+      "algebra_checks": {
+        "forward_mean": {
+          "eligible": 249,
+          "mismatches": 0
+        },
+        "backward_mean": {
+          "eligible": 145,
+          "mismatches": 0
+        },
+        "flow_bytes_rate": {
+          "eligible": 249,
+          "mismatches": 0
+        },
+        "flow_packets_rate": {
+          "eligible": 249,
+          "mismatches": 0
+        }
+      }
+    },
+    {
+      "split": "train",
+      "group": "ids2018-Thursday-22-02-2018",
+      "family": "bruteforcexss",
+      "population_rows": 79,
+      "sample_rows": 79,
+      "feature_medians": [
+        5015564.410637877,
+        3.0000000152372346,
+        1.0000000038093086,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        6.022783308786871,
+        166578.7743691573,
+        113969.71232878581,
+        0.0,
+        3.884401185602761,
+        0.19937929072889,
+        0.0,
+        0.0
+      ],
+      "algebra_checks": {
+        "forward_mean": {
+          "eligible": 79,
+          "mismatches": 0
+        },
+        "backward_mean": {
+          "eligible": 40,
+          "mismatches": 0
+        },
+        "flow_bytes_rate": {
+          "eligible": 79,
+          "mismatches": 0
+        },
+        "flow_packets_rate": {
+          "eligible": 79,
+          "mismatches": 0
+        }
+      }
+    },
+    {
+      "split": "train",
+      "group": "ids2018-Thursday-22-02-2018",
+      "family": "sqlinjection",
+      "population_rows": 34,
+      "sample_rows": 34,
+      "feature_medians": [
+        5007487.286562234,
+        4.000000150353914,
+        3.0000000152372346,
+        534.0000023595458,
+        457.9999763547949,
+        118.39999406876376,
+        130.66665104612164,
+        197.83595967982325,
+        1.6983761454563533,
+        670239.5547966249,
+        18412.83826776022,
+        2885.0001100445097,
+        0.9989469561769321,
+        0.5990116417014001,
+        123.81251498235045,
+        0.0
+      ],
+      "algebra_checks": {
+        "forward_mean": {
+          "eligible": 34,
+          "mismatches": 0
+        },
+        "backward_mean": {
+          "eligible": 23,
+          "mismatches": 0
+        },
+        "flow_bytes_rate": {
+          "eligible": 34,
+          "mismatches": 0
+        },
+        "flow_packets_rate": {
+          "eligible": 34,
+          "mismatches": 0
+        }
+      }
+    },
+    {
+      "split": "train",
+      "group": "ids2018-Wednesday-14-02-2018",
+      "family": "benign",
+      "population_rows": 663803,
+      "sample_rows": 512,
+      "feature_medians": [
+        13064.497700424305,
+        2.0000000595022636,
+        1.0000000038093086,
+        45.000000835049,
+        101.99999179184613,
+        39.24359174566659,
+        67.5999952307993,
+        1164.624396892565,
+        176.52381107196342,
+        7020.649812263622,
+        257.50004753547915,
+        0.0,
+        92.65432592612657,
+        5.478332553257525,
+        72.09092235514511,
+        1.0000000038093086
+      ],
+      "algebra_checks": {
+        "forward_mean": {
+          "eligible": 512,
+          "mismatches": 0
+        },
+        "backward_mean": {
+          "eligible": 395,
+          "mismatches": 0
+        },
+        "flow_bytes_rate": {
+          "eligible": 512,
+          "mismatches": 0
+        },
+        "flow_packets_rate": {
+          "eligible": 512,
+          "mismatches": 0
+        }
+      }
+    },
+    {
+      "split": "train",
+      "group": "ids2018-Wednesday-14-02-2018",
+      "family": "ftpbruteforce",
+      "population_rows": 193354,
+      "sample_rows": 512,
+      "feature_medians": [
+        2.0000000595022636,
+        1.0000000038093086,
+        1.0000000038093086,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1000000.145527593,
+        2.0000000595022636,
+        0.0,
+        0.0,
+        499999.81023037684,
+        499999.81023037684,
+        0.0,
+        1.0000000038093086
+      ],
+      "algebra_checks": {
+        "forward_mean": {
+          "eligible": 512,
+          "mismatches": 0
+        },
+        "backward_mean": {
+          "eligible": 512,
+          "mismatches": 0
+        },
+        "flow_bytes_rate": {
+          "eligible": 512,
+          "mismatches": 0
+        },
+        "flow_packets_rate": {
+          "eligible": 512,
+          "mismatches": 0
+        }
+      }
+    },
+    {
+      "split": "train",
+      "group": "ids2018-Wednesday-14-02-2018",
+      "family": "sshbruteforce",
+      "population_rows": 187589,
+      "sample_rows": 512,
+      "feature_medians": [
+        12.500000516146912,
+        1.0000000038093086,
+        1.0000000038093086,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        162337.66315540206,
+        12.500000516146912,
+        0.0,
+        0.0,
+        81168.82529476794,
+        81168.82529476794,
+        0.0,
+        1.0000000038093086
+      ],
+      "algebra_checks": {
+        "forward_mean": {
+          "eligible": 512,
+          "mismatches": 0
+        },
+        "backward_mean": {
+          "eligible": 512,
+          "mismatches": 0
+        },
+        "flow_bytes_rate": {
+          "eligible": 512,
+          "mismatches": 0
+        },
+        "flow_packets_rate": {
+          "eligible": 512,
+          "mismatches": 0
+        }
+      }
+    },
+    {
+      "split": "train",
+      "group": "ids2018-Wednesday-21-02-2018",
+      "family": "benign",
+      "population_rows": 360833,
+      "sample_rows": 512,
+      "feature_medians": [
+        1480.9998261733836,
+        5.000000130432452,
+        2.0000000595022636,
+        935.0001875765629,
+        309.9999725114171,
+        187.00002373516344,
+        155.00002787151612,
+        833624.2674358035,
+        4726.538451426864,
+        246.8332981872687,
+        370.2499624821319,
+        844.5000116113285,
+        3376.098877985626,
+        1350.439331313764,
+        177.85713052931968,
+        0.0
+      ],
+      "algebra_checks": {
+        "forward_mean": {
+          "eligible": 512,
+          "mismatches": 0
+        },
+        "backward_mean": {
+          "eligible": 509,
+          "mismatches": 0
+        },
+        "flow_bytes_rate": {
+          "eligible": 512,
+          "mismatches": 0
+        },
+        "flow_packets_rate": {
+          "eligible": 512,
+          "mismatches": 0
+        }
+      }
+    },
+    {
+      "split": "train",
+      "group": "ids2018-Wednesday-21-02-2018",
+      "family": "ddosattackhoic",
+      "population_rows": 686012,
+      "sample_rows": 512,
+      "feature_medians": [
+        7064.501310038948,
+        2.0000000595022636,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        458.0740719235676,
+        3367.4167726115957,
+        5319.751537490809,
+        0.0,
+        300.12356014382055,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "algebra_checks": {
+        "forward_mean": {
+          "eligible": 512,
+          "mismatches": 0
+        },
+        "backward_mean": {
+          "eligible": 121,
+          "mismatches": 0
+        },
+        "flow_bytes_rate": {
+          "eligible": 512,
+          "mismatches": 0
+        },
+        "flow_packets_rate": {
+          "eligible": 512,
+          "mismatches": 0
+        }
+      }
+    },
+    {
+      "split": "train",
+      "group": "ids2018-Wednesday-21-02-2018",
+      "family": "ddosattackloicudp",
+      "population_rows": 1730,
+      "sample_rows": 512,
+      "feature_medians": [
+        119764625.98449431,
+        118138.02375958345,
+        0.0,
+        3780417.1512392852,
+        0.0,
+        32.00000274516584,
+        0.0,
+        32362.36911686221,
+        1011.324100027039,
+        988.8112511113932,
+        988.8112511113932,
+        0.0,
+        1011.324100027039,
+        0.0,
+        32.000270251918074,
+        0.0
+      ],
+      "algebra_checks": {
+        "forward_mean": {
+          "eligible": 512,
+          "mismatches": 0
+        },
+        "backward_mean": {
+          "eligible": 0,
+          "mismatches": 0
+        },
+        "flow_bytes_rate": {
+          "eligible": 512,
+          "mismatches": 0
+        },
+        "flow_packets_rate": {
+          "eligible": 512,
+          "mismatches": 0
+        }
+      }
+    },
+    {
+      "split": "train",
+      "group": "ids2018-Wednesday-28-02-2018",
+      "family": "benign",
+      "population_rows": 538666,
+      "sample_rows": 512,
+      "feature_medians": [
+        1903.4999385729552,
+        2.0000000595022636,
+        1.0000000038093086,
+        41.00000369857209,
+        73.00000993852443,
+        35.00000156518945,
+        61.999991657042244,
+        1585.647790203368,
+        1108.5541479230114,
+        1765.4998343727557,
+        127.75001427498754,
+        0.0,
+        584.025308371369,
+        27.45580121784325,
+        72.50001106722084,
+        1.0000000038093086
+      ],
+      "algebra_checks": {
+        "forward_mean": {
+          "eligible": 512,
+          "mismatches": 0
+        },
+        "backward_mean": {
+          "eligible": 418,
+          "mismatches": 0
+        },
+        "flow_bytes_rate": {
+          "eligible": 512,
+          "mismatches": 0
+        },
+        "flow_packets_rate": {
+          "eligible": 512,
+          "mismatches": 0
+        }
+      }
+    },
+    {
+      "split": "train",
+      "group": "ids2018-Wednesday-28-02-2018",
+      "family": "infilteration",
+      "population_rows": 68236,
+      "sample_rows": 512,
+      "feature_medians": [
+        1396.0002553760746,
+        2.0000000595022636,
+        1.0000000038093086,
+        42.000003177566455,
+        79.00000301515203,
+        36.99999836844669,
+        65.00000561603886,
+        1693.8064588175394,
+        1504.5770385404453,
+        1330.0002288798805,
+        127.74999250176887,
+        0.0,
+        752.2882603655158,
+        26.875330489573283,
+        71.2499994665351,
+        1.0000000038093086
+      ],
+      "algebra_checks": {
+        "forward_mean": {
+          "eligible": 512,
+          "mismatches": 0
+        },
+        "backward_mean": {
+          "eligible": 418,
+          "mismatches": 0
+        },
+        "flow_bytes_rate": {
+          "eligible": 512,
+          "mismatches": 0
+        },
+        "flow_packets_rate": {
+          "eligible": 512,
+          "mismatches": 0
+        }
+      }
+    },
+    {
+      "split": "train",
+      "group": "cic2017-tuesday",
+      "family": "benign",
+      "population_rows": 423684,
+      "sample_rows": 512,
+      "feature_medians": [
+        30926.508645699443,
+        2.0000000595022636,
+        2.0000000595022636,
+        64.0000120309119,
+        151.4999989333274,
+        36.29166652430899,
+        80.9999967609524,
+        2470.853708926189,
+        129.0885629420464,
+        10272.16281041273,
+        47.00000131772985,
+        3.0000000152372346,
+        64.9003372992242,
+        25.24773333839171,
+        73.2500048378135,
+        1.0000000038093086
+      ],
+      "algebra_checks": {
+        "forward_mean": {
+          "eligible": 512,
+          "mismatches": 0
+        },
+        "backward_mean": {
+          "eligible": 430,
+          "mismatches": 0
+        },
+        "flow_bytes_rate": {
+          "eligible": 512,
+          "mismatches": 0
+        },
+        "flow_packets_rate": {
+          "eligible": 512,
+          "mismatches": 0
+        }
+      }
+    },
+    {
+      "split": "train",
+      "group": "cic2017-tuesday",
+      "family": "cic2017_attack",
+      "population_rows": 11357,
+      "sample_rows": 512,
+      "feature_medians": [
+        8828349.91206265,
+        9.000000319754372,
+        15.000000121897875,
+        103.99998716992323,
+        187.99997871976882,
+        11.555556142406427,
+        12.533332365240746,
+        35.1167320471902,
+        4.420840191537485,
+        230632.5229388766,
+        505432.65419580083,
+        387545.2590680041,
+        1.7574277642535627,
+        2.5378986810442243,
+        12.249999146562484,
+        1.0000000038093086
+      ],
+      "algebra_checks": {
+        "forward_mean": {
+          "eligible": 512,
+          "mismatches": 0
+        },
+        "backward_mean": {
+          "eligible": 483,
+          "mismatches": 0
+        },
+        "flow_bytes_rate": {
+          "eligible": 512,
+          "mismatches": 0
+        },
+        "flow_packets_rate": {
+          "eligible": 512,
+          "mismatches": 0
+        }
+      }
+    },
+    {
+      "split": "train",
+      "group": "cic2017-wednesday",
+      "family": "benign",
+      "population_rows": 430227,
+      "sample_rows": 512,
+      "feature_medians": [
+        31241.013273022247,
+        2.0000000595022636,
+        2.0000000595022636,
+        73.00000999705551,
+        150.99998591029333,
+        41.00000369857209,
+        85.99999407377993,
+        5437.6786667914375,
+        85.18795812653303,
+        15652.836472235715,
+        4.000000150353914,
+        3.0000000152372346,
+        42.794641675082744,
+        26.014545091616526,
+        81.49999458254113,
+        1.0000000038093086
+      ],
+      "algebra_checks": {
+        "forward_mean": {
+          "eligible": 512,
+          "mismatches": 0
+        },
+        "backward_mean": {
+          "eligible": 453,
+          "mismatches": 0
+        },
+        "flow_bytes_rate": {
+          "eligible": 512,
+          "mismatches": 0
+        },
+        "flow_packets_rate": {
+          "eligible": 512,
+          "mismatches": 0
+        }
+      }
+    },
+    {
+      "split": "train",
+      "group": "cic2017-wednesday",
+      "family": "cic2017_attack",
+      "population_rows": 193185,
+      "sample_rows": 512,
+      "feature_medians": [
+        85606205.23264495,
+        5.999999629792443,
+        5.999999629792443,
+        350.00007529737593,
+        11595.00131726102,
+        52.92857310664955,
+        1932.50012067856,
+        123.30544449169292,
+        0.1519704521434428,
+        7101813.258232507,
+        14050004.595827425,
+        30820.09304497266,
+        0.08262752135702477,
+        0.07000424458751836,
+        916.4230887623786,
+        0.0
+      ],
+      "algebra_checks": {
+        "forward_mean": {
+          "eligible": 512,
+          "mismatches": 0
+        },
+        "backward_mean": {
+          "eligible": 458,
+          "mismatches": 0
+        },
+        "flow_bytes_rate": {
+          "eligible": 512,
+          "mismatches": 0
+        },
+        "flow_packets_rate": {
+          "eligible": 512,
+          "mismatches": 0
+        }
+      }
+    },
+    {
+      "split": "validation",
+      "group": "ids2018-Friday-23-02-2018",
+      "family": "benign",
+      "population_rows": 1042301,
+      "sample_rows": 512,
+      "feature_medians": [
+        102069.0101538355,
+        2.0000000595022636,
+        1.0000000038093086,
+        44.5000019866511,
+        101.99999179184613,
+        37.99999752099087,
+        68.00000248970443,
+        766.2421276466082,
+        42.88408050136654,
+        32203.29383438144,
+        30466.000065867287,
+        0.0,
+        21.881175616243752,
+        3.4354456734258756,
+        72.09092235514511,
+        0.0
+      ],
+      "algebra_checks": {
+        "forward_mean": {
+          "eligible": 512,
+          "mismatches": 0
+        },
+        "backward_mean": {
+          "eligible": 388,
+          "mismatches": 0
+        },
+        "flow_bytes_rate": {
+          "eligible": 512,
+          "mismatches": 0
+        },
+        "flow_packets_rate": {
+          "eligible": 512,
+          "mismatches": 0
+        }
+      }
+    },
+    {
+      "split": "validation",
+      "group": "ids2018-Friday-23-02-2018",
+      "family": "bruteforceweb",
+      "population_rows": 362,
+      "sample_rows": 362,
+      "feature_medians": [
+        56260262.95884317,
+        5.999999629792443,
+        0.0,
+        2999.9990105905795,
+        0.0,
+        359.44438919994457,
+        0.0,
+        33.527188743957225,
+        1.597573742581694,
+        715370.2837596242,
+        375341.89356012613,
+        0.0,
+        0.9983902537390912,
+        0.0,
+        496.00391260694744,
+        0.0
+      ],
+      "algebra_checks": {
+        "forward_mean": {
+          "eligible": 362,
+          "mismatches": 0
+        },
+        "backward_mean": {
+          "eligible": 127,
+          "mismatches": 0
+        },
+        "flow_bytes_rate": {
+          "eligible": 362,
+          "mismatches": 0
+        },
+        "flow_packets_rate": {
+          "eligible": 362,
+          "mismatches": 0
+        }
+      }
+    },
+    {
+      "split": "validation",
+      "group": "ids2018-Friday-23-02-2018",
+      "family": "bruteforcexss",
+      "population_rows": 151,
+      "sample_rows": 151,
+      "feature_medians": [
+        23081635.025525976,
+        5.999999629792443,
+        0.0,
+        2999.9990105905795,
+        0.0,
+        269.80201382847156,
+        0.0,
+        33.52741923857844,
+        5.457580808373336,
+        183830.11578463897,
+        265549.198560689,
+        0.0,
+        3.608758488127024,
+        0.0,
+        583.3332639469213,
+        0.0
+      ],
+      "algebra_checks": {
+        "forward_mean": {
+          "eligible": 151,
+          "mismatches": 0
+        },
+        "backward_mean": {
+          "eligible": 74,
+          "mismatches": 0
+        },
+        "flow_bytes_rate": {
+          "eligible": 151,
+          "mismatches": 0
+        },
+        "flow_packets_rate": {
+          "eligible": 151,
+          "mismatches": 0
+        }
+      }
+    },
+    {
+      "split": "validation",
+      "group": "ids2018-Friday-23-02-2018",
+      "family": "sqlinjection",
+      "population_rows": 53,
+      "sample_rows": 53,
+      "feature_medians": [
+        5005248.071705791,
+        4.000000150353914,
+        3.0000000152372346,
+        444.999980675419,
+        364.00008095552215,
+        89.0000064479253,
+        91.00000184532621,
+        184.22122870264997,
+        1.7296529345167395,
+        650419.3136087989,
+        3036.332469172311,
+        1400.9999890923248,
+        0.998153827689789,
+        0.5988762599196378,
+        115.37500955331225,
+        0.0
+      ],
+      "algebra_checks": {
+        "forward_mean": {
+          "eligible": 53,
+          "mismatches": 0
+        },
+        "backward_mean": {
+          "eligible": 35,
+          "mismatches": 0
+        },
+        "flow_bytes_rate": {
+          "eligible": 53,
+          "mismatches": 0
+        },
+        "flow_packets_rate": {
+          "eligible": 53,
+          "mismatches": 0
+        }
+      }
+    },
+    {
+      "split": "validation",
+      "group": "ids2018-Thursday-01-03-2018",
+      "family": "benign",
+      "population_rows": 235778,
+      "sample_rows": 512,
+      "feature_medians": [
+        36731.50788611896,
+        2.0000000595022636,
+        1.0000000038093086,
+        45.000000835049,
+        95.99998714205748,
+        36.99999836844669,
+        66.99999925664291,
+        1356.11419770047,
+        86.1261860520637,
+        19364.00615530755,
+        14183.251679853925,
+        0.0,
+        46.806933309139005,
+        8.242591783252266,
+        77.000013787195,
+        1.0000000038093086
+      ],
+      "algebra_checks": {
+        "forward_mean": {
+          "eligible": 512,
+          "mismatches": 0
+        },
+        "backward_mean": {
+          "eligible": 435,
+          "mismatches": 0
+        },
+        "flow_bytes_rate": {
+          "eligible": 512,
+          "mismatches": 0
+        },
+        "flow_packets_rate": {
+          "eligible": 512,
+          "mismatches": 0
+        }
+      }
+    },
+    {
+      "split": "validation",
+      "group": "ids2018-Thursday-01-03-2018",
+      "family": "infilteration",
+      "population_rows": 92403,
+      "sample_rows": 512,
+      "feature_medians": [
+        817.5000554862152,
+        1.0000000038093086,
+        1.0000000038093086,
+        34.00000337376485,
+        51.49999632475466,
+        27.999997449404816,
+        44.99999884366664,
+        154.7785781124822,
+        2590.6471908642925,
+        750.5001065024819,
+        0.0,
+        0.0,
+        1375.7718622752561,
+        785.9080669015823,
+        47.78333090706545,
+        1.0000000038093086
+      ],
+      "algebra_checks": {
+        "forward_mean": {
+          "eligible": 512,
+          "mismatches": 0
+        },
+        "backward_mean": {
+          "eligible": 457,
+          "mismatches": 0
+        },
+        "flow_bytes_rate": {
+          "eligible": 512,
+          "mismatches": 0
+        },
+        "flow_packets_rate": {
+          "eligible": 512,
+          "mismatches": 0
+        }
+      }
+    },
+    {
+      "split": "validation",
+      "group": "cic2017-thursday",
+      "family": "benign",
+      "population_rows": 401323,
+      "sample_rows": 512,
+      "feature_medians": [
+        30636.001625741726,
+        2.0000000595022636,
+        2.0000000595022636,
+        69.00000751662435,
+        153.99999476737892,
+        35.999996077302455,
+        84.49999365898262,
+        8209.024188305539,
+        127.80983443323291,
+        10359.669487066014,
+        4.000000150353914,
+        3.0000000152372346,
+        64.45011767064412,
+        32.46859154566667,
+        77.000013787195,
+        1.0000000038093086
+      ],
+      "algebra_checks": {
+        "forward_mean": {
+          "eligible": 512,
+          "mismatches": 0
+        },
+        "backward_mean": {
+          "eligible": 446,
+          "mismatches": 0
+        },
+        "flow_bytes_rate": {
+          "eligible": 512,
+          "mismatches": 0
+        },
+        "flow_packets_rate": {
+          "eligible": 512,
+          "mismatches": 0
+        }
+      }
+    },
+    {
+      "split": "validation",
+      "group": "cic2017-thursday",
+      "family": "cic2017_attack",
+      "population_rows": 2215,
+      "sample_rows": 512,
+      "feature_medians": [
+        5499730.601930251,
+        3.0000000152372346,
+        1.0000000038093086,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.737376439487051,
+        1807153.9042259501,
+        2710731.4049408208,
+        0.0,
+        0.5513199616522821,
+        0.1839210343000823,
+        0.0,
+        0.0
+      ],
+      "algebra_checks": {
+        "forward_mean": {
+          "eligible": 512,
+          "mismatches": 0
+        },
+        "backward_mean": {
+          "eligible": 505,
+          "mismatches": 0
+        },
+        "flow_bytes_rate": {
+          "eligible": 512,
+          "mismatches": 0
+        },
+        "flow_packets_rate": {
+          "eligible": 512,
+          "mismatches": 0
+        }
+      }
+    }
+  ],
+  "distinct_sample_feature_vectors": 11618,
+  "sample_feature_vectors_with_conflicting_binary_labels": 182,
+  "interpretation": "Algebra checks use 1% relative / 0.01 absolute tolerance after reversing float32 log1p; mismatches indicate exporter semantics or data issues to investigate, not proof labels are wrong. Identical 16-feature vectors cannot be distinguished by a deterministic feature-only classifier.",
+  "within_capture_conflicting_sample_vectors": [
+    {
+      "split": "train",
+      "group": "cic2017-tuesday",
+      "vectors": 11
+    },
+    {
+      "split": "train",
+      "group": "ids2018-Thursday-22-02-2018",
+      "vectors": 13
+    },
+    {
+      "split": "train",
+      "group": "ids2018-Wednesday-14-02-2018",
+      "vectors": 6
+    },
+    {
+      "split": "train",
+      "group": "ids2018-Wednesday-28-02-2018",
+      "vectors": 17
+    },
+    {
+      "split": "validation",
+      "group": "cic2017-thursday",
+      "vectors": 4
+    },
+    {
+      "split": "validation",
+      "group": "ids2018-Friday-23-02-2018",
+      "vectors": 10
+    },
+    {
+      "split": "validation",
+      "group": "ids2018-Thursday-01-03-2018",
+      "vectors": 17
+    }
+  ]
+}

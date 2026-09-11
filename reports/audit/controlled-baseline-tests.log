@@ -1,0 +1,10 @@
+/home/lucifer/Projects/combiners/venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+test_end_to_end_baseline_preserves_holdout_and_normalization (test_tabular_baseline.TabularBaselineTests.test_end_to_end_baseline_preserves_holdout_and_normalization) ... ok
+test_headers_require_real_features_but_not_graph_identifiers (test_tabular_baseline.TabularBaselineTests.test_headers_require_real_features_but_not_graph_identifiers) ... ok
+test_linear_baseline_has_single_logit_per_flow (test_tabular_baseline.TabularBaselineTests.test_linear_baseline_has_single_logit_per_flow) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.452s
+
+OK

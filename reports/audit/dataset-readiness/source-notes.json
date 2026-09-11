@@ -1,0 +1,20 @@
+{
+  "audience": "technical",
+  "delivery": "html",
+  "evidence": "inventory.json",
+  "code": "check.py",
+  "notebook": "check.ipynb",
+  "structure": "Technical summary; findings; scope and method; limits; next steps; open questions.",
+  "chart_contract": {
+    "question": "How many local files were inspected in each folder?",
+    "grain": "one file including temporary copies",
+    "type": "bar",
+    "x": "folder",
+    "y": "file count",
+    "source": "inventory.json projected into SQLite inventory table",
+    "sql": "file-counts.sql",
+    "interpretation": "File counts do not prove download completeness or distinct data coverage.",
+    "palette": "shared renderer default; folder labels distinguish bars"
+  },
+  "html_delivery_blocker": "Canonical portable builder failed desktop horizontal-overflow verification after sandboxed Chromium launch was retried with escalation. HTML is not delivered as verified; findings, inventory, notebook and canonical artifact retained."
+}

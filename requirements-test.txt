@@ -1,0 +1,4 @@
+-r requirements-training.txt
+-r requirements-tabular.txt
+# Independent numerical reference for classification metric regression tests.
+scikit-learn>=1.4,<2

@@ -1,0 +1,101 @@
+{
+  "count_basis": "Accepted canonical rows before prepared-data deduplication; does not claim per-family detection rates",
+  "train_attack_families": [
+    "DoS GoldenEye",
+    "DoS Hulk",
+    "DoS Slowhttptest",
+    "DoS slowloris",
+    "FTP-Patator",
+    "Heartbleed",
+    "SSH-Patator"
+  ],
+  "validation_attack_families": [
+    "Infiltration",
+    "Web Attack - Brute Force",
+    "Web Attack - Sql Injection",
+    "Web Attack - XSS"
+  ],
+  "test_attack_families": [
+    "Bot",
+    "DDoS",
+    "PortScan"
+  ],
+  "validation_families_absent_from_training": [
+    "Infiltration",
+    "Web Attack - Brute Force",
+    "Web Attack - Sql Injection",
+    "Web Attack - XSS"
+  ],
+  "test_families_absent_from_training": [
+    "Bot",
+    "DDoS",
+    "PortScan"
+  ],
+  "train_counts": {
+    "BENIGN": 871458,
+    "FTP-Patator": 7935,
+    "SSH-Patator": 5897,
+    "DoS slowloris": 5796,
+    "DoS Slowhttptest": 5499,
+    "DoS Hulk": 230124,
+    "DoS GoldenEye": 10293,
+    "Heartbleed": 11
+  },
+  "validation_counts": {
+    "BENIGN": 456395,
+    "Infiltration": 36,
+    "Web Attack - Brute Force": 1507,
+    "Web Attack - XSS": 652,
+    "Web Attack - Sql Injection": 21
+  },
+  "paired_export_prefix_comparison": [
+    {
+      "file": "Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv",
+      "common_columns": 78,
+      "checked_rows": 1000,
+      "matching_rows": 1000
+    },
+    {
+      "file": "Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv",
+      "common_columns": 78,
+      "checked_rows": 1000,
+      "matching_rows": 809
+    },
+    {
+      "file": "Friday-WorkingHours-Morning.pcap_ISCX.csv",
+      "common_columns": 78,
+      "checked_rows": 1000,
+      "matching_rows": 817
+    },
+    {
+      "file": "Monday-WorkingHours.pcap_ISCX.csv",
+      "common_columns": 78,
+      "checked_rows": 1000,
+      "matching_rows": 0
+    },
+    {
+      "file": "Thursday-WorkingHours-Afternoon-Infilteration.pcap_ISCX.csv",
+      "common_columns": 78,
+      "checked_rows": 1000,
+      "matching_rows": 862
+    },
+    {
+      "file": "Thursday-WorkingHours-Morning-WebAttacks.pcap_ISCX.csv",
+      "common_columns": 78,
+      "checked_rows": 1000,
+      "matching_rows": 855
+    },
+    {
+      "file": "Tuesday-WorkingHours.pcap_ISCX.csv",
+      "common_columns": 78,
+      "checked_rows": 1000,
+      "matching_rows": 755
+    },
+    {
+      "file": "Wednesday-workingHours.pcap_ISCX.csv",
+      "common_columns": 78,
+      "checked_rows": 1000,
+      "matching_rows": 558
+    }
+  ]
+}

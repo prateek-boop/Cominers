@@ -1,0 +1,69 @@
+{
+  "scope": "First 4096 training rows only, matched initialization and optimizer; diagnostic, not accuracy evaluation",
+  "results": [
+    {
+      "transform": "identity",
+      "rows": 4096,
+      "seed": 42,
+      "max_gradient_norm": 11770514.0,
+      "median_gradient_norm": 102.17373657226562,
+      "clipped_steps": 90,
+      "steps": 128,
+      "mean_loss": 0.06099384085973725,
+      "largest_parameter_gradients": [
+        [
+          "memory.memory.time_enc.lin.weight",
+          11770514.0
+        ],
+        [
+          "prob_head.mlp.0.weight",
+          6.6790571212768555
+        ],
+        [
+          "prob_head.mlp.2.weight",
+          4.955605983734131
+        ],
+        [
+          "gnn.embedding.conv.lin_edge.weight",
+          2.925348997116089
+        ],
+        [
+          "current_flow_head.net.2.weight",
+          1.7311104536056519
+        ]
+      ]
+    },
+    {
+      "transform": "signed_log1p",
+      "rows": 4096,
+      "seed": 42,
+      "max_gradient_norm": 7.803488254547119,
+      "median_gradient_norm": 0.0013769309152849019,
+      "clipped_steps": 10,
+      "steps": 128,
+      "mean_loss": 0.030731103790458292,
+      "largest_parameter_gradients": [
+        [
+          "prob_head.mlp.0.weight",
+          5.760160446166992
+        ],
+        [
+          "prob_head.mlp.2.weight",
+          4.420887470245361
+        ],
+        [
+          "gnn.embedding.conv.lin_edge.weight",
+          2.6843791007995605
+        ],
+        [
+          "current_flow_head.net.2.weight",
+          1.7311104536056519
+        ],
+        [
+          "memory.memory.gru.weight_ih",
+          0.8165975213050842
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{"event": "starting", "arm": "cic2017", "command": ["/home/lucifer/Projects/combiners/venv/bin/python", "-u", "-m", "training.tabular", "train", "--data", "data/ids2018-tabular", "--graph-data", "data/cic2017-prepared", "--output", "/home/lucifer/Projects/combiners/training-runs/controlled-cic2017", "--training-source", "cic2017", "--validation-only", "--epochs", "10", "--patience", "3", "--hidden", "64", "--threads", "2", "--seed", "42"]}
+/home/lucifer/Projects/combiners/venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+{"epoch": 1, "loss": 0.646215304650345, "elapsed_seconds": 7.749066276999656, "validation_average_precision": 0.04665561060523158, "validation_target_met": false, "threshold": 1.0}
+{"epoch": 2, "loss": 0.4637124808471944, "elapsed_seconds": 7.690844939999806, "validation_average_precision": 0.048002899029128465, "validation_target_met": false, "threshold": 1.0}
+{"epoch": 3, "loss": 0.339716326101033, "elapsed_seconds": 8.036852021999948, "validation_average_precision": 0.05091264554045409, "validation_target_met": false, "threshold": 1.0}
+{"epoch": 4, "loss": 0.25165173871190866, "elapsed_seconds": 7.7505176389968256, "validation_average_precision": 0.05464465201436913, "validation_target_met": false, "threshold": 1.0}
+{"epoch": 5, "loss": 0.2623601002763678, "elapsed_seconds": 10.739870230994711, "validation_average_precision": 0.04925890746356482, "validation_target_met": false, "threshold": 1.0}
+{"epoch": 6, "loss": 0.2039348507974844, "elapsed_seconds": 8.782772387996374, "validation_average_precision": 0.05001513707711253, "validation_target_met": false, "threshold": 1.0}
+{"epoch": 7, "loss": 0.19276810758310836, "elapsed_seconds": 8.624605688004522, "validation_average_precision": 0.05073607068557571, "validation_target_met": false, "threshold": 1.0}
+{"event": "completed_validation_only", "model_type": "feature_only_mlp", "deployment_approved": false}
+{"event": "starting", "arm": "combined", "command": ["/home/lucifer/Projects/combiners/venv/bin/python", "-u", "-m", "training.tabular", "train", "--data", "data/ids2018-tabular", "--graph-data", "data/cic2017-prepared", "--output", "/home/lucifer/Projects/combiners/training-runs/controlled-combined", "--training-source", "combined", "--validation-only", "--epochs", "10", "--patience", "3", "--hidden", "64", "--threads", "2", "--seed", "42"]}
+/home/lucifer/Projects/combiners/venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+{"epoch": 1, "loss": 0.6163213615074798, "elapsed_seconds": 38.19854896199831, "validation_average_precision": 0.05991618133185191, "validation_target_met": false, "threshold": 1.0}
+{"epoch": 2, "loss": 0.4358091767409162, "elapsed_seconds": 47.7558118129964, "validation_average_precision": 0.08332715323395508, "validation_target_met": false, "threshold": 1.0}
+{"epoch": 3, "loss": 0.37014873148103805, "elapsed_seconds": 58.81623846099683, "validation_average_precision": 0.08150000551720929, "validation_target_met": false, "threshold": 1.0}
+{"epoch": 4, "loss": 0.30089547436070985, "elapsed_seconds": 55.243312232996686, "validation_average_precision": 0.10192219680469093, "validation_target_met": false, "threshold": 1.0}
+{"epoch": 5, "loss": 0.2893019829328072, "elapsed_seconds": 45.05453190299886, "validation_average_precision": 0.07863690189934525, "validation_target_met": false, "threshold": 1.0}
+{"epoch": 6, "loss": 0.3118486023791518, "elapsed_seconds": 49.372851813001034, "validation_average_precision": 0.09792479294300255, "validation_target_met": false, "threshold": 1.0}
+{"epoch": 7, "loss": 0.2660545406104618, "elapsed_seconds": 49.22795757000131, "validation_average_precision": 0.07195784037548059, "validation_target_met": false, "threshold": 1.0}
+{"event": "completed_validation_only", "model_type": "feature_only_mlp", "deployment_approved": false}
+{"event": "starting", "arm": "family", "command": ["/home/lucifer/Projects/combiners/venv/bin/python", "-u", "-m", "training.tabular", "train", "--data", "data/ids2018-tabular", "--graph-data", "data/cic2017-prepared", "--output", "/home/lucifer/Projects/combiners/training-runs/controlled-family", "--training-source", "combined", "--validation-only", "--epochs", "10", "--patience", "3", "--hidden", "64", "--threads", "2", "--seed", "42", "--family-weighting"]}
+/home/lucifer/Projects/combiners/venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+{"epoch": 1, "loss": 0.9285784078869109, "elapsed_seconds": 48.01556172500568, "validation_average_precision": 0.06251652691507242, "validation_target_met": false, "threshold": 1.0}
+{"epoch": 2, "loss": 0.6969414008194169, "elapsed_seconds": 51.862335703997815, "validation_average_precision": 0.0827450051344361, "validation_target_met": false, "threshold": 1.0}
+{"epoch": 3, "loss": 0.5736721431834505, "elapsed_seconds": 56.18104617100471, "validation_average_precision": 0.08222249130320256, "validation_target_met": false, "threshold": 1.0}
+{"epoch": 4, "loss": 0.5060754084209773, "elapsed_seconds": 54.827892181005154, "validation_average_precision": 0.10356667372268125, "validation_target_met": false, "threshold": 1.0}
+{"epoch": 5, "loss": 0.5024466377126506, "elapsed_seconds": 43.257376946996374, "validation_average_precision": 0.07947929106135554, "validation_target_met": false, "threshold": 1.0}
+{"epoch": 6, "loss": 0.5681561839347804, "elapsed_seconds": 36.43200408099801, "validation_average_precision": 0.10079847191584818, "validation_target_met": false, "threshold": 1.0}
+{"epoch": 7, "loss": 0.47830882389379714, "elapsed_seconds": 83.7140127169987, "validation_average_precision": 0.0730379546218329, "validation_target_met": false, "threshold": 1.0}
+{"event": "completed_validation_only", "model_type": "feature_only_mlp", "deployment_approved": false}
+{"event": "completed", "test_evaluated": false}

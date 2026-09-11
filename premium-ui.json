@@ -1,0 +1,8 @@
+{
+  "profile": "product-admin",
+  "sourceRoots": [
+    "static"
+  ],
+  "locale": "en",
+  "canonicalMap": "docs/design.md"
+}

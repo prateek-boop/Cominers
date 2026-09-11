@@ -6,6 +6,7 @@ import threading
 import numpy as np
 import torch
 from torch_geometric.nn.models.tgn import LastNeighborLoader
+from models.current_flow import load_current_flow, combined_logits, encode_timestamps
 from models.memory import MemoryModule
 from models.tgn import CyberTGN
 from models.multitask_heads import AttackProbabilityHead, MitreStageClassifier
@@ -36,14 +37,18 @@ class ModelRuntime:
         self.msg_dim = mem['memory.gru.weight_ih'].shape[1] - 2 * dim - time_dim
         embedding_dim = checkpoint['prob_head']['mlp.0.weight'].shape[1] // 2
         self.num_classes = checkpoint['mitre_head']['mlp.2.weight'].shape[0]
-        self.memory = MemoryModule(self.num_nodes, self.msg_dim, dim, time_dim)
-        self.gnn = CyberTGN(self.memory, dim, embedding_dim, self.msg_dim, time_dim)
+        time_transform = checkpoint.get('model_config',{}).get('time_transform','identity')
+        self.memory = MemoryModule(self.num_nodes, self.msg_dim, dim, time_dim,time_transform)
+        self.gnn = CyberTGN(self.memory, dim, embedding_dim, self.msg_dim, time_dim,time_transform)
         self.prob_head = AttackProbabilityHead(embedding_dim)
         self.stage_head = MitreStageClassifier(embedding_dim, self.num_classes)
         self.memory.load_state_dict(mem, strict=True)
         self.gnn.load_state_dict(checkpoint['gnn'], strict=True)
         self.prob_head.load_state_dict(checkpoint['prob_head'], strict=True)
         self.stage_head.load_state_dict(checkpoint['mitre_head'], strict=True)
+        self.current_flow_head = load_current_flow(checkpoint)
+        self.timestamp_encoding = checkpoint.get("timestamp_encoding", "legacy_float32")
+        self.stage_training_counts = checkpoint.get("stage_training_counts")
         for module in (self.memory, self.gnn, self.prob_head, self.stage_head):
             module.eval()
         if any(not torch.isfinite(p).all() for m in (self.gnn, self.prob_head, self.stage_head) for p in m.parameters()):
@@ -71,8 +76,9 @@ class ModelRuntime:
         self.assoc[nodes] = torch.arange(len(nodes))
         z = self.gnn(nodes, edges, self.history_t[ids], self.history_msg[ids])
         a, b = z[self.assoc[src]], z[self.assoc[dst]]
-        probabilities = self.prob_head(a, b).sigmoid()
-        stages = self.stage_head(a, b).softmax(-1)
+        attack_logits, stage_logits = combined_logits(self.prob_head, self.stage_head, self.current_flow_head, a, b, msg)
+        probabilities = attack_logits.sigmoid()
+        stages = stage_logits.softmax(-1)
         if not torch.isfinite(probabilities).all() or not torch.isfinite(stages).all():
             raise ValueError('Model produced non-finite predictions')
         self.memory.update_state(src, dst, t.long(), msg)
@@ -112,7 +118,7 @@ class ModelRuntime:
         if len(mapping) > self.num_nodes:
             raise ValueError('Node capacity exceeded')
         # Match training timestamp conversion, including float32 rounding before int64.
-        t = torch.tensor(times, dtype=torch.float32).long()
+        t = encode_timestamps(times, self.timestamp_encoding)
         msg = torch.tensor(features, dtype=torch.float32)
         output = []
         with self.lock:

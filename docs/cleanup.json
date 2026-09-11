@@ -1,0 +1,654 @@
+{
+  "reviewed": "2026-09-11",
+  "recovery_archive": "/tmp/cybertgn-doc-cleanup-n_u0y7n4",
+  "consolidated": [
+    {
+      "source": "TRAINING.md",
+      "destination": "docs/training.md"
+    },
+    {
+      "source": "TRAINING_OBJECTIVES.md",
+      "destination": "docs/training.md"
+    },
+    {
+      "source": "IDS2018_BASELINES.md",
+      "destination": "docs/training.md"
+    },
+    {
+      "source": "DATASETS.md",
+      "destination": "docs/datasets.md"
+    },
+    {
+      "source": "MODEL_USAGE.md",
+      "destination": "README.md"
+    },
+    {
+      "source": "DESIGN.md",
+      "destination": "docs/design.md"
+    },
+    {
+      "source": "reports/MODEL_REPORT.md",
+      "destination": "docs/model-history.md"
+    }
+  ],
+  "removed": [
+    {
+      "path": "reports/audit/REVIEW.md",
+      "bytes": 3583,
+      "reason": "Superseded narrative; retain current remediation and machine-readable evidence"
+    },
+    {
+      "path": "reports/audit/EXTENDED_VERIFICATION.md",
+      "bytes": 4468,
+      "reason": "Superseded narrative; retain current remediation and machine-readable evidence"
+    },
+    {
+      "path": "reports/audit/training-verification.md",
+      "bytes": 1133,
+      "reason": "Superseded narrative; retain current remediation and machine-readable evidence"
+    },
+    {
+      "path": "reports/audit/training-deep-review.md",
+      "bytes": 3344,
+      "reason": "Superseded narrative; retain current remediation and machine-readable evidence"
+    },
+    {
+      "path": "reports/audit/training-objectives-review.md",
+      "bytes": 2842,
+      "reason": "Superseded narrative; retain current remediation and machine-readable evidence"
+    },
+    {
+      "path": "reports/audit/dataset-readiness/findings.md",
+      "bytes": 2865,
+      "reason": "Superseded narrative; retain current remediation and machine-readable evidence"
+    },
+    {
+      "path": "reports/audit/tests.log",
+      "bytes": 10105,
+      "reason": "Older software-check log superseded by retained checks"
+    },
+    {
+      "path": "reports/audit/training-tests.log",
+      "bytes": 11239,
+      "reason": "Older software-check log superseded by retained checks"
+    },
+    {
+      "path": "reports/audit/training-deep-tests.log",
+      "bytes": 12509,
+      "reason": "Older software-check log superseded by retained checks"
+    },
+    {
+      "path": "reports/audit/training-deep-cli.log",
+      "bytes": 1431,
+      "reason": "Older software-check log superseded by retained checks"
+    },
+    {
+      "path": "reports/audit/training-objectives-full-tests.log",
+      "bytes": 13728,
+      "reason": "Older software-check log superseded by retained checks"
+    },
+    {
+      "path": "reports/audit/training-objectives-targeted-tests.log",
+      "bytes": 3934,
+      "reason": "Older software-check log superseded by retained checks"
+    },
+    {
+      "path": "reports/audit/training-objectives-cli.log",
+      "bytes": 1615,
+      "reason": "Older software-check log superseded by retained checks"
+    },
+    {
+      "path": "reports/audit/ids2018-baselines-tests.log",
+      "bytes": 14503,
+      "reason": "Older software-check log superseded by retained checks"
+    },
+    {
+      "path": "reports/audit/dataset-readiness/report.html.tmp-814214-58fa3913-540e-4239-bb6f-614ea485ed18.verification-failure.png",
+      "bytes": 123105,
+      "reason": "Failed temporary report rendering"
+    },
+    {
+      "path": "models/__pycache__/__init__.cpython-312.pyc",
+      "bytes": 148,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "models/__pycache__/multitask_heads.cpython-312.pyc",
+      "bytes": 2498,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "models/__pycache__/current_flow.cpython-312.pyc",
+      "bytes": 3717,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "models/__pycache__/memory.cpython-312.pyc",
+      "bytes": 2156,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "models/__pycache__/tgn.cpython-312.pyc",
+      "bytes": 2594,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "models/__pycache__/time_features.cpython-312.pyc",
+      "bytes": 1728,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "tests/__pycache__/test_complete_system.cpython-312.pyc",
+      "bytes": 13111,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "tests/__pycache__/test_model_service.cpython-312.pyc",
+      "bytes": 10604,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "tests/__pycache__/test_advanced_phases_and_scenarios.cpython-312.pyc",
+      "bytes": 11648,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "tests/__pycache__/test_end_to_end_pipeline.cpython-312.pyc",
+      "bytes": 16051,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "tests/__pycache__/test_regressions.cpython-312.pyc",
+      "bytes": 26292,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "tests/__pycache__/test_operational_verification.cpython-312.pyc",
+      "bytes": 6505,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "tests/__pycache__/test_training.cpython-312.pyc",
+      "bytes": 33299,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "tests/__pycache__/test_training_objectives.cpython-312.pyc",
+      "bytes": 11084,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "tests/__pycache__/test_cic2017_conversion.cpython-312.pyc",
+      "bytes": 1959,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "tests/__pycache__/test_training_stability.cpython-312.pyc",
+      "bytes": 7362,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "tests/__pycache__/test_tabular_baseline.cpython-312.pyc",
+      "bytes": 8658,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "__pycache__/pipeline.cpython-312.pyc",
+      "bytes": 16569,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "__pycache__/demo.cpython-312.pyc",
+      "bytes": 11217,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "__pycache__/run_case_studies.cpython-312.pyc",
+      "bytes": 19699,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "__pycache__/api.cpython-314.pyc",
+      "bytes": 23930,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "__pycache__/pipeline.cpython-314.pyc",
+      "bytes": 18746,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "__pycache__/demo.cpython-314.pyc",
+      "bytes": 11799,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "__pycache__/run_case_studies.cpython-314.pyc",
+      "bytes": 20531,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "__pycache__/api.cpython-312.pyc",
+      "bytes": 21829,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "__pycache__/train.cpython-312.pyc",
+      "bytes": 300,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "__pycache__/model_runtime.cpython-312.pyc",
+      "bytes": 12988,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "engine/__pycache__/__init__.cpython-312.pyc",
+      "bytes": 420,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "engine/__pycache__/conformal.cpython-312.pyc",
+      "bytes": 4969,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "engine/__pycache__/flow_engine.cpython-312.pyc",
+      "bytes": 17913,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "engine/__pycache__/hybrid_detector.cpython-312.pyc",
+      "bytes": 11379,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "engine/__pycache__/mitigation.cpython-312.pyc",
+      "bytes": 8364,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "engine/__pycache__/live_sniffer.cpython-312.pyc",
+      "bytes": 8542,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "engine/__pycache__/__init__.cpython-314.pyc",
+      "bytes": 384,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "engine/__pycache__/conformal.cpython-314.pyc",
+      "bytes": 5800,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "engine/__pycache__/flow_engine.cpython-314.pyc",
+      "bytes": 20621,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "engine/__pycache__/hybrid_detector.cpython-314.pyc",
+      "bytes": 12753,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "engine/__pycache__/live_sniffer.cpython-314.pyc",
+      "bytes": 9514,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "engine/__pycache__/mitigation.cpython-314.pyc",
+      "bytes": 10006,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "engine/__pycache__/stateful_tgn.cpython-314.pyc",
+      "bytes": 13950,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "engine/__pycache__/streaming_runtime.cpython-314.pyc",
+      "bytes": 17252,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "engine/__pycache__/stateful_tgn.cpython-312.pyc",
+      "bytes": 13500,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "engine/__pycache__/streaming_runtime.cpython-312.pyc",
+      "bytes": 16301,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "capture/__pycache__/__init__.cpython-312.pyc",
+      "bytes": 376,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "capture/__pycache__/filter.cpython-312.pyc",
+      "bytes": 3541,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "capture/__pycache__/sniffer.cpython-312.pyc",
+      "bytes": 9218,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "features/__pycache__/__init__.cpython-312.pyc",
+      "bytes": 554,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "features/__pycache__/entropy.cpython-312.pyc",
+      "bytes": 1516,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "features/__pycache__/port_roles.cpython-312.pyc",
+      "bytes": 2282,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "features/__pycache__/dual_branch.cpython-312.pyc",
+      "bytes": 9095,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "features/__pycache__/handshake.cpython-312.pyc",
+      "bytes": 2622,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "features/__pycache__/flow_aggregator.cpython-312.pyc",
+      "bytes": 12786,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "graph/__pycache__/__init__.cpython-312.pyc",
+      "bytes": 326,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "graph/__pycache__/graph_formatter.cpython-312.pyc",
+      "bytes": 4523,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "graph/__pycache__/temporal_windows.cpython-312.pyc",
+      "bytes": 9756,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "soar/__pycache__/__init__.cpython-312.pyc",
+      "bytes": 367,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "soar/__pycache__/policy.cpython-312.pyc",
+      "bytes": 3766,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "soar/__pycache__/mitigation.cpython-312.pyc",
+      "bytes": 6901,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "forensics/__pycache__/__init__.cpython-312.pyc",
+      "bytes": 410,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "forensics/__pycache__/merkle_tree.cpython-312.pyc",
+      "bytes": 4297,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "forensics/__pycache__/pcap_dumper.cpython-312.pyc",
+      "bytes": 3719,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "forensics/__pycache__/hasher.cpython-312.pyc",
+      "bytes": 2312,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "ledger/__pycache__/__init__.cpython-312.pyc",
+      "bytes": 313,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "ledger/__pycache__/blockchain_ledger.cpython-312.pyc",
+      "bytes": 7834,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "ledger/__pycache__/__init__.cpython-314.pyc",
+      "bytes": 277,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "ledger/__pycache__/blockchain_ledger.cpython-314.pyc",
+      "bytes": 9346,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "pruning/__pycache__/__init__.cpython-312.pyc",
+      "bytes": 274,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "pruning/__pycache__/graph_pruner.cpython-312.pyc",
+      "bytes": 3295,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "forecasting/__pycache__/__init__.cpython-312.pyc",
+      "bytes": 410,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "forecasting/__pycache__/delta_predictor.cpython-312.pyc",
+      "bytes": 3325,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "forecasting/__pycache__/kalman_filter.cpython-312.pyc",
+      "bytes": 4699,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "calibration/__pycache__/__init__.cpython-312.pyc",
+      "bytes": 397,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "calibration/__pycache__/conformal.cpython-312.pyc",
+      "bytes": 6603,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "calibration/__pycache__/ece.cpython-312.pyc",
+      "bytes": 3569,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "explainability/__pycache__/__init__.cpython-312.pyc",
+      "bytes": 449,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "explainability/__pycache__/gnn_explainer.cpython-312.pyc",
+      "bytes": 5112,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "explainability/__pycache__/shap_explainer.cpython-312.pyc",
+      "bytes": 5678,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "casestudies/__pycache__/__init__.cpython-312.pyc",
+      "bytes": 613,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "casestudies/__pycache__/threat_scenarios.cpython-312.pyc",
+      "bytes": 10647,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "scripts/__pycache__/run_isolated.cpython-314.pyc",
+      "bytes": 992,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "scripts/__pycache__/verify_evidence.cpython-314.pyc",
+      "bytes": 12064,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "scripts/__pycache__/verify_live.cpython-314.pyc",
+      "bytes": 17812,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "scripts/__pycache__/prepare_cic2017.cpython-312.pyc",
+      "bytes": 11582,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "scripts/__pycache__/run_cic2017_candidate.cpython-312.pyc",
+      "bytes": 3596,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "scripts/__pycache__/run_ids2018_baselines.cpython-312.pyc",
+      "bytes": 2904,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "scripts/__pycache__/run_controlled_baselines.cpython-312.pyc",
+      "bytes": 2496,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "scripts/__pycache__/audit_feature_consistency.cpython-312.pyc",
+      "bytes": 6599,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "scripts/__pycache__/diagnose_graph_gradients.cpython-312.pyc",
+      "bytes": 5594,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "training/__pycache__/__init__.cpython-312.pyc",
+      "bytes": 222,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "training/__pycache__/smoke.cpython-312.pyc",
+      "bytes": 2805,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "training/__pycache__/data.cpython-312.pyc",
+      "bytes": 16696,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "training/__pycache__/assessment.cpython-312.pyc",
+      "bytes": 5813,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "training/__pycache__/losses.cpython-312.pyc",
+      "bytes": 1156,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "training/__pycache__/runner.cpython-312.pyc",
+      "bytes": 47250,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "training/__pycache__/tabular.cpython-312.pyc",
+      "bytes": 26731,
+      "reason": "Regenerable Python bytecode"
+    }
+  ],
+  "empty_directories_removed": [
+    "dest-dir/Original Network Traffic and Log data/Friday-02-03-2018",
+    "dest-dir/Original Network Traffic and Log data/Friday-16-02-2018",
+    "dest-dir/Original Network Traffic and Log data/Friday-23-02-2018",
+    "dest-dir/Original Network Traffic and Log data/Thursday-01-03-2018",
+    "dest-dir/Original Network Traffic and Log data",
+    "dest-dir"
+  ],
+  "preserved": "Source, tests, datasets, prepared shards, checkpoints, candidate runs, forensic captures, ledgers, historical metric JSON and current audit evidence",
+  "code_cleanup_sessions": [
+    {
+      "reviewed": "2026-09-11",
+      "recovery_archive": "/tmp/cybertgn-code-cleanup-6l3zdgiy",
+      "removed": [
+        {
+          "path": "explainability/gnn_explainer.py",
+          "bytes": 3806,
+          "sha256": "67fd06e28f613c53524bff60f76dfd3171932b9549fcafef20eb600fdfd3dd22",
+          "reason": "Rule-ranked edge helper superseded by model_explainer.py"
+        },
+        {
+          "path": "explainability/shap_explainer.py",
+          "bytes": 5612,
+          "sha256": "144507a12a831679e5edd9c0e5fa8587b73857a07a00c1adffe89fcfca3d89b1",
+          "reason": "Hand-written feature weights superseded by model-based Shapley estimates"
+        },
+        {
+          "path": "run_case_studies.py",
+          "bytes": 15455,
+          "sha256": "112fbe71f50678c5f42edb6aec562499a3fb0523a34ac41b864f1a13f369258e",
+          "reason": "Redundant demonstration using superseded explanation helpers; demo.py and tested scenario fixtures retained"
+        },
+        {
+          "path": "scripts/run_cic2017_candidate.py",
+          "bytes": 1921,
+          "sha256": "2e8e44d21892ec352aeee36cfb28dcb19cbd8fb7df5240adeff2bf9afb8ce2c0",
+          "reason": "Completed one-off job launcher; reusable training CLI and run artifacts retained"
+        },
+        {
+          "path": "scripts/run_ids2018_baselines.py",
+          "bytes": 1368,
+          "sha256": "5c8819fe981711c163f1b9054289463289999f7dfd97efd4e04a569acefa8e64",
+          "reason": "Completed one-off job launcher; reusable tabular training CLI and run artifacts retained"
+        }
+      ],
+      "edited_files": [
+        "explainability/__init__.py",
+        "tests/test_advanced_phases_and_scenarios.py",
+        "README.md",
+        "docs/training.md",
+        "docs/cleanup.json",
+        "attack.md",
+        "reports/audit/integration-verification.json"
+      ],
+      "removed_test": "Obsolete heuristic-explainer test; real model-explanation tests retained in tests/test_model_integration.py",
+      "validation": {
+        "full_suite_tests": 96,
+        "passed": true,
+        "log": "reports/audit/code-cleanup-tests.log",
+        "checkpoint_unchanged": true,
+        "dangling_source_references": 0
+      },
+      "removed_stale_bytecode": [
+        "explainability/__pycache__/gnn_explainer.cpython-312.pyc",
+        "explainability/__pycache__/shap_explainer.cpython-312.pyc"
+      ]
+    }
+  ]
+}

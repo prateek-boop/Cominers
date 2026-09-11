@@ -4,3 +4,7 @@ __pycache__/
 *.py[cod]
 .pytest_cache/
 predictions.json
+
+# Local training data and candidate models (never replace deployed checkpoints automatically).
+data/
+training-runs/

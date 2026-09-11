@@ -1,0 +1,26 @@
+{
+  "source": "ledger/ledger.jsonl",
+  "original_sha256": "914ceb0e24f31d3e1c60f80f0be682afa2cf3d888047e439bcc1a01d70714d48",
+  "records": 22,
+  "invalid_record_hashes_or_merkle_roots": [],
+  "forks": 2,
+  "derived_branches": [
+    {
+      "tip": "9d4e58eb1df1b04b2faae1178a79d374784ea5ae3bddf5b15a85723d6c6659df",
+      "blocks": 13,
+      "valid": true,
+      "derived_path": "reports/audit/ledger-branches/9d4e58eb1df1b04b.jsonl"
+    },
+    {
+      "tip": "a7bb5de70b307fcc4d26a548a0f680396a0dfc75262cd70b2b72bf32e06f6992",
+      "blocks": 21,
+      "valid": false,
+      "derived_path": null
+    }
+  ],
+  "recovered_view_integrity_valid": true,
+  "recovered_view": "reports/audit/recovered-ledger-view.jsonl",
+  "recovered_view_preserves_all_leaf_hashes": true,
+  "original_unchanged": true,
+  "interpretation": "Derived branches preserve original blocks. No branch is automatically chosen as authoritative."
+}

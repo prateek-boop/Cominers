@@ -2,11 +2,12 @@ import torch
 from torch import nn
 from torch_geometric.nn import TransformerConv
 from torch_geometric.nn.models.tgn import TimeEncoder
+from models.time_features import TransformedTimeEncoder
 
 class GraphAttentionEmbedding(torch.nn.Module):
-    def __init__(self, in_channels: int, out_channels: int, msg_dim: int, time_dim: int):
+    def __init__(self, in_channels: int, out_channels: int, msg_dim: int, time_dim: int, time_transform='identity'):
         super().__init__()
-        self.time_enc = TimeEncoder(time_dim)
+        self.time_enc = TransformedTimeEncoder(TimeEncoder(time_dim),time_transform)
         self.conv = TransformerConv(
             in_channels=in_channels,
             out_channels=out_channels // 2,
@@ -21,10 +22,10 @@ class GraphAttentionEmbedding(torch.nn.Module):
         return self.conv(x, edge_index, edge_attr)
 
 class CyberTGN(torch.nn.Module):
-    def __init__(self, memory_module, in_channels, out_channels, msg_dim, time_dim):
+    def __init__(self, memory_module, in_channels, out_channels, msg_dim, time_dim, time_transform='identity'):
         super().__init__()
         self.memory = memory_module
-        self.embedding = GraphAttentionEmbedding(in_channels, out_channels, msg_dim, time_dim)
+        self.embedding = GraphAttentionEmbedding(in_channels, out_channels, msg_dim, time_dim,time_transform)
 
     def forward(self, n_id, edge_index, t, msg):
         z_mem, last_update = self.memory(n_id)

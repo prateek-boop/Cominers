@@ -106,5 +106,5 @@ checks. CLI JSON prediction also passed. HTTP tests required execution outside
 the sandbox because the sandbox stalled asynchronous worker notification.
 No public deployment was performed.
 
-See [MODEL_USAGE.md](../MODEL_USAGE.md) for install/run commands, request format,
+See [README](../README.md) for install/run commands, request format,
 feature order, sharing instructions and a Python client.

@@ -1,0 +1,2963 @@
+[
+  {
+    "arm": "cic2017",
+    "validation": {
+      "events": 1774586,
+      "tp": 0,
+      "fp": 0,
+      "tn": 1679402,
+      "fn": 95184,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "false_positive_rate": 0.0,
+      "average_precision": 0.05464465201436913,
+      "roc_auc": 0.5002949742418901,
+      "threshold": 1.0,
+      "brier": 0.05452074379259682,
+      "accuracy": 0.9463627009341897,
+      "attack_prevalence": 0.05363729906581028,
+      "confusion_matrix": [
+        [
+          1679402,
+          0
+        ],
+        [
+          95184,
+          0
+        ]
+      ],
+      "confusion_matrix_labels": [
+        "benign",
+        "attack"
+      ],
+      "false_negative_rate": 1.0,
+      "specificity": 1.0,
+      "balanced_accuracy": 0.5,
+      "f2": 0.0,
+      "mcc": 0.0,
+      "log_loss": 0.25048519146965437,
+      "precision_defined": false,
+      "recall_defined": true,
+      "fpr_defined": true,
+      "intervals_95_iid": {
+        "precision": null,
+        "recall": [
+          0.0,
+          4.035661237633992e-05
+        ],
+        "false_positive_rate": [
+          0.0,
+          2.2873916035430905e-06
+        ]
+      },
+      "interval_assumption": "IID binomial illustration only; correlated flows can understate uncertainty. Use independent capture evidence.",
+      "ece_10_bins": 0.03543624288895557,
+      "reliability_bins": [
+        {
+          "bin": 0,
+          "count": 1561088,
+          "mean_score": 0.03174647316336632,
+          "attack_fraction": 0.05444343944735979
+        },
+        {
+          "bin": 1,
+          "count": 157005,
+          "mean_score": 0.13534460961818695,
+          "attack_fraction": 0.0411770325785803
+        },
+        {
+          "bin": 2,
+          "count": 44200,
+          "mean_score": 0.24270941317081451,
+          "attack_fraction": 0.06180995475113122
+        },
+        {
+          "bin": 3,
+          "count": 5229,
+          "mean_score": 0.34300583600997925,
+          "attack_fraction": 0.05393000573723465
+        },
+        {
+          "bin": 4,
+          "count": 2636,
+          "mean_score": 0.46073901653289795,
+          "attack_fraction": 0.1043247344461305
+        },
+        {
+          "bin": 5,
+          "count": 2981,
+          "mean_score": 0.55892413854599,
+          "attack_fraction": 0.14223414961422343
+        },
+        {
+          "bin": 6,
+          "count": 924,
+          "mean_score": 0.6314657926559448,
+          "attack_fraction": 0.016233766233766232
+        },
+        {
+          "bin": 7,
+          "count": 323,
+          "mean_score": 0.7497427463531494,
+          "attack_fraction": 0.0
+        },
+        {
+          "bin": 8,
+          "count": 191,
+          "mean_score": 0.8376176357269287,
+          "attack_fraction": 0.0
+        },
+        {
+          "bin": 9,
+          "count": 9,
+          "mean_score": 0.921959638595581,
+          "attack_fraction": 0.0
+        }
+      ],
+      "per_capture": {
+        "ids2018-Friday-23-02-2018": {
+          "events": 1042867,
+          "tp": 0,
+          "fp": 0,
+          "tn": 1042301,
+          "fn": 566,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "false_positive_rate": 0.0,
+          "average_precision": 0.00047524203209753027,
+          "roc_auc": 0.4290312860832917,
+          "threshold": 1.0,
+          "brier": 0.00725803200540859,
+          "accuracy": 0.9994572654039298,
+          "attack_prevalence": 0.0005427345960702563,
+          "confusion_matrix": [
+            [
+              1042301,
+              0
+            ],
+            [
+              566,
+              0
+            ]
+          ],
+          "confusion_matrix_labels": [
+            "benign",
+            "attack"
+          ],
+          "false_negative_rate": 1.0,
+          "specificity": 1.0,
+          "balanced_accuracy": 0.5,
+          "f2": 0.0,
+          "mcc": 0.0,
+          "log_loss": 0.059497497362473215,
+          "precision_defined": false,
+          "recall_defined": true,
+          "fpr_defined": true,
+          "intervals_95_iid": {
+            "precision": null,
+            "recall": [
+              4.336808689942018e-19,
+              0.0067412764747657224
+            ],
+            "false_positive_rate": [
+              0.0,
+              3.68554252834284e-06
+            ]
+          },
+          "interval_assumption": "IID binomial illustration only; correlated flows can understate uncertainty. Use independent capture evidence.",
+          "ece_10_bins": 0.0520568609328068,
+          "reliability_bins": [
+            {
+              "bin": 0,
+              "count": 907741,
+              "mean_score": 0.03410444036126137,
+              "attack_fraction": 0.0005827653482656397
+            },
+            {
+              "bin": 1,
+              "count": 97221,
+              "mean_score": 0.13294710218906403,
+              "attack_fraction": 0.0003394328385842565
+            },
+            {
+              "bin": 2,
+              "count": 29989,
+              "mean_score": 0.24479401111602783,
+              "attack_fraction": 0.0001333822401547234
+            },
+            {
+              "bin": 3,
+              "count": 3706,
+              "mean_score": 0.3465685248374939,
+              "attack_fraction": 0.0
+            },
+            {
+              "bin": 4,
+              "count": 1744,
+              "mean_score": 0.45823875069618225,
+              "attack_fraction": 0.0
+            },
+            {
+              "bin": 5,
+              "count": 1082,
+              "mean_score": 0.5511466860771179,
+              "attack_fraction": 0.0
+            },
+            {
+              "bin": 6,
+              "count": 887,
+              "mean_score": 0.6315383911132812,
+              "attack_fraction": 0.0
+            },
+            {
+              "bin": 7,
+              "count": 306,
+              "mean_score": 0.7499390840530396,
+              "attack_fraction": 0.0
+            },
+            {
+              "bin": 8,
+              "count": 182,
+              "mean_score": 0.8360449075698853,
+              "attack_fraction": 0.0
+            },
+            {
+              "bin": 9,
+              "count": 9,
+              "mean_score": 0.921959638595581,
+              "attack_fraction": 0.0
+            }
+          ]
+        },
+        "ids2018-Thursday-01-03-2018": {
+          "events": 328181,
+          "tp": 0,
+          "fp": 0,
+          "tn": 235778,
+          "fn": 92403,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "false_positive_rate": 0.0,
+          "average_precision": 0.2733243222200166,
+          "roc_auc": 0.4931399116660129,
+          "threshold": 1.0,
+          "brier": 0.2611549546126315,
+          "accuracy": 0.7184389102355103,
+          "attack_prevalence": 0.28156108976448974,
+          "confusion_matrix": [
+            [
+              235778,
+              0
+            ],
+            [
+              92403,
+              0
+            ]
+          ],
+          "confusion_matrix_labels": [
+            "benign",
+            "attack"
+          ],
+          "false_negative_rate": 1.0,
+          "specificity": 1.0,
+          "balanced_accuracy": 0.5,
+          "f2": 0.0,
+          "mcc": 0.0,
+          "log_loss": 1.096418165930398,
+          "precision_defined": false,
+          "recall_defined": true,
+          "fpr_defined": true,
+          "intervals_95_iid": {
+            "precision": null,
+            "recall": [
+              0.0,
+              4.157115165986921e-05
+            ],
+            "false_positive_rate": [
+              0.0,
+              1.6292428615055312e-05
+            ]
+          },
+          "interval_assumption": "IID binomial illustration only; correlated flows can understate uncertainty. Use independent capture evidence.",
+          "ece_10_bins": 0.23367719816817745,
+          "reliability_bins": [
+            {
+              "bin": 0,
+              "count": 288011,
+              "mean_score": 0.031733568757772446,
+              "attack_fraction": 0.2856071469492485
+            },
+            {
+              "bin": 1,
+              "count": 27725,
+              "mean_score": 0.14119188487529755,
+              "attack_fraction": 0.23170423805229937
+            },
+            {
+              "bin": 2,
+              "count": 9244,
+              "mean_score": 0.24043166637420654,
+              "attack_fraction": 0.29489398528775423
+            },
+            {
+              "bin": 3,
+              "count": 868,
+              "mean_score": 0.33630695939064026,
+              "attack_fraction": 0.3248847926267281
+            },
+            {
+              "bin": 4,
+              "count": 696,
+              "mean_score": 0.47335535287857056,
+              "attack_fraction": 0.39511494252873564
+            },
+            {
+              "bin": 5,
+              "count": 1601,
+              "mean_score": 0.566884458065033,
+              "attack_fraction": 0.26420986883198
+            },
+            {
+              "bin": 6,
+              "count": 32,
+              "mean_score": 0.6287461519241333,
+              "attack_fraction": 0.46875
+            },
+            {
+              "bin": 7,
+              "count": 4,
+              "mean_score": 0.764278769493103,
+              "attack_fraction": 0.0
+            }
+          ]
+        },
+        "cic2017-thursday": {
+          "events": 403538,
+          "tp": 0,
+          "fp": 0,
+          "tn": 401323,
+          "fn": 2215,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "false_positive_rate": 0.0,
+          "average_precision": 0.01722083163520304,
+          "roc_auc": 0.8113984086797704,
+          "threshold": 1.0,
+          "brier": 0.00861503110194511,
+          "accuracy": 0.9945110497648301,
+          "attack_prevalence": 0.005488950235169922,
+          "confusion_matrix": [
+            [
+              401323,
+              0
+            ],
+            [
+              2215,
+              0
+            ]
+          ],
+          "confusion_matrix_labels": [
+            "benign",
+            "attack"
+          ],
+          "false_negative_rate": 1.0,
+          "specificity": 1.0,
+          "balanced_accuracy": 0.5,
+          "f2": 0.0,
+          "mcc": 0.0,
+          "log_loss": 0.056093669726900205,
+          "precision_defined": false,
+          "recall_defined": true,
+          "fpr_defined": true,
+          "intervals_95_iid": {
+            "precision": null,
+            "recall": [
+              1.0842021724855044e-19,
+              0.001731290356696258
+            ],
+            "false_positive_rate": [
+              0.0,
+              9.571896080338024e-06
+            ]
+          },
+          "interval_assumption": "IID binomial illustration only; correlated flows can understate uncertainty. Use independent capture evidence.",
+          "ece_10_bins": 0.03297461338471919,
+          "reliability_bins": [
+            {
+              "bin": 0,
+              "count": 365336,
+              "mean_score": 0.025897858664393425,
+              "attack_fraction": 0.006032802680272406
+            },
+            {
+              "bin": 1,
+              "count": 32059,
+              "mean_score": 0.13755838572978973,
+              "attack_fraction": 0.0002495399107894819
+            },
+            {
+              "bin": 2,
+              "count": 4967,
+              "mean_score": 0.23436228930950165,
+              "attack_fraction": 0.0004026575397624321
+            },
+            {
+              "bin": 3,
+              "count": 655,
+              "mean_score": 0.3317250907421112,
+              "attack_fraction": 0.0
+            },
+            {
+              "bin": 4,
+              "count": 196,
+              "mean_score": 0.43818554282188416,
+              "attack_fraction": 0.0
+            },
+            {
+              "bin": 5,
+              "count": 298,
+              "mean_score": 0.544396698474884,
+              "attack_fraction": 0.003355704697986577
+            },
+            {
+              "bin": 6,
+              "count": 5,
+              "mean_score": 0.6359836459159851,
+              "attack_fraction": 0.0
+            },
+            {
+              "bin": 7,
+              "count": 13,
+              "mean_score": 0.7406491637229919,
+              "attack_fraction": 0.0
+            },
+            {
+              "bin": 8,
+              "count": 9,
+              "mean_score": 0.8694210648536682,
+              "attack_fraction": 0.0
+            }
+          ]
+        }
+      },
+      "elapsed_seconds": 1.2193504239985486
+    },
+    "fixed_threshold_diagnostic": {
+      "events": 1774586,
+      "tp": 439,
+      "fp": 3989,
+      "tn": 1675413,
+      "fn": 94745,
+      "precision": 0.09914182475158084,
+      "recall": 0.004612119683980501,
+      "f1": 0.008814199092478818,
+      "false_positive_rate": 0.002375250237882294,
+      "average_precision": 0.05464465201436913,
+      "roc_auc": 0.5002949742418901,
+      "threshold": 0.5,
+      "brier": 0.05452074379259682,
+      "accuracy": 0.9443622343464898,
+      "attack_prevalence": 0.05363729906581028,
+      "confusion_matrix": [
+        [
+          1675413,
+          3989
+        ],
+        [
+          94745,
+          439
+        ]
+      ],
+      "confusion_matrix_labels": [
+        "benign",
+        "attack"
+      ],
+      "false_negative_rate": 0.9953878803160195,
+      "specificity": 0.9976247497621177,
+      "balanced_accuracy": 0.5011184347230491,
+      "f2": 0.005698871130219854,
+      "mcc": 0.010101598990575729,
+      "log_loss": 0.25048519146965437,
+      "precision_defined": true,
+      "recall_defined": true,
+      "fpr_defined": true,
+      "intervals_95_iid": {
+        "precision": [
+          0.09068384387443974,
+          0.10829472226211849
+        ],
+        "recall": [
+          0.00420121655805104,
+          0.005063007163233664
+        ],
+        "false_positive_rate": [
+          0.002302757542019514,
+          0.002450019459093716
+        ]
+      },
+      "interval_assumption": "IID binomial illustration only; correlated flows can understate uncertainty. Use independent capture evidence.",
+      "ece_10_bins": 0.03543624288895557,
+      "reliability_bins": [
+        {
+          "bin": 0,
+          "count": 1561088,
+          "mean_score": 0.03174647316336632,
+          "attack_fraction": 0.05444343944735979
+        },
+        {
+          "bin": 1,
+          "count": 157005,
+          "mean_score": 0.13534460961818695,
+          "attack_fraction": 0.0411770325785803
+        },
+        {
+          "bin": 2,
+          "count": 44200,
+          "mean_score": 0.24270941317081451,
+          "attack_fraction": 0.06180995475113122
+        },
+        {
+          "bin": 3,
+          "count": 5229,
+          "mean_score": 0.34300583600997925,
+          "attack_fraction": 0.05393000573723465
+        },
+        {
+          "bin": 4,
+          "count": 2636,
+          "mean_score": 0.46073901653289795,
+          "attack_fraction": 0.1043247344461305
+        },
+        {
+          "bin": 5,
+          "count": 2981,
+          "mean_score": 0.55892413854599,
+          "attack_fraction": 0.14223414961422343
+        },
+        {
+          "bin": 6,
+          "count": 924,
+          "mean_score": 0.6314657926559448,
+          "attack_fraction": 0.016233766233766232
+        },
+        {
+          "bin": 7,
+          "count": 323,
+          "mean_score": 0.7497427463531494,
+          "attack_fraction": 0.0
+        },
+        {
+          "bin": 8,
+          "count": 191,
+          "mean_score": 0.8376176357269287,
+          "attack_fraction": 0.0
+        },
+        {
+          "bin": 9,
+          "count": 9,
+          "mean_score": 0.921959638595581,
+          "attack_fraction": 0.0
+        }
+      ],
+      "per_capture": {
+        "ids2018-Friday-23-02-2018": {
+          "events": 1042867,
+          "tp": 0,
+          "fp": 2466,
+          "tn": 1039835,
+          "fn": 566,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "false_positive_rate": 0.0023659192498136335,
+          "average_precision": 0.00047524203209753027,
+          "roc_auc": 0.4290312860832917,
+          "threshold": 0.5,
+          "brier": 0.00725803200540859,
+          "accuracy": 0.9970926302203444,
+          "attack_prevalence": 0.0005427345960702563,
+          "confusion_matrix": [
+            [
+              1039835,
+              2466
+            ],
+            [
+              566,
+              0
+            ]
+          ],
+          "confusion_matrix_labels": [
+            "benign",
+            "attack"
+          ],
+          "false_negative_rate": 1.0,
+          "specificity": 0.9976340807501863,
+          "balanced_accuracy": 0.49881704037509317,
+          "f2": 0.0,
+          "mcc": -0.0011345086043912818,
+          "log_loss": 0.059497497362473215,
+          "precision_defined": true,
+          "recall_defined": true,
+          "fpr_defined": true,
+          "intervals_95_iid": {
+            "precision": [
+              0.0,
+              0.0015553463186776186
+            ],
+            "recall": [
+              4.336808689942018e-19,
+              0.0067412764747657224
+            ],
+            "false_positive_rate": [
+              0.002274466487402986,
+              0.0024610401153605964
+            ]
+          },
+          "interval_assumption": "IID binomial illustration only; correlated flows can understate uncertainty. Use independent capture evidence.",
+          "ece_10_bins": 0.0520568609328068,
+          "reliability_bins": [
+            {
+              "bin": 0,
+              "count": 907741,
+              "mean_score": 0.03410444036126137,
+              "attack_fraction": 0.0005827653482656397
+            },
+            {
+              "bin": 1,
+              "count": 97221,
+              "mean_score": 0.13294710218906403,
+              "attack_fraction": 0.0003394328385842565
+            },
+            {
+              "bin": 2,
+              "count": 29989,
+              "mean_score": 0.24479401111602783,
+              "attack_fraction": 0.0001333822401547234
+            },
+            {
+              "bin": 3,
+              "count": 3706,
+              "mean_score": 0.3465685248374939,
+              "attack_fraction": 0.0
+            },
+            {
+              "bin": 4,
+              "count": 1744,
+              "mean_score": 0.45823875069618225,
+              "attack_fraction": 0.0
+            },
+            {
+              "bin": 5,
+              "count": 1082,
+              "mean_score": 0.5511466860771179,
+              "attack_fraction": 0.0
+            },
+            {
+              "bin": 6,
+              "count": 887,
+              "mean_score": 0.6315383911132812,
+              "attack_fraction": 0.0
+            },
+            {
+              "bin": 7,
+              "count": 306,
+              "mean_score": 0.7499390840530396,
+              "attack_fraction": 0.0
+            },
+            {
+              "bin": 8,
+              "count": 182,
+              "mean_score": 0.8360449075698853,
+              "attack_fraction": 0.0
+            },
+            {
+              "bin": 9,
+              "count": 9,
+              "mean_score": 0.921959638595581,
+              "attack_fraction": 0.0
+            }
+          ]
+        },
+        "ids2018-Thursday-01-03-2018": {
+          "events": 328181,
+          "tp": 438,
+          "fp": 1199,
+          "tn": 234579,
+          "fn": 91965,
+          "precision": 0.2675626145387905,
+          "recall": 0.004740105840719457,
+          "f1": 0.00931518502764781,
+          "false_positive_rate": 0.005085292096802925,
+          "average_precision": 0.2733243222200166,
+          "roc_auc": 0.4931399116660129,
+          "threshold": 0.5,
+          "brier": 0.2611549546126315,
+          "accuracy": 0.7161200678893659,
+          "attack_prevalence": 0.28156108976448974,
+          "confusion_matrix": [
+            [
+              234579,
+              1199
+            ],
+            [
+              91965,
+              438
+            ]
+          ],
+          "confusion_matrix_labels": [
+            "benign",
+            "attack"
+          ],
+          "false_negative_rate": 0.9952598941592805,
+          "specificity": 0.994914707903197,
+          "balanced_accuracy": 0.49982740687195826,
+          "f2": 0.005899005788567781,
+          "mcc": -0.0022037025648246693,
+          "log_loss": 1.096418165930398,
+          "precision_defined": true,
+          "recall_defined": true,
+          "fpr_defined": true,
+          "intervals_95_iid": {
+            "precision": [
+              0.24668020580998323,
+              0.2895333656419801
+            ],
+            "recall": [
+              0.004317364351923762,
+              0.005204024377857445
+            ],
+            "false_positive_rate": [
+              0.004806135246106305,
+              0.005380575672597653
+            ]
+          },
+          "interval_assumption": "IID binomial illustration only; correlated flows can understate uncertainty. Use independent capture evidence.",
+          "ece_10_bins": 0.23367719816817745,
+          "reliability_bins": [
+            {
+              "bin": 0,
+              "count": 288011,
+              "mean_score": 0.031733568757772446,
+              "attack_fraction": 0.2856071469492485
+            },
+            {
+              "bin": 1,
+              "count": 27725,
+              "mean_score": 0.14119188487529755,
+              "attack_fraction": 0.23170423805229937
+            },
+            {
+              "bin": 2,
+              "count": 9244,
+              "mean_score": 0.24043166637420654,
+              "attack_fraction": 0.29489398528775423
+            },
+            {
+              "bin": 3,
+              "count": 868,
+              "mean_score": 0.33630695939064026,
+              "attack_fraction": 0.3248847926267281
+            },
+            {
+              "bin": 4,
+              "count": 696,
+              "mean_score": 0.47335535287857056,
+              "attack_fraction": 0.39511494252873564
+            },
+            {
+              "bin": 5,
+              "count": 1601,
+              "mean_score": 0.566884458065033,
+              "attack_fraction": 0.26420986883198
+            },
+            {
+              "bin": 6,
+              "count": 32,
+              "mean_score": 0.6287461519241333,
+              "attack_fraction": 0.46875
+            },
+            {
+              "bin": 7,
+              "count": 4,
+              "mean_score": 0.764278769493103,
+              "attack_fraction": 0.0
+            }
+          ]
+        },
+        "cic2017-thursday": {
+          "events": 403538,
+          "tp": 1,
+          "fp": 324,
+          "tn": 400999,
+          "fn": 2214,
+          "precision": 0.003076923076923077,
+          "recall": 0.0004514672686230248,
+          "f1": 0.0007874015748031496,
+          "false_positive_rate": 0.0008073297568292871,
+          "average_precision": 0.01722083163520304,
+          "roc_auc": 0.8113984086797704,
+          "threshold": 0.5,
+          "brier": 0.00861503110194511,
+          "accuracy": 0.9937106294822297,
+          "attack_prevalence": 0.005488950235169922,
+          "confusion_matrix": [
+            [
+              400999,
+              324
+            ],
+            [
+              2214,
+              1
+            ]
+          ],
+          "confusion_matrix_labels": [
+            "benign",
+            "attack"
+          ],
+          "false_negative_rate": 0.999548532731377,
+          "specificity": 0.9991926702431707,
+          "balanced_accuracy": 0.49982206875589685,
+          "f2": 0.0005443658138268917,
+          "mcc": -0.0009268450993649719,
+          "log_loss": 0.056093669726900205,
+          "precision_defined": true,
+          "recall_defined": true,
+          "fpr_defined": true,
+          "intervals_95_iid": {
+            "precision": [
+              0.0005433591236260436,
+              0.01722039500166894
+            ],
+            "recall": [
+              7.969950458184822e-05,
+              0.0025529621475033973
+            ],
+            "false_positive_rate": [
+              0.0007241064479927979,
+              0.0009001095063930444
+            ]
+          },
+          "interval_assumption": "IID binomial illustration only; correlated flows can understate uncertainty. Use independent capture evidence.",
+          "ece_10_bins": 0.03297461338471919,
+          "reliability_bins": [
+            {
+              "bin": 0,
+              "count": 365336,
+              "mean_score": 0.025897858664393425,
+              "attack_fraction": 0.006032802680272406
+            },
+            {
+              "bin": 1,
+              "count": 32059,
+              "mean_score": 0.13755838572978973,
+              "attack_fraction": 0.0002495399107894819
+            },
+            {
+              "bin": 2,
+              "count": 4967,
+              "mean_score": 0.23436228930950165,
+              "attack_fraction": 0.0004026575397624321
+            },
+            {
+              "bin": 3,
+              "count": 655,
+              "mean_score": 0.3317250907421112,
+              "attack_fraction": 0.0
+            },
+            {
+              "bin": 4,
+              "count": 196,
+              "mean_score": 0.43818554282188416,
+              "attack_fraction": 0.0
+            },
+            {
+              "bin": 5,
+              "count": 298,
+              "mean_score": 0.544396698474884,
+              "attack_fraction": 0.003355704697986577
+            },
+            {
+              "bin": 6,
+              "count": 5,
+              "mean_score": 0.6359836459159851,
+              "attack_fraction": 0.0
+            },
+            {
+              "bin": 7,
+              "count": 13,
+              "mean_score": 0.7406491637229919,
+              "attack_fraction": 0.0
+            },
+            {
+              "bin": 8,
+              "count": 9,
+              "mean_score": 0.8694210648536682,
+              "attack_fraction": 0.0
+            }
+          ]
+        }
+      },
+      "elapsed_seconds": 1.2193504239985486
+    },
+    "history": [
+      {
+        "epoch": 1,
+        "loss": 0.646215304650345,
+        "elapsed_seconds": 7.749066276999656,
+        "validation_average_precision": 0.04665561060523158,
+        "validation_target_met": false,
+        "threshold": 1.0
+      },
+      {
+        "epoch": 2,
+        "loss": 0.4637124808471944,
+        "elapsed_seconds": 7.690844939999806,
+        "validation_average_precision": 0.048002899029128465,
+        "validation_target_met": false,
+        "threshold": 1.0
+      },
+      {
+        "epoch": 3,
+        "loss": 0.339716326101033,
+        "elapsed_seconds": 8.036852021999948,
+        "validation_average_precision": 0.05091264554045409,
+        "validation_target_met": false,
+        "threshold": 1.0
+      },
+      {
+        "epoch": 4,
+        "loss": 0.25165173871190866,
+        "elapsed_seconds": 7.7505176389968256,
+        "validation_average_precision": 0.05464465201436913,
+        "validation_target_met": false,
+        "threshold": 1.0
+      },
+      {
+        "epoch": 5,
+        "loss": 0.2623601002763678,
+        "elapsed_seconds": 10.739870230994711,
+        "validation_average_precision": 0.04925890746356482,
+        "validation_target_met": false,
+        "threshold": 1.0
+      },
+      {
+        "epoch": 6,
+        "loss": 0.2039348507974844,
+        "elapsed_seconds": 8.782772387996374,
+        "validation_average_precision": 0.05001513707711253,
+        "validation_target_met": false,
+        "threshold": 1.0
+      },
+      {
+        "epoch": 7,
+        "loss": 0.19276810758310836,
+        "elapsed_seconds": 8.624605688004522,
+        "validation_average_precision": 0.05073607068557571,
+        "validation_target_met": false,
+        "threshold": 1.0
+      }
+    ]
+  },
+  {
+    "arm": "combined",
+    "validation": {
+      "events": 1774586,
+      "tp": 0,
+      "fp": 0,
+      "tn": 1679402,
+      "fn": 95184,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "false_positive_rate": 0.0,
+      "average_precision": 0.10192219680469093,
+      "roc_auc": 0.6003697030082277,
+      "threshold": 1.0,
+      "brier": 0.15128616426892755,
+      "accuracy": 0.9463627009341897,
+      "attack_prevalence": 0.05363729906581028,
+      "confusion_matrix": [
+        [
+          1679402,
+          0
+        ],
+        [
+          95184,
+          0
+        ]
+      ],
+      "confusion_matrix_labels": [
+        "benign",
+        "attack"
+      ],
+      "false_negative_rate": 1.0,
+      "specificity": 1.0,
+      "balanced_accuracy": 0.5,
+      "f2": 0.0,
+      "mcc": 0.0,
+      "log_loss": 0.5561191711092475,
+      "precision_defined": false,
+      "recall_defined": true,
+      "fpr_defined": true,
+      "intervals_95_iid": {
+        "precision": null,
+        "recall": [
+          0.0,
+          4.035661237633992e-05
+        ],
+        "false_positive_rate": [
+          0.0,
+          2.2873916035430905e-06
+        ]
+      },
+      "interval_assumption": "IID binomial illustration only; correlated flows can understate uncertainty. Use independent capture evidence.",
+      "ece_10_bins": 0.16332559060567126,
+      "reliability_bins": [
+        {
+          "bin": 0,
+          "count": 1172721,
+          "mean_score": 0.021820703521370888,
+          "attack_fraction": 0.041397740809621386
+        },
+        {
+          "bin": 1,
+          "count": 173206,
+          "mean_score": 0.1508188545703888,
+          "attack_fraction": 0.04032192880154267
+        },
+        {
+          "bin": 2,
+          "count": 55615,
+          "mean_score": 0.24512147903442383,
+          "attack_fraction": 0.05111930234648926
+        },
+        {
+          "bin": 3,
+          "count": 53819,
+          "mean_score": 0.35695376992225647,
+          "attack_fraction": 0.05983017150077111
+        },
+        {
+          "bin": 4,
+          "count": 36430,
+          "mean_score": 0.4493405818939209,
+          "attack_fraction": 0.2211364260225089
+        },
+        {
+          "bin": 5,
+          "count": 28874,
+          "mean_score": 0.5455201864242554,
+          "attack_fraction": 0.29666828288425573
+        },
+        {
+          "bin": 6,
+          "count": 22636,
+          "mean_score": 0.6463941931724548,
+          "attack_fraction": 0.03830182010955999
+        },
+        {
+          "bin": 7,
+          "count": 38737,
+          "mean_score": 0.7582733035087585,
+          "attack_fraction": 0.06257583189198956
+        },
+        {
+          "bin": 8,
+          "count": 58836,
+          "mean_score": 0.8474278450012207,
+          "attack_fraction": 0.022435243728329595
+        },
+        {
+          "bin": 9,
+          "count": 133712,
+          "mean_score": 0.9614824652671814,
+          "attack_fraction": 0.09240756252243629
+        }
+      ],
+      "per_capture": {
+        "ids2018-Friday-23-02-2018": {
+          "events": 1042867,
+          "tp": 0,
+          "fp": 0,
+          "tn": 1042301,
+          "fn": 566,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "false_positive_rate": 0.0,
+          "average_precision": 0.0011027257220502017,
+          "roc_auc": 0.5964017339280222,
+          "threshold": 1.0,
+          "brier": 0.13334652660667312,
+          "accuracy": 0.9994572654039298,
+          "attack_prevalence": 0.0005427345960702563,
+          "confusion_matrix": [
+            [
+              1042301,
+              0
+            ],
+            [
+              566,
+              0
+            ]
+          ],
+          "confusion_matrix_labels": [
+            "benign",
+            "attack"
+          ],
+          "false_negative_rate": 1.0,
+          "specificity": 1.0,
+          "balanced_accuracy": 0.5,
+          "f2": 0.0,
+          "mcc": 0.0,
+          "log_loss": 0.45500842455343193,
+          "precision_defined": false,
+          "recall_defined": true,
+          "fpr_defined": true,
+          "intervals_95_iid": {
+            "precision": null,
+            "recall": [
+              4.336808689942018e-19,
+              0.0067412764747657224
+            ],
+            "false_positive_rate": [
+              0.0,
+              3.68554252834284e-06
+            ]
+          },
+          "interval_assumption": "IID binomial illustration only; correlated flows can understate uncertainty. Use independent capture evidence.",
+          "ece_10_bins": 0.19202038762502593,
+          "reliability_bins": [
+            {
+              "bin": 0,
+              "count": 689240,
+              "mean_score": 0.020311787724494934,
+              "attack_fraction": 0.0002901746851604666
+            },
+            {
+              "bin": 1,
+              "count": 108454,
+              "mean_score": 0.15200449526309967,
+              "attack_fraction": 0.001078798384568573
+            },
+            {
+              "bin": 2,
+              "count": 30652,
+              "mean_score": 0.24739032983779907,
+              "attack_fraction": 0.0021532037061203183
+            },
+            {
+              "bin": 3,
+              "count": 30817,
+              "mean_score": 0.35791292786598206,
+              "attack_fraction": 0.0
+            },
+            {
+              "bin": 4,
+              "count": 14931,
+              "mean_score": 0.44269222021102905,
+              "attack_fraction": 0.0
+            },
+            {
+              "bin": 5,
+              "count": 7974,
+              "mean_score": 0.546884298324585,
+              "attack_fraction": 0.00012540757461750688
+            },
+            {
+              "bin": 6,
+              "count": 9057,
+              "mean_score": 0.6489293575286865,
+              "attack_fraction": 0.0014353538699348571
+            },
+            {
+              "bin": 7,
+              "count": 26052,
+              "mean_score": 0.7611014246940613,
+              "attack_fraction": 0.001458621219100261
+            },
+            {
+              "bin": 8,
+              "count": 44943,
+              "mean_score": 0.8470268845558167,
+              "attack_fraction": 0.0007565138063769664
+            },
+            {
+              "bin": 9,
+              "count": 80747,
+              "mean_score": 0.9532927870750427,
+              "attack_fraction": 0.0012012830198025932
+            }
+          ]
+        },
+        "ids2018-Thursday-01-03-2018": {
+          "events": 328181,
+          "tp": 0,
+          "fp": 0,
+          "tn": 235778,
+          "fn": 92403,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "false_positive_rate": 0.0,
+          "average_precision": 0.3459464519791651,
+          "roc_auc": 0.5898716502684421,
+          "threshold": 1.0,
+          "brier": 0.28002840782049643,
+          "accuracy": 0.7184389102355103,
+          "attack_prevalence": 0.28156108976448974,
+          "confusion_matrix": [
+            [
+              235778,
+              0
+            ],
+            [
+              92403,
+              0
+            ]
+          ],
+          "confusion_matrix_labels": [
+            "benign",
+            "attack"
+          ],
+          "false_negative_rate": 1.0,
+          "specificity": 1.0,
+          "balanced_accuracy": 0.5,
+          "f2": 0.0,
+          "mcc": 0.0,
+          "log_loss": 1.1695951879631616,
+          "precision_defined": false,
+          "recall_defined": true,
+          "fpr_defined": true,
+          "intervals_95_iid": {
+            "precision": null,
+            "recall": [
+              0.0,
+              4.157115165986921e-05
+            ],
+            "false_positive_rate": [
+              0.0,
+              1.6292428615055312e-05
+            ]
+          },
+          "interval_assumption": "IID binomial illustration only; correlated flows can understate uncertainty. Use independent capture evidence.",
+          "ece_10_bins": 0.2566954388246792,
+          "reliability_bins": [
+            {
+              "bin": 0,
+              "count": 201439,
+              "mean_score": 0.022087186574935913,
+              "attack_fraction": 0.23082918402096914
+            },
+            {
+              "bin": 1,
+              "count": 27768,
+              "mean_score": 0.14610671997070312,
+              "attack_fraction": 0.24585854220685682
+            },
+            {
+              "bin": 2,
+              "count": 10902,
+              "mean_score": 0.2468056082725525,
+              "attack_fraction": 0.24876169510181617
+            },
+            {
+              "bin": 3,
+              "count": 12358,
+              "mean_score": 0.35699063539505005,
+              "attack_fraction": 0.25449101796407186
+            },
+            {
+              "bin": 4,
+              "count": 11768,
+              "mean_score": 0.4561835527420044,
+              "attack_fraction": 0.6845683208701564
+            },
+            {
+              "bin": 5,
+              "count": 10587,
+              "mean_score": 0.5355011224746704,
+              "attack_fraction": 0.8089165958250685
+            },
+            {
+              "bin": 6,
+              "count": 3240,
+              "mean_score": 0.6541117429733276,
+              "attack_fraction": 0.26358024691358023
+            },
+            {
+              "bin": 7,
+              "count": 7348,
+              "mean_score": 0.7463669776916504,
+              "attack_fraction": 0.3236254763200871
+            },
+            {
+              "bin": 8,
+              "count": 3415,
+              "mean_score": 0.8519790768623352,
+              "attack_fraction": 0.354904831625183
+            },
+            {
+              "bin": 9,
+              "count": 39356,
+              "mean_score": 0.9818438291549683,
+              "attack_fraction": 0.3088982620184978
+            }
+          ]
+        },
+        "cic2017-thursday": {
+          "events": 403538,
+          "tp": 0,
+          "fp": 0,
+          "tn": 401323,
+          "fn": 2215,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "false_positive_rate": 0.0,
+          "average_precision": 0.004856569531651154,
+          "roc_auc": 0.4230749780428546,
+          "threshold": 1.0,
+          "brier": 0.09294691958546508,
+          "accuracy": 0.9945110497648301,
+          "attack_prevalence": 0.005488950235169922,
+          "confusion_matrix": [
+            [
+              401323,
+              0
+            ],
+            [
+              2215,
+              0
+            ]
+          ],
+          "confusion_matrix_labels": [
+            "benign",
+            "attack"
+          ],
+          "false_negative_rate": 1.0,
+          "specificity": 1.0,
+          "balanced_accuracy": 0.5,
+          "f2": 0.0,
+          "mcc": 0.0,
+          "log_loss": 0.31850558389141226,
+          "precision_defined": false,
+          "recall_defined": true,
+          "fpr_defined": true,
+          "intervals_95_iid": {
+            "precision": null,
+            "recall": [
+              1.0842021724855044e-19,
+              0.001731290356696258
+            ],
+            "false_positive_rate": [
+              0.0,
+              9.571896080338024e-06
+            ]
+          },
+          "interval_assumption": "IID binomial illustration only; correlated flows can understate uncertainty. Use independent capture evidence.",
+          "ece_10_bins": 0.1493509841680463,
+          "reliability_bins": [
+            {
+              "bin": 0,
+              "count": 282042,
+              "mean_score": 0.025317782536149025,
+              "attack_fraction": 0.0065593067699137005
+            },
+            {
+              "bin": 1,
+              "count": 36984,
+              "mean_score": 0.1508798897266388,
+              "attack_fraction": 0.001081548777849881
+            },
+            {
+              "bin": 2,
+              "count": 14061,
+              "mean_score": 0.23886975646018982,
+              "attack_fraction": 0.004622715311855487
+            },
+            {
+              "bin": 3,
+              "count": 10644,
+              "mean_score": 0.3541339039802551,
+              "attack_fraction": 0.007046223224351747
+            },
+            {
+              "bin": 4,
+              "count": 9731,
+              "mean_score": 0.45126625895500183,
+              "attack_fraction": 0.0
+            },
+            {
+              "bin": 5,
+              "count": 10313,
+              "mean_score": 0.5547508597373962,
+              "attack_fraction": 9.69649956365752e-05
+            },
+            {
+              "bin": 6,
+              "count": 10339,
+              "mean_score": 0.6417548656463623,
+              "attack_fraction": 0.0
+            },
+            {
+              "bin": 7,
+              "count": 5337,
+              "mean_score": 0.7608603835105896,
+              "attack_fraction": 0.001498969458497283
+            },
+            {
+              "bin": 8,
+              "count": 10478,
+              "mean_score": 0.8476642370223999,
+              "attack_fraction": 0.007062416491696889
+            },
+            {
+              "bin": 9,
+              "count": 13609,
+              "mean_score": 0.9511918425559998,
+              "attack_fraction": 0.007495040047027703
+            }
+          ]
+        }
+      },
+      "elapsed_seconds": 1.7350326320010936
+    },
+    "fixed_threshold_diagnostic": {
+      "events": 1774586,
+      "tp": 25533,
+      "fp": 257262,
+      "tn": 1422140,
+      "fn": 69651,
+      "precision": 0.09028801782209728,
+      "recall": 0.26824886535552195,
+      "f1": 0.13510274380322718,
+      "false_positive_rate": 0.1531866700170656,
+      "average_precision": 0.10192219680469093,
+      "roc_auc": 0.6003697030082277,
+      "threshold": 0.5,
+      "brier": 0.15128616426892755,
+      "accuracy": 0.8157806947648635,
+      "attack_prevalence": 0.05363729906581028,
+      "confusion_matrix": [
+        [
+          1422140,
+          257262
+        ],
+        [
+          69651,
+          25533
+        ]
+      ],
+      "confusion_matrix_labels": [
+        "benign",
+        "attack"
+      ],
+      "false_negative_rate": 0.731751134644478,
+      "specificity": 0.8468133299829343,
+      "balanced_accuracy": 0.5575310976692281,
+      "f2": 0.19240246499409974,
+      "mcc": 0.07082753218099842,
+      "log_loss": 0.5561191711092475,
+      "precision_defined": true,
+      "recall_defined": true,
+      "fpr_defined": true,
+      "intervals_95_iid": {
+        "precision": [
+          0.08923729528850244,
+          0.09134987117716056
+        ],
+        "recall": [
+          0.2654436587764326,
+          0.27107277731602863
+        ],
+        "false_positive_rate": [
+          0.1526427411434067,
+          0.1537321854865225
+        ]
+      },
+      "interval_assumption": "IID binomial illustration only; correlated flows can understate uncertainty. Use independent capture evidence.",
+      "ece_10_bins": 0.16332559060567126,
+      "reliability_bins": [
+        {
+          "bin": 0,
+          "count": 1172721,
+          "mean_score": 0.021820703521370888,
+          "attack_fraction": 0.041397740809621386
+        },
+        {
+          "bin": 1,
+          "count": 173206,
+          "mean_score": 0.1508188545703888,
+          "attack_fraction": 0.04032192880154267
+        },
+        {
+          "bin": 2,
+          "count": 55615,
+          "mean_score": 0.24512147903442383,
+          "attack_fraction": 0.05111930234648926
+        },
+        {
+          "bin": 3,
+          "count": 53819,
+          "mean_score": 0.35695376992225647,
+          "attack_fraction": 0.05983017150077111
+        },
+        {
+          "bin": 4,
+          "count": 36430,
+          "mean_score": 0.4493405818939209,
+          "attack_fraction": 0.2211364260225089
+        },
+        {
+          "bin": 5,
+          "count": 28874,
+          "mean_score": 0.5455201864242554,
+          "attack_fraction": 0.29666828288425573
+        },
+        {
+          "bin": 6,
+          "count": 22636,
+          "mean_score": 0.6463941931724548,
+          "attack_fraction": 0.03830182010955999
+        },
+        {
+          "bin": 7,
+          "count": 38737,
+          "mean_score": 0.7582733035087585,
+          "attack_fraction": 0.06257583189198956
+        },
+        {
+          "bin": 8,
+          "count": 58836,
+          "mean_score": 0.8474278450012207,
+          "attack_fraction": 0.022435243728329595
+        },
+        {
+          "bin": 9,
+          "count": 133712,
+          "mean_score": 0.9614824652671814,
+          "attack_fraction": 0.09240756252243629
+        }
+      ],
+      "per_capture": {
+        "ids2018-Friday-23-02-2018": {
+          "events": 1042867,
+          "tp": 183,
+          "fp": 168590,
+          "tn": 873711,
+          "fn": 383,
+          "precision": 0.00108429665882576,
+          "recall": 0.32332155477031804,
+          "f1": 0.002161344994360425,
+          "false_positive_rate": 0.16174790199759953,
+          "average_precision": 0.0011027257220502017,
+          "roc_auc": 0.5964017339280222,
+          "threshold": 0.5,
+          "brier": 0.13334652660667312,
+          "accuracy": 0.8379726273820152,
+          "attack_prevalence": 0.0005427345960702563,
+          "confusion_matrix": [
+            [
+              873711,
+              168590
+            ],
+            [
+              383,
+              183
+            ]
+          ],
+          "confusion_matrix_labels": [
+            "benign",
+            "attack"
+          ],
+          "false_negative_rate": 0.676678445229682,
+          "specificity": 0.8382520980024004,
+          "balanced_accuracy": 0.5807868263863593,
+          "f2": 0.005349719651303519,
+          "mcc": 0.010217503179647532,
+          "log_loss": 0.45500842455343193,
+          "precision_defined": true,
+          "recall_defined": true,
+          "fpr_defined": true,
+          "intervals_95_iid": {
+            "precision": [
+              0.0009382311425308313,
+              0.0012530733967885074
+            ],
+            "recall": [
+              0.28608985358800876,
+              0.3629353324454774
+            ],
+            "false_positive_rate": [
+              0.16104224854272334,
+              0.1624560487374607
+            ]
+          },
+          "interval_assumption": "IID binomial illustration only; correlated flows can understate uncertainty. Use independent capture evidence.",
+          "ece_10_bins": 0.19202038762502593,
+          "reliability_bins": [
+            {
+              "bin": 0,
+              "count": 689240,
+              "mean_score": 0.020311787724494934,
+              "attack_fraction": 0.0002901746851604666
+            },
+            {
+              "bin": 1,
+              "count": 108454,
+              "mean_score": 0.15200449526309967,
+              "attack_fraction": 0.001078798384568573
+            },
+            {
+              "bin": 2,
+              "count": 30652,
+              "mean_score": 0.24739032983779907,
+              "attack_fraction": 0.0021532037061203183
+            },
+            {
+              "bin": 3,
+              "count": 30817,
+              "mean_score": 0.35791292786598206,
+              "attack_fraction": 0.0
+            },
+            {
+              "bin": 4,
+              "count": 14931,
+              "mean_score": 0.44269222021102905,
+              "attack_fraction": 0.0
+            },
+            {
+              "bin": 5,
+              "count": 7974,
+              "mean_score": 0.546884298324585,
+              "attack_fraction": 0.00012540757461750688
+            },
+            {
+              "bin": 6,
+              "count": 9057,
+              "mean_score": 0.6489293575286865,
+              "attack_fraction": 0.0014353538699348571
+            },
+            {
+              "bin": 7,
+              "count": 26052,
+              "mean_score": 0.7611014246940613,
+              "attack_fraction": 0.001458621219100261
+            },
+            {
+              "bin": 8,
+              "count": 44943,
+              "mean_score": 0.8470268845558167,
+              "attack_fraction": 0.0007565138063769664
+            },
+            {
+              "bin": 9,
+              "count": 80747,
+              "mean_score": 0.9532927870750427,
+              "attack_fraction": 0.0012012830198025932
+            }
+          ]
+        },
+        "ids2018-Thursday-01-03-2018": {
+          "events": 328181,
+          "tp": 25165,
+          "fp": 38781,
+          "tn": 196997,
+          "fn": 67238,
+          "precision": 0.39353517029994056,
+          "recall": 0.2723396426522948,
+          "f1": 0.3219080390664475,
+          "false_positive_rate": 0.16448099483412362,
+          "average_precision": 0.3459464519791651,
+          "roc_auc": 0.5898716502684421,
+          "threshold": 0.5,
+          "brier": 0.28002840782049643,
+          "accuracy": 0.6769496101236817,
+          "attack_prevalence": 0.28156108976448974,
+          "confusion_matrix": [
+            [
+              196997,
+              38781
+            ],
+            [
+              67238,
+              25165
+            ]
+          ],
+          "confusion_matrix_labels": [
+            "benign",
+            "attack"
+          ],
+          "false_negative_rate": 0.7276603573477052,
+          "specificity": 0.8355190051658764,
+          "balanced_accuracy": 0.5539293239090857,
+          "f2": 0.29021491934181814,
+          "mcc": 0.12247509466029666,
+          "log_loss": 1.1695951879631616,
+          "precision_defined": true,
+          "recall_defined": true,
+          "fpr_defined": true,
+          "intervals_95_iid": {
+            "precision": [
+              0.3897551911845117,
+              0.39732794007285394
+            ],
+            "recall": [
+              0.2694788669819096,
+              0.2752193465291646
+            ],
+            "false_positive_rate": [
+              0.16299011589805443,
+              0.16598280660907413
+            ]
+          },
+          "interval_assumption": "IID binomial illustration only; correlated flows can understate uncertainty. Use independent capture evidence.",
+          "ece_10_bins": 0.2566954388246792,
+          "reliability_bins": [
+            {
+              "bin": 0,
+              "count": 201439,
+              "mean_score": 0.022087186574935913,
+              "attack_fraction": 0.23082918402096914
+            },
+            {
+              "bin": 1,
+              "count": 27768,
+              "mean_score": 0.14610671997070312,
+              "attack_fraction": 0.24585854220685682
+            },
+            {
+              "bin": 2,
+              "count": 10902,
+              "mean_score": 0.2468056082725525,
+              "attack_fraction": 0.24876169510181617
+            },
+            {
+              "bin": 3,
+              "count": 12358,
+              "mean_score": 0.35699063539505005,
+              "attack_fraction": 0.25449101796407186
+            },
+            {
+              "bin": 4,
+              "count": 11768,
+              "mean_score": 0.4561835527420044,
+              "attack_fraction": 0.6845683208701564
+            },
+            {
+              "bin": 5,
+              "count": 10587,
+              "mean_score": 0.5355011224746704,
+              "attack_fraction": 0.8089165958250685
+            },
+            {
+              "bin": 6,
+              "count": 3240,
+              "mean_score": 0.6541117429733276,
+              "attack_fraction": 0.26358024691358023
+            },
+            {
+              "bin": 7,
+              "count": 7348,
+              "mean_score": 0.7463669776916504,
+              "attack_fraction": 0.3236254763200871
+            },
+            {
+              "bin": 8,
+              "count": 3415,
+              "mean_score": 0.8519790768623352,
+              "attack_fraction": 0.354904831625183
+            },
+            {
+              "bin": 9,
+              "count": 39356,
+              "mean_score": 0.9818438291549683,
+              "attack_fraction": 0.3088982620184978
+            }
+          ]
+        },
+        "cic2017-thursday": {
+          "events": 403538,
+          "tp": 185,
+          "fp": 49891,
+          "tn": 351432,
+          "fn": 2030,
+          "precision": 0.003694384535506031,
+          "recall": 0.0835214446952596,
+          "f1": 0.007075787420397391,
+          "false_positive_rate": 0.12431632375916656,
+          "average_precision": 0.004856569531651154,
+          "roc_auc": 0.4230749780428546,
+          "threshold": 0.5,
+          "brier": 0.09294691958546508,
+          "accuracy": 0.8713355371736986,
+          "attack_prevalence": 0.005488950235169922,
+          "confusion_matrix": [
+            [
+              351432,
+              49891
+            ],
+            [
+              2030,
+              185
+            ]
+          ],
+          "confusion_matrix_labels": [
+            "benign",
+            "attack"
+          ],
+          "false_negative_rate": 0.9164785553047404,
+          "specificity": 0.8756836762408334,
+          "balanced_accuracy": 0.4796025604680465,
+          "f2": 0.015694991176869826,
+          "mcc": -0.009142255610845505,
+          "log_loss": 0.31850558389141226,
+          "precision_defined": true,
+          "recall_defined": true,
+          "fpr_defined": true,
+          "intervals_95_iid": {
+            "precision": [
+              0.0031997384386038643,
+              0.0042651705533324185
+            ],
+            "recall": [
+              0.07270808113450121,
+              0.09577689886915776
+            ],
+            "false_positive_rate": [
+              0.12329912275577501,
+              0.1253407167727742
+            ]
+          },
+          "interval_assumption": "IID binomial illustration only; correlated flows can understate uncertainty. Use independent capture evidence.",
+          "ece_10_bins": 0.1493509841680463,
+          "reliability_bins": [
+            {
+              "bin": 0,
+              "count": 282042,
+              "mean_score": 0.025317782536149025,
+              "attack_fraction": 0.0065593067699137005
+            },
+            {
+              "bin": 1,
+              "count": 36984,
+              "mean_score": 0.1508798897266388,
+              "attack_fraction": 0.001081548777849881
+            },
+            {
+              "bin": 2,
+              "count": 14061,
+              "mean_score": 0.23886975646018982,
+              "attack_fraction": 0.004622715311855487
+            },
+            {
+              "bin": 3,
+              "count": 10644,
+              "mean_score": 0.3541339039802551,
+              "attack_fraction": 0.007046223224351747
+            },
+            {
+              "bin": 4,
+              "count": 9731,
+              "mean_score": 0.45126625895500183,
+              "attack_fraction": 0.0
+            },
+            {
+              "bin": 5,
+              "count": 10313,
+              "mean_score": 0.5547508597373962,
+              "attack_fraction": 9.69649956365752e-05
+            },
+            {
+              "bin": 6,
+              "count": 10339,
+              "mean_score": 0.6417548656463623,
+              "attack_fraction": 0.0
+            },
+            {
+              "bin": 7,
+              "count": 5337,
+              "mean_score": 0.7608603835105896,
+              "attack_fraction": 0.001498969458497283
+            },
+            {
+              "bin": 8,
+              "count": 10478,
+              "mean_score": 0.8476642370223999,
+              "attack_fraction": 0.007062416491696889
+            },
+            {
+              "bin": 9,
+              "count": 13609,
+              "mean_score": 0.9511918425559998,
+              "attack_fraction": 0.007495040047027703
+            }
+          ]
+        }
+      },
+      "elapsed_seconds": 1.7350326320010936
+    },
+    "history": [
+      {
+        "epoch": 1,
+        "loss": 0.6163213615074798,
+        "elapsed_seconds": 38.19854896199831,
+        "validation_average_precision": 0.05991618133185191,
+        "validation_target_met": false,
+        "threshold": 1.0
+      },
+      {
+        "epoch": 2,
+        "loss": 0.4358091767409162,
+        "elapsed_seconds": 47.7558118129964,
+        "validation_average_precision": 0.08332715323395508,
+        "validation_target_met": false,
+        "threshold": 1.0
+      },
+      {
+        "epoch": 3,
+        "loss": 0.37014873148103805,
+        "elapsed_seconds": 58.81623846099683,
+        "validation_average_precision": 0.08150000551720929,
+        "validation_target_met": false,
+        "threshold": 1.0
+      },
+      {
+        "epoch": 4,
+        "loss": 0.30089547436070985,
+        "elapsed_seconds": 55.243312232996686,
+        "validation_average_precision": 0.10192219680469093,
+        "validation_target_met": false,
+        "threshold": 1.0
+      },
+      {
+        "epoch": 5,
+        "loss": 0.2893019829328072,
+        "elapsed_seconds": 45.05453190299886,
+        "validation_average_precision": 0.07863690189934525,
+        "validation_target_met": false,
+        "threshold": 1.0
+      },
+      {
+        "epoch": 6,
+        "loss": 0.3118486023791518,
+        "elapsed_seconds": 49.372851813001034,
+        "validation_average_precision": 0.09792479294300255,
+        "validation_target_met": false,
+        "threshold": 1.0
+      },
+      {
+        "epoch": 7,
+        "loss": 0.2660545406104618,
+        "elapsed_seconds": 49.22795757000131,
+        "validation_average_precision": 0.07195784037548059,
+        "validation_target_met": false,
+        "threshold": 1.0
+      }
+    ]
+  },
+  {
+    "arm": "family",
+    "validation": {
+      "events": 1774586,
+      "tp": 0,
+      "fp": 0,
+      "tn": 1679402,
+      "fn": 95184,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "false_positive_rate": 0.0,
+      "average_precision": 0.10356667372268125,
+      "roc_auc": 0.6057792468128993,
+      "threshold": 1.0,
+      "brier": 0.1632109450311843,
+      "accuracy": 0.9463627009341897,
+      "attack_prevalence": 0.05363729906581028,
+      "confusion_matrix": [
+        [
+          1679402,
+          0
+        ],
+        [
+          95184,
+          0
+        ]
+      ],
+      "confusion_matrix_labels": [
+        "benign",
+        "attack"
+      ],
+      "false_negative_rate": 1.0,
+      "specificity": 1.0,
+      "balanced_accuracy": 0.5,
+      "f2": 0.0,
+      "mcc": 0.0,
+      "log_loss": 0.6225476408453264,
+      "precision_defined": false,
+      "recall_defined": true,
+      "fpr_defined": true,
+      "intervals_95_iid": {
+        "precision": null,
+        "recall": [
+          0.0,
+          4.035661237633992e-05
+        ],
+        "false_positive_rate": [
+          0.0,
+          2.2873916035430905e-06
+        ]
+      },
+      "interval_assumption": "IID binomial illustration only; correlated flows can understate uncertainty. Use independent capture evidence.",
+      "ece_10_bins": 0.17811077932927571,
+      "reliability_bins": [
+        {
+          "bin": 0,
+          "count": 1142112,
+          "mean_score": 0.023490604013204575,
+          "attack_fraction": 0.041488050208736096
+        },
+        {
+          "bin": 1,
+          "count": 158839,
+          "mean_score": 0.15711702406406403,
+          "attack_fraction": 0.03616869912301135
+        },
+        {
+          "bin": 2,
+          "count": 78108,
+          "mean_score": 0.24014948308467865,
+          "attack_fraction": 0.049060275515952274
+        },
+        {
+          "bin": 3,
+          "count": 39223,
+          "mean_score": 0.34670302271842957,
+          "attack_fraction": 0.04981770899727201
+        },
+        {
+          "bin": 4,
+          "count": 48389,
+          "mean_score": 0.45271262526512146,
+          "attack_fraction": 0.0486680857219616
+        },
+        {
+          "bin": 5,
+          "count": 25962,
+          "mean_score": 0.5499334931373596,
+          "attack_fraction": 0.14821662429704954
+        },
+        {
+          "bin": 6,
+          "count": 34796,
+          "mean_score": 0.6532585620880127,
+          "attack_fraction": 0.3674847683641798
+        },
+        {
+          "bin": 7,
+          "count": 22140,
+          "mean_score": 0.7474437952041626,
+          "attack_fraction": 0.10492321589882565
+        },
+        {
+          "bin": 8,
+          "count": 64351,
+          "mean_score": 0.8572537899017334,
+          "attack_fraction": 0.02891951951018632
+        },
+        {
+          "bin": 9,
+          "count": 160666,
+          "mean_score": 0.9670816659927368,
+          "attack_fraction": 0.08150448757048784
+        }
+      ],
+      "per_capture": {
+        "ids2018-Friday-23-02-2018": {
+          "events": 1042867,
+          "tp": 0,
+          "fp": 0,
+          "tn": 1042301,
+          "fn": 566,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "false_positive_rate": 0.0,
+          "average_precision": 0.0012021574643748974,
+          "roc_auc": 0.6153560778511709,
+          "threshold": 1.0,
+          "brier": 0.1481830349678595,
+          "accuracy": 0.9994572654039298,
+          "attack_prevalence": 0.0005427345960702563,
+          "confusion_matrix": [
+            [
+              1042301,
+              0
+            ],
+            [
+              566,
+              0
+            ]
+          ],
+          "confusion_matrix_labels": [
+            "benign",
+            "attack"
+          ],
+          "false_negative_rate": 1.0,
+          "specificity": 1.0,
+          "balanced_accuracy": 0.5,
+          "f2": 0.0,
+          "mcc": 0.0,
+          "log_loss": 0.536106362535539,
+          "precision_defined": false,
+          "recall_defined": true,
+          "fpr_defined": true,
+          "intervals_95_iid": {
+            "precision": null,
+            "recall": [
+              4.336808689942018e-19,
+              0.0067412764747657224
+            ],
+            "false_positive_rate": [
+              0.0,
+              3.68554252834284e-06
+            ]
+          },
+          "interval_assumption": "IID binomial illustration only; correlated flows can understate uncertainty. Use independent capture evidence.",
+          "ece_10_bins": 0.2081292795502913,
+          "reliability_bins": [
+            {
+              "bin": 0,
+              "count": 674446,
+              "mean_score": 0.021991949528455734,
+              "attack_fraction": 0.000290608884921847
+            },
+            {
+              "bin": 1,
+              "count": 99920,
+              "mean_score": 0.1640598177909851,
+              "attack_fraction": 0.0004203362690152122
+            },
+            {
+              "bin": 2,
+              "count": 41892,
+              "mean_score": 0.23900127410888672,
+              "attack_fraction": 0.0002387090613959706
+            },
+            {
+              "bin": 3,
+              "count": 21435,
+              "mean_score": 0.34660521149635315,
+              "attack_fraction": 0.00013995801259622114
+            },
+            {
+              "bin": 4,
+              "count": 27511,
+              "mean_score": 0.4540255665779114,
+              "attack_fraction": 0.0
+            },
+            {
+              "bin": 5,
+              "count": 11293,
+              "mean_score": 0.5468810796737671,
+              "attack_fraction": 0.006287080492340388
+            },
+            {
+              "bin": 6,
+              "count": 9656,
+              "mean_score": 0.6531122922897339,
+              "attack_fraction": 0.006524440762220381
+            },
+            {
+              "bin": 7,
+              "count": 7834,
+              "mean_score": 0.7540059685707092,
+              "attack_fraction": 0.0033188664794485574
+            },
+            {
+              "bin": 8,
+              "count": 49042,
+              "mean_score": 0.8593698740005493,
+              "attack_fraction": 0.0007748460503242119
+            },
+            {
+              "bin": 9,
+              "count": 99838,
+              "mean_score": 0.960806667804718,
+              "attack_fraction": 0.0011718984755303592
+            }
+          ]
+        },
+        "ids2018-Thursday-01-03-2018": {
+          "events": 328181,
+          "tp": 0,
+          "fp": 0,
+          "tn": 235778,
+          "fn": 92403,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "false_positive_rate": 0.0,
+          "average_precision": 0.34781032894656966,
+          "roc_auc": 0.5923788486015618,
+          "threshold": 1.0,
+          "brier": 0.2786018403894127,
+          "accuracy": 0.7184389102355103,
+          "attack_prevalence": 0.28156108976448974,
+          "confusion_matrix": [
+            [
+              235778,
+              0
+            ],
+            [
+              92403,
+              0
+            ]
+          ],
+          "confusion_matrix_labels": [
+            "benign",
+            "attack"
+          ],
+          "false_negative_rate": 1.0,
+          "specificity": 1.0,
+          "balanced_accuracy": 0.5,
+          "f2": 0.0,
+          "mcc": 0.0,
+          "log_loss": 1.1968168283979765,
+          "precision_defined": false,
+          "recall_defined": true,
+          "fpr_defined": true,
+          "intervals_95_iid": {
+            "precision": null,
+            "recall": [
+              0.0,
+              4.157115165986921e-05
+            ],
+            "false_positive_rate": [
+              0.0,
+              1.6292428615055312e-05
+            ]
+          },
+          "interval_assumption": "IID binomial illustration only; correlated flows can understate uncertainty. Use independent capture evidence.",
+          "ece_10_bins": 0.24945810194545107,
+          "reliability_bins": [
+            {
+              "bin": 0,
+              "count": 196222,
+              "mean_score": 0.023701462894678116,
+              "attack_fraction": 0.23111577702806005
+            },
+            {
+              "bin": 1,
+              "count": 25065,
+              "mean_score": 0.1483352929353714,
+              "attack_fraction": 0.22685018950728106
+            },
+            {
+              "bin": 2,
+              "count": 14404,
+              "mean_score": 0.24195851385593414,
+              "attack_fraction": 0.2597195223549014
+            },
+            {
+              "bin": 3,
+              "count": 7776,
+              "mean_score": 0.3486843705177307,
+              "attack_fraction": 0.25051440329218105
+            },
+            {
+              "bin": 4,
+              "count": 10115,
+              "mean_score": 0.4514859914779663,
+              "attack_fraction": 0.23133959466139398
+            },
+            {
+              "bin": 5,
+              "count": 6263,
+              "mean_score": 0.5565102100372314,
+              "attack_fraction": 0.602586619830752
+            },
+            {
+              "bin": 6,
+              "count": 15574,
+              "mean_score": 0.6504168510437012,
+              "attack_fraction": 0.8168742776422242
+            },
+            {
+              "bin": 7,
+              "count": 5239,
+              "mean_score": 0.75812166929245,
+              "attack_fraction": 0.4246993701087994
+            },
+            {
+              "bin": 8,
+              "count": 6284,
+              "mean_score": 0.8371587991714478,
+              "attack_fraction": 0.2872374283895608
+            },
+            {
+              "bin": 9,
+              "count": 41239,
+              "mean_score": 0.9865106344223022,
+              "attack_fraction": 0.3106767865370159
+            }
+          ]
+        },
+        "cic2017-thursday": {
+          "events": 403538,
+          "tp": 0,
+          "fp": 0,
+          "tn": 401323,
+          "fn": 2215,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "false_positive_rate": 0.0,
+          "average_precision": 0.00637419415140711,
+          "roc_auc": 0.42139943862536955,
+          "threshold": 1.0,
+          "brier": 0.10820500272699127,
+          "accuracy": 0.9945110497648301,
+          "attack_prevalence": 0.005488950235169922,
+          "confusion_matrix": [
+            [
+              401323,
+              0
+            ],
+            [
+              2215,
+              0
+            ]
+          ],
+          "confusion_matrix_labels": [
+            "benign",
+            "attack"
+          ],
+          "false_negative_rate": 1.0,
+          "specificity": 1.0,
+          "balanced_accuracy": 0.5,
+          "f2": 0.0,
+          "mcc": 0.0,
+          "log_loss": 0.3789089261440518,
+          "precision_defined": false,
+          "recall_defined": true,
+          "fpr_defined": true,
+          "intervals_95_iid": {
+            "precision": null,
+            "recall": [
+              1.0842021724855044e-19,
+              0.001731290356696258
+            ],
+            "false_positive_rate": [
+              0.0,
+              9.571896080338024e-06
+            ]
+          },
+          "interval_assumption": "IID binomial illustration only; correlated flows can understate uncertainty. Use independent capture evidence.",
+          "ece_10_bins": 0.16764765025137215,
+          "reliability_bins": [
+            {
+              "bin": 0,
+              "count": 271444,
+              "mean_score": 0.027061795815825462,
+              "attack_fraction": 0.006771194058442994
+            },
+            {
+              "bin": 1,
+              "count": 33854,
+              "mean_score": 0.1431272029876709,
+              "attack_fraction": 0.0005021563183080286
+            },
+            {
+              "bin": 2,
+              "count": 21812,
+              "mean_score": 0.2411600947380066,
+              "attack_fraction": 0.003713552173115716
+            },
+            {
+              "bin": 3,
+              "count": 10012,
+              "mean_score": 0.3453735411167145,
+              "attack_fraction": 0.0002996404314822213
+            },
+            {
+              "bin": 4,
+              "count": 10763,
+              "mean_score": 0.45050933957099915,
+              "attack_fraction": 0.00139366347672582
+            },
+            {
+              "bin": 5,
+              "count": 8406,
+              "mean_score": 0.5491341352462769,
+              "attack_fraction": 0.00035688793718772306
+            },
+            {
+              "bin": 6,
+              "count": 9566,
+              "mean_score": 0.6580327749252319,
+              "attack_fraction": 0.0002090738030524775
+            },
+            {
+              "bin": 7,
+              "count": 9067,
+              "mean_score": 0.7356042861938477,
+              "attack_fraction": 0.00794088452630418
+            },
+            {
+              "bin": 8,
+              "count": 9025,
+              "mean_score": 0.8597464561462402,
+              "attack_fraction": 0.001994459833795014
+            },
+            {
+              "bin": 9,
+              "count": 19589,
+              "mean_score": 0.9581608176231384,
+              "attack_fraction": 0.008474143652049619
+            }
+          ]
+        }
+      },
+      "elapsed_seconds": 1.3388430339982733
+    },
+    "fixed_threshold_diagnostic": {
+      "events": 1774586,
+      "tp": 33914,
+      "fp": 274001,
+      "tn": 1405401,
+      "fn": 61270,
+      "precision": 0.11014078560641735,
+      "recall": 0.35629937804673056,
+      "f1": 0.16826635640376186,
+      "false_positive_rate": 0.16315390835547416,
+      "average_precision": 0.10356667372268125,
+      "roc_auc": 0.6057792468128993,
+      "threshold": 0.5,
+      "brier": 0.1632109450311843,
+      "accuracy": 0.8110708638521886,
+      "attack_prevalence": 0.05363729906581028,
+      "confusion_matrix": [
+        [
+          1405401,
+          274001
+        ],
+        [
+          61270,
+          33914
+        ]
+      ],
+      "confusion_matrix_labels": [
+        "benign",
+        "attack"
+      ],
+      "false_negative_rate": 0.6437006219532695,
+      "specificity": 0.8368460916445258,
+      "balanced_accuracy": 0.5965727348456282,
+      "f2": 0.2462350305161831,
+      "mcc": 0.11491112048401522,
+      "log_loss": 0.6225476408453264,
+      "precision_defined": true,
+      "recall_defined": true,
+      "fpr_defined": true,
+      "intervals_95_iid": {
+        "precision": [
+          0.10903986889632179,
+          0.11125142973761433
+        ],
+        "recall": [
+          0.353262838089253,
+          0.35934751654480507
+        ],
+        "false_positive_rate": [
+          0.16259583277168735,
+          0.16371352493710442
+        ]
+      },
+      "interval_assumption": "IID binomial illustration only; correlated flows can understate uncertainty. Use independent capture evidence.",
+      "ece_10_bins": 0.17811077932927571,
+      "reliability_bins": [
+        {
+          "bin": 0,
+          "count": 1142112,
+          "mean_score": 0.023490604013204575,
+          "attack_fraction": 0.041488050208736096
+        },
+        {
+          "bin": 1,
+          "count": 158839,
+          "mean_score": 0.15711702406406403,
+          "attack_fraction": 0.03616869912301135
+        },
+        {
+          "bin": 2,
+          "count": 78108,
+          "mean_score": 0.24014948308467865,
+          "attack_fraction": 0.049060275515952274
+        },
+        {
+          "bin": 3,
+          "count": 39223,
+          "mean_score": 0.34670302271842957,
+          "attack_fraction": 0.04981770899727201
+        },
+        {
+          "bin": 4,
+          "count": 48389,
+          "mean_score": 0.45271262526512146,
+          "attack_fraction": 0.0486680857219616
+        },
+        {
+          "bin": 5,
+          "count": 25962,
+          "mean_score": 0.5499334931373596,
+          "attack_fraction": 0.14821662429704954
+        },
+        {
+          "bin": 6,
+          "count": 34796,
+          "mean_score": 0.6532585620880127,
+          "attack_fraction": 0.3674847683641798
+        },
+        {
+          "bin": 7,
+          "count": 22140,
+          "mean_score": 0.7474437952041626,
+          "attack_fraction": 0.10492321589882565
+        },
+        {
+          "bin": 8,
+          "count": 64351,
+          "mean_score": 0.8572537899017334,
+          "attack_fraction": 0.02891951951018632
+        },
+        {
+          "bin": 9,
+          "count": 160666,
+          "mean_score": 0.9670816659927368,
+          "attack_fraction": 0.08150448757048784
+        }
+      ],
+      "per_capture": {
+        "ids2018-Friday-23-02-2018": {
+          "events": 1042867,
+          "tp": 315,
+          "fp": 177348,
+          "tn": 864953,
+          "fn": 251,
+          "precision": 0.0017730197058475879,
+          "recall": 0.5565371024734982,
+          "f1": 0.003534778290850535,
+          "false_positive_rate": 0.17015046517272842,
+          "average_precision": 0.0012021574643748974,
+          "roc_auc": 0.6153560778511709,
+          "threshold": 0.5,
+          "brier": 0.1481830349678595,
+          "accuracy": 0.829701198714697,
+          "attack_prevalence": 0.0005427345960702563,
+          "confusion_matrix": [
+            [
+              864953,
+              177348
+            ],
+            [
+              251,
+              315
+            ]
+          ],
+          "confusion_matrix_labels": [
+            "benign",
+            "attack"
+          ],
+          "false_negative_rate": 0.44346289752650175,
+          "specificity": 0.8298495348272716,
+          "balanced_accuracy": 0.6931933186503849,
+          "f2": 0.008753550050853957,
+          "mcc": 0.02393696784188385,
+          "log_loss": 0.536106362535539,
+          "precision_defined": true,
+          "recall_defined": true,
+          "fpr_defined": true,
+          "intervals_95_iid": {
+            "precision": [
+              0.0015878744455993668,
+              0.0019797099928711335
+            ],
+            "recall": [
+              0.5153648404631983,
+              0.596947100006086
+            ],
+            "false_positive_rate": [
+              0.16943029506596172,
+              0.17087306662847226
+            ]
+          },
+          "interval_assumption": "IID binomial illustration only; correlated flows can understate uncertainty. Use independent capture evidence.",
+          "ece_10_bins": 0.2081292795502913,
+          "reliability_bins": [
+            {
+              "bin": 0,
+              "count": 674446,
+              "mean_score": 0.021991949528455734,
+              "attack_fraction": 0.000290608884921847
+            },
+            {
+              "bin": 1,
+              "count": 99920,
+              "mean_score": 0.1640598177909851,
+              "attack_fraction": 0.0004203362690152122
+            },
+            {
+              "bin": 2,
+              "count": 41892,
+              "mean_score": 0.23900127410888672,
+              "attack_fraction": 0.0002387090613959706
+            },
+            {
+              "bin": 3,
+              "count": 21435,
+              "mean_score": 0.34660521149635315,
+              "attack_fraction": 0.00013995801259622114
+            },
+            {
+              "bin": 4,
+              "count": 27511,
+              "mean_score": 0.4540255665779114,
+              "attack_fraction": 0.0
+            },
+            {
+              "bin": 5,
+              "count": 11293,
+              "mean_score": 0.5468810796737671,
+              "attack_fraction": 0.006287080492340388
+            },
+            {
+              "bin": 6,
+              "count": 9656,
+              "mean_score": 0.6531122922897339,
+              "attack_fraction": 0.006524440762220381
+            },
+            {
+              "bin": 7,
+              "count": 7834,
+              "mean_score": 0.7540059685707092,
+              "attack_fraction": 0.0033188664794485574
+            },
+            {
+              "bin": 8,
+              "count": 49042,
+              "mean_score": 0.8593698740005493,
+              "attack_fraction": 0.0007748460503242119
+            },
+            {
+              "bin": 9,
+              "count": 99838,
+              "mean_score": 0.960806667804718,
+              "attack_fraction": 0.0011718984755303592
+            }
+          ]
+        },
+        "ids2018-Thursday-01-03-2018": {
+          "events": 328181,
+          "tp": 33338,
+          "fp": 41261,
+          "tn": 194517,
+          "fn": 59065,
+          "precision": 0.44689607099290873,
+          "recall": 0.3607891518673636,
+          "f1": 0.3992527035604364,
+          "false_positive_rate": 0.17499936380832817,
+          "average_precision": 0.34781032894656966,
+          "roc_auc": 0.5923788486015618,
+          "threshold": 0.5,
+          "brier": 0.2786018403894127,
+          "accuracy": 0.6942967447841283,
+          "attack_prevalence": 0.28156108976448974,
+          "confusion_matrix": [
+            [
+              194517,
+              41261
+            ],
+            [
+              59065,
+              33338
+            ]
+          ],
+          "confusion_matrix_labels": [
+            "benign",
+            "attack"
+          ],
+          "false_negative_rate": 0.6392108481326364,
+          "specificity": 0.8250006361916719,
+          "balanced_accuracy": 0.5928948940295178,
+          "f2": 0.3752495998523224,
+          "mcc": 0.19938422770950237,
+          "log_loss": 1.1968168283979765,
+          "precision_defined": true,
+          "recall_defined": true,
+          "fpr_defined": true,
+          "intervals_95_iid": {
+            "precision": [
+              0.4433311970581798,
+              0.45046641379591423
+            ],
+            "recall": [
+              0.3576986207878253,
+              0.36389125725746274
+            ],
+            "false_positive_rate": [
+              0.1734709572307126,
+              0.17653836048527377
+            ]
+          },
+          "interval_assumption": "IID binomial illustration only; correlated flows can understate uncertainty. Use independent capture evidence.",
+          "ece_10_bins": 0.24945810194545107,
+          "reliability_bins": [
+            {
+              "bin": 0,
+              "count": 196222,
+              "mean_score": 0.023701462894678116,
+              "attack_fraction": 0.23111577702806005
+            },
+            {
+              "bin": 1,
+              "count": 25065,
+              "mean_score": 0.1483352929353714,
+              "attack_fraction": 0.22685018950728106
+            },
+            {
+              "bin": 2,
+              "count": 14404,
+              "mean_score": 0.24195851385593414,
+              "attack_fraction": 0.2597195223549014
+            },
+            {
+              "bin": 3,
+              "count": 7776,
+              "mean_score": 0.3486843705177307,
+              "attack_fraction": 0.25051440329218105
+            },
+            {
+              "bin": 4,
+              "count": 10115,
+              "mean_score": 0.4514859914779663,
+              "attack_fraction": 0.23133959466139398
+            },
+            {
+              "bin": 5,
+              "count": 6263,
+              "mean_score": 0.5565102100372314,
+              "attack_fraction": 0.602586619830752
+            },
+            {
+              "bin": 6,
+              "count": 15574,
+              "mean_score": 0.6504168510437012,
+              "attack_fraction": 0.8168742776422242
+            },
+            {
+              "bin": 7,
+              "count": 5239,
+              "mean_score": 0.75812166929245,
+              "attack_fraction": 0.4246993701087994
+            },
+            {
+              "bin": 8,
+              "count": 6284,
+              "mean_score": 0.8371587991714478,
+              "attack_fraction": 0.2872374283895608
+            },
+            {
+              "bin": 9,
+              "count": 41239,
+              "mean_score": 0.9865106344223022,
+              "attack_fraction": 0.3106767865370159
+            }
+          ]
+        },
+        "cic2017-thursday": {
+          "events": 403538,
+          "tp": 261,
+          "fp": 55392,
+          "tn": 345931,
+          "fn": 1954,
+          "precision": 0.004689774136165167,
+          "recall": 0.11783295711060948,
+          "f1": 0.009020529480887537,
+          "false_positive_rate": 0.13802348731570332,
+          "average_precision": 0.00637419415140711,
+          "roc_auc": 0.42139943862536955,
+          "threshold": 0.5,
+          "brier": 0.10820500272699127,
+          "accuracy": 0.8578919457399303,
+          "attack_prevalence": 0.005488950235169922,
+          "confusion_matrix": [
+            [
+              345931,
+              55392
+            ],
+            [
+              1954,
+              261
+            ]
+          ],
+          "confusion_matrix_labels": [
+            "benign",
+            "attack"
+          ],
+          "false_negative_rate": 0.8821670428893905,
+          "specificity": 0.8619765126842966,
+          "balanced_accuracy": 0.48990473489745306,
+          "f2": 0.020228481081332444,
+          "mcc": -0.004326328298095573,
+          "log_loss": 0.3789089261440518,
+          "precision_defined": true,
+          "recall_defined": true,
+          "fpr_defined": true,
+          "intervals_95_iid": {
+            "precision": [
+              0.0041553299469352396,
+              0.0052925913694361355
+            ],
+            "recall": [
+              0.10506319764150646,
+              0.13192600081171554
+            ],
+            "false_positive_rate": [
+              0.13695980206313177,
+              0.13909410217140075
+            ]
+          },
+          "interval_assumption": "IID binomial illustration only; correlated flows can understate uncertainty. Use independent capture evidence.",
+          "ece_10_bins": 0.16764765025137215,
+          "reliability_bins": [
+            {
+              "bin": 0,
+              "count": 271444,
+              "mean_score": 0.027061795815825462,
+              "attack_fraction": 0.006771194058442994
+            },
+            {
+              "bin": 1,
+              "count": 33854,
+              "mean_score": 0.1431272029876709,
+              "attack_fraction": 0.0005021563183080286
+            },
+            {
+              "bin": 2,
+              "count": 21812,
+              "mean_score": 0.2411600947380066,
+              "attack_fraction": 0.003713552173115716
+            },
+            {
+              "bin": 3,
+              "count": 10012,
+              "mean_score": 0.3453735411167145,
+              "attack_fraction": 0.0002996404314822213
+            },
+            {
+              "bin": 4,
+              "count": 10763,
+              "mean_score": 0.45050933957099915,
+              "attack_fraction": 0.00139366347672582
+            },
+            {
+              "bin": 5,
+              "count": 8406,
+              "mean_score": 0.5491341352462769,
+              "attack_fraction": 0.00035688793718772306
+            },
+            {
+              "bin": 6,
+              "count": 9566,
+              "mean_score": 0.6580327749252319,
+              "attack_fraction": 0.0002090738030524775
+            },
+            {
+              "bin": 7,
+              "count": 9067,
+              "mean_score": 0.7356042861938477,
+              "attack_fraction": 0.00794088452630418
+            },
+            {
+              "bin": 8,
+              "count": 9025,
+              "mean_score": 0.8597464561462402,
+              "attack_fraction": 0.001994459833795014
+            },
+            {
+              "bin": 9,
+              "count": 19589,
+              "mean_score": 0.9581608176231384,
+              "attack_fraction": 0.008474143652049619
+            }
+          ]
+        }
+      },
+      "elapsed_seconds": 1.3388430339982733
+    },
+    "history": [
+      {
+        "epoch": 1,
+        "loss": 0.9285784078869109,
+        "elapsed_seconds": 48.01556172500568,
+        "validation_average_precision": 0.06251652691507242,
+        "validation_target_met": false,
+        "threshold": 1.0
+      },
+      {
+        "epoch": 2,
+        "loss": 0.6969414008194169,
+        "elapsed_seconds": 51.862335703997815,
+        "validation_average_precision": 0.0827450051344361,
+        "validation_target_met": false,
+        "threshold": 1.0
+      },
+      {
+        "epoch": 3,
+        "loss": 0.5736721431834505,
+        "elapsed_seconds": 56.18104617100471,
+        "validation_average_precision": 0.08222249130320256,
+        "validation_target_met": false,
+        "threshold": 1.0
+      },
+      {
+        "epoch": 4,
+        "loss": 0.5060754084209773,
+        "elapsed_seconds": 54.827892181005154,
+        "validation_average_precision": 0.10356667372268125,
+        "validation_target_met": false,
+        "threshold": 1.0
+      },
+      {
+        "epoch": 5,
+        "loss": 0.5024466377126506,
+        "elapsed_seconds": 43.257376946996374,
+        "validation_average_precision": 0.07947929106135554,
+        "validation_target_met": false,
+        "threshold": 1.0
+      },
+      {
+        "epoch": 6,
+        "loss": 0.5681561839347804,
+        "elapsed_seconds": 36.43200408099801,
+        "validation_average_precision": 0.10079847191584818,
+        "validation_target_met": false,
+        "threshold": 1.0
+      },
+      {
+        "epoch": 7,
+        "loss": 0.47830882389379714,
+        "elapsed_seconds": 83.7140127169987,
+        "validation_average_precision": 0.0730379546218329,
+        "validation_target_met": false,
+        "threshold": 1.0
+      }
+    ]
+  }
+]

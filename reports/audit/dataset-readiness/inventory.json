@@ -1,0 +1,629 @@
+{
+  "checked_at": "2026-09-10T09:22:27.197827+00:00",
+  "scope": "Headers, file sizes/tails and first 5000 rows per file; no full-row, checksum or duplicate-content verification",
+  "files": [
+    {
+      "file": "TrafficLabelling /Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv",
+      "bytes": 96101069,
+      "columns": 85,
+      "missing_required": [],
+      "duplicate_header_names": [
+        "Fwd Header Length"
+      ],
+      "sampled_rows": 5000,
+      "sample_labels": {
+        "BENIGN": 5000
+      },
+      "sample_errors": {
+        "invalid_required_numeric_cell": 8
+      },
+      "first_timestamp": "7/7/2017 3:30",
+      "non_csv_suffix": false,
+      "ends_with_newline": true,
+      "final_record_field_count": 85,
+      "changed_during_check": false
+    },
+    {
+      "file": "TrafficLabelling /Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv",
+      "bytes": 101874777,
+      "columns": 85,
+      "missing_required": [],
+      "duplicate_header_names": [
+        "Fwd Header Length"
+      ],
+      "sampled_rows": 5000,
+      "sample_labels": {
+        "BENIGN": 4993,
+        "PortScan": 7
+      },
+      "sample_errors": {
+        "invalid_required_numeric_cell": 2
+      },
+      "first_timestamp": "7/7/2017 1:00",
+      "non_csv_suffix": false,
+      "ends_with_newline": true,
+      "final_record_field_count": 85,
+      "changed_during_check": false
+    },
+    {
+      "file": "TrafficLabelling /Friday-WorkingHours-Morning.pcap_ISCX.csv",
+      "bytes": 75386737,
+      "columns": 85,
+      "missing_required": [],
+      "duplicate_header_names": [
+        "Fwd Header Length"
+      ],
+      "sampled_rows": 5000,
+      "sample_labels": {
+        "BENIGN": 5000
+      },
+      "sample_errors": {
+        "invalid_required_numeric_cell": 10
+      },
+      "first_timestamp": "7/7/2017 8:59",
+      "non_csv_suffix": false,
+      "ends_with_newline": true,
+      "final_record_field_count": 85,
+      "changed_during_check": false
+    },
+    {
+      "file": "TrafficLabelling /Monday-WorkingHours.pcap_ISCX.csv",
+      "bytes": 268649908,
+      "columns": 85,
+      "missing_required": [],
+      "duplicate_header_names": [
+        "Fwd Header Length"
+      ],
+      "sampled_rows": 5000,
+      "sample_labels": {
+        "BENIGN": 5000
+      },
+      "sample_errors": {
+        "invalid_required_numeric_cell": 28
+      },
+      "first_timestamp": "03/07/2017 08:55:58",
+      "non_csv_suffix": false,
+      "ends_with_newline": true,
+      "final_record_field_count": 85,
+      "changed_during_check": false
+    },
+    {
+      "file": "TrafficLabelling /Thursday-WorkingHours-Afternoon-Infilteration.pcap_ISCX.csv",
+      "bytes": 108723183,
+      "columns": 85,
+      "missing_required": [],
+      "duplicate_header_names": [
+        "Fwd Header Length"
+      ],
+      "sampled_rows": 5000,
+      "sample_labels": {
+        "BENIGN": 5000
+      },
+      "sample_errors": {},
+      "first_timestamp": "6/7/2017 1:00",
+      "non_csv_suffix": false,
+      "ends_with_newline": true,
+      "final_record_field_count": 85,
+      "changed_during_check": false
+    },
+    {
+      "file": "TrafficLabelling /Thursday-WorkingHours-Morning-WebAttacks.pcap_ISCX.csv",
+      "bytes": 92030223,
+      "columns": 85,
+      "missing_required": [],
+      "duplicate_header_names": [
+        "Fwd Header Length"
+      ],
+      "sampled_rows": 5000,
+      "sample_labels": {
+        "BENIGN": 5000
+      },
+      "sample_errors": {
+        "invalid_required_numeric_cell": 10
+      },
+      "first_timestamp": "6/7/2017 8:59",
+      "non_csv_suffix": false,
+      "ends_with_newline": true,
+      "final_record_field_count": 85,
+      "changed_during_check": false
+    },
+    {
+      "file": "TrafficLabelling /Tuesday-WorkingHours.pcap_ISCX.csv",
+      "bytes": 174696560,
+      "columns": 85,
+      "missing_required": [],
+      "duplicate_header_names": [
+        "Fwd Header Length"
+      ],
+      "sampled_rows": 5000,
+      "sample_labels": {
+        "BENIGN": 5000
+      },
+      "sample_errors": {
+        "invalid_required_numeric_cell": 26
+      },
+      "first_timestamp": "4/7/2017 8:54",
+      "non_csv_suffix": false,
+      "ends_with_newline": true,
+      "final_record_field_count": 85,
+      "changed_during_check": false
+    },
+    {
+      "file": "TrafficLabelling /Wednesday-workingHours.pcap_ISCX.csv",
+      "bytes": 285642925,
+      "columns": 85,
+      "missing_required": [],
+      "duplicate_header_names": [
+        "Fwd Header Length"
+      ],
+      "sampled_rows": 5000,
+      "sample_labels": {
+        "BENIGN": 5000
+      },
+      "sample_errors": {
+        "invalid_required_numeric_cell": 18
+      },
+      "first_timestamp": "5/7/2017 8:42",
+      "non_csv_suffix": false,
+      "ends_with_newline": true,
+      "final_record_field_count": 85,
+      "changed_during_check": false
+    },
+    {
+      "file": "MachineLearningCVE/Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv",
+      "bytes": 77123859,
+      "columns": 79,
+      "missing_required": [
+        "src_ip",
+        "dst_ip",
+        "timestamp"
+      ],
+      "duplicate_header_names": [
+        "Fwd Header Length"
+      ],
+      "sampled_rows": 5000,
+      "sample_labels": {
+        "BENIGN": 5000
+      },
+      "sample_errors": {
+        "invalid_required_numeric_cell": 8
+      },
+      "first_timestamp": null,
+      "non_csv_suffix": false,
+      "ends_with_newline": true,
+      "final_record_field_count": 79,
+      "changed_during_check": false
+    },
+    {
+      "file": "MachineLearningCVE/Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv",
+      "bytes": 76906168,
+      "columns": 79,
+      "missing_required": [
+        "src_ip",
+        "dst_ip",
+        "timestamp"
+      ],
+      "duplicate_header_names": [
+        "Fwd Header Length"
+      ],
+      "sampled_rows": 5000,
+      "sample_labels": {
+        "BENIGN": 4993,
+        "PortScan": 7
+      },
+      "sample_errors": {
+        "invalid_required_numeric_cell": 2
+      },
+      "first_timestamp": null,
+      "non_csv_suffix": false,
+      "ends_with_newline": true,
+      "final_record_field_count": 79,
+      "changed_during_check": false
+    },
+    {
+      "file": "MachineLearningCVE/Friday-WorkingHours-Morning.pcap_ISCX.csv",
+      "bytes": 58316725,
+      "columns": 79,
+      "missing_required": [
+        "src_ip",
+        "dst_ip",
+        "timestamp"
+      ],
+      "duplicate_header_names": [
+        "Fwd Header Length"
+      ],
+      "sampled_rows": 5000,
+      "sample_labels": {
+        "BENIGN": 5000
+      },
+      "sample_errors": {
+        "invalid_required_numeric_cell": 10
+      },
+      "first_timestamp": null,
+      "non_csv_suffix": false,
+      "ends_with_newline": true,
+      "final_record_field_count": 79,
+      "changed_during_check": false
+    },
+    {
+      "file": "MachineLearningCVE/Monday-WorkingHours.pcap_ISCX.csv",
+      "bytes": 176927918,
+      "columns": 79,
+      "missing_required": [
+        "src_ip",
+        "dst_ip",
+        "timestamp"
+      ],
+      "duplicate_header_names": [
+        "Fwd Header Length"
+      ],
+      "sampled_rows": 5000,
+      "sample_labels": {
+        "BENIGN": 5000
+      },
+      "sample_errors": {
+        "invalid_required_numeric_cell": 28
+      },
+      "first_timestamp": null,
+      "non_csv_suffix": false,
+      "ends_with_newline": true,
+      "final_record_field_count": 79,
+      "changed_during_check": false
+    },
+    {
+      "file": "MachineLearningCVE/Thursday-WorkingHours-Afternoon-Infilteration.pcap_ISCX.csv",
+      "bytes": 83102436,
+      "columns": 79,
+      "missing_required": [
+        "src_ip",
+        "dst_ip",
+        "timestamp"
+      ],
+      "duplicate_header_names": [
+        "Fwd Header Length"
+      ],
+      "sampled_rows": 5000,
+      "sample_labels": {
+        "BENIGN": 5000
+      },
+      "sample_errors": {},
+      "first_timestamp": null,
+      "non_csv_suffix": false,
+      "ends_with_newline": true,
+      "final_record_field_count": 79,
+      "changed_during_check": false
+    },
+    {
+      "file": "MachineLearningCVE/Thursday-WorkingHours-Morning-WebAttacks.pcap_ISCX.csv",
+      "bytes": 52023263,
+      "columns": 79,
+      "missing_required": [
+        "src_ip",
+        "dst_ip",
+        "timestamp"
+      ],
+      "duplicate_header_names": [
+        "Fwd Header Length"
+      ],
+      "sampled_rows": 5000,
+      "sample_labels": {
+        "BENIGN": 5000
+      },
+      "sample_errors": {
+        "invalid_required_numeric_cell": 10
+      },
+      "first_timestamp": null,
+      "non_csv_suffix": false,
+      "ends_with_newline": true,
+      "final_record_field_count": 79,
+      "changed_during_check": false
+    },
+    {
+      "file": "MachineLearningCVE/Tuesday-WorkingHours.pcap_ISCX.csv",
+      "bytes": 135078995,
+      "columns": 79,
+      "missing_required": [
+        "src_ip",
+        "dst_ip",
+        "timestamp"
+      ],
+      "duplicate_header_names": [
+        "Fwd Header Length"
+      ],
+      "sampled_rows": 5000,
+      "sample_labels": {
+        "BENIGN": 5000
+      },
+      "sample_errors": {
+        "invalid_required_numeric_cell": 26
+      },
+      "first_timestamp": null,
+      "non_csv_suffix": false,
+      "ends_with_newline": true,
+      "final_record_field_count": 79,
+      "changed_during_check": false
+    },
+    {
+      "file": "MachineLearningCVE/Wednesday-workingHours.pcap_ISCX.csv",
+      "bytes": 225166395,
+      "columns": 79,
+      "missing_required": [
+        "src_ip",
+        "dst_ip",
+        "timestamp"
+      ],
+      "duplicate_header_names": [
+        "Fwd Header Length"
+      ],
+      "sampled_rows": 5000,
+      "sample_labels": {
+        "BENIGN": 5000
+      },
+      "sample_errors": {
+        "invalid_required_numeric_cell": 18
+      },
+      "first_timestamp": null,
+      "non_csv_suffix": false,
+      "ends_with_newline": true,
+      "final_record_field_count": 79,
+      "changed_during_check": false
+    },
+    {
+      "file": "cic-ids2018-processed/Friday-02-03-2018_TrafficForML_CICFlowMeter.csv",
+      "bytes": 352368373,
+      "columns": 80,
+      "missing_required": [
+        "src_ip",
+        "dst_ip"
+      ],
+      "duplicate_header_names": [],
+      "sampled_rows": 5000,
+      "sample_labels": {
+        "Benign": 1401,
+        "Bot": 3599
+      },
+      "sample_errors": {
+        "invalid_required_numeric_cell": 64
+      },
+      "first_timestamp": "02/03/2018 08:47:38",
+      "non_csv_suffix": false,
+      "ends_with_newline": true,
+      "final_record_field_count": 80,
+      "changed_during_check": false
+    },
+    {
+      "file": "cic-ids2018-processed/Friday-16-02-2018_TrafficForML_CICFlowMeter.csv",
+      "bytes": 333723605,
+      "columns": 80,
+      "missing_required": [
+        "src_ip",
+        "dst_ip"
+      ],
+      "duplicate_header_names": [],
+      "sampled_rows": 5000,
+      "sample_labels": {
+        "Benign": 98,
+        "DoS attacks-SlowHTTPTest": 4902
+      },
+      "sample_errors": {},
+      "first_timestamp": "16/02/2018 08:27:23",
+      "non_csv_suffix": false,
+      "ends_with_newline": true,
+      "final_record_field_count": 80,
+      "changed_during_check": false
+    },
+    {
+      "file": "cic-ids2018-processed/Friday-23-02-2018_TrafficForML_CICFlowMeter.csv",
+      "bytes": 382840456,
+      "columns": 80,
+      "missing_required": [
+        "src_ip",
+        "dst_ip"
+      ],
+      "duplicate_header_names": [],
+      "sampled_rows": 5000,
+      "sample_labels": {
+        "Benign": 4434,
+        "Brute Force -Web": 362,
+        "Brute Force -XSS": 151,
+        "SQL Injection": 53
+      },
+      "sample_errors": {
+        "invalid_required_numeric_cell": 38
+      },
+      "first_timestamp": "23/02/2018 08:18:29",
+      "non_csv_suffix": false,
+      "ends_with_newline": true,
+      "final_record_field_count": 80,
+      "changed_during_check": false
+    },
+    {
+      "file": "cic-ids2018-processed/Thuesday-20-02-2018_TrafficForML_CICFlowMeter.csv.7B71DA2b",
+      "bytes": 386924544,
+      "columns": 84,
+      "missing_required": [],
+      "duplicate_header_names": [],
+      "sampled_rows": 5000,
+      "sample_labels": {
+        "Benign": 65,
+        "DDoS attacks-LOIC-HTTP": 4935
+      },
+      "sample_errors": {},
+      "first_timestamp": "20/02/2018 08:34:07",
+      "non_csv_suffix": true,
+      "ends_with_newline": false,
+      "final_record_field_count": 21,
+      "changed_during_check": false
+    },
+    {
+      "file": "cic-ids2018-processed/Thuesday-20-02-2018_TrafficForML_CICFlowMeter.csv.a30BCa3e",
+      "bytes": 570687488,
+      "columns": 84,
+      "missing_required": [],
+      "duplicate_header_names": [],
+      "sampled_rows": 5000,
+      "sample_labels": {
+        "Benign": 65,
+        "DDoS attacks-LOIC-HTTP": 4935
+      },
+      "sample_errors": {},
+      "first_timestamp": "20/02/2018 08:34:07",
+      "non_csv_suffix": true,
+      "ends_with_newline": false,
+      "final_record_field_count": 76,
+      "changed_during_check": false
+    },
+    {
+      "file": "cic-ids2018-processed/Thursday-01-03-2018_TrafficForML_CICFlowMeter.csv",
+      "bytes": 107842858,
+      "columns": 80,
+      "missing_required": [
+        "src_ip",
+        "dst_ip"
+      ],
+      "duplicate_header_names": [],
+      "sampled_rows": 5000,
+      "sample_labels": {
+        "Benign": 4999,
+        "Label": 1
+      },
+      "sample_errors": {
+        "invalid_required_numeric_cell": 300
+      },
+      "first_timestamp": "01/03/2018 08:17:11",
+      "non_csv_suffix": false,
+      "ends_with_newline": true,
+      "final_record_field_count": 80,
+      "changed_during_check": false
+    },
+    {
+      "file": "cic-ids2018-processed/Thursday-15-02-2018_TrafficForML_CICFlowMeter.csv",
+      "bytes": 375945899,
+      "columns": 80,
+      "missing_required": [
+        "src_ip",
+        "dst_ip"
+      ],
+      "duplicate_header_names": [],
+      "sampled_rows": 5000,
+      "sample_labels": {
+        "Benign": 53,
+        "DoS attacks-GoldenEye": 4947
+      },
+      "sample_errors": {},
+      "first_timestamp": "15/02/2018 08:25:18",
+      "non_csv_suffix": false,
+      "ends_with_newline": true,
+      "final_record_field_count": 80,
+      "changed_during_check": false
+    },
+    {
+      "file": "cic-ids2018-processed/Thursday-22-02-2018_TrafficForML_CICFlowMeter.csv",
+      "bytes": 382636202,
+      "columns": 80,
+      "missing_required": [
+        "src_ip",
+        "dst_ip"
+      ],
+      "duplicate_header_names": [],
+      "sampled_rows": 5000,
+      "sample_labels": {
+        "Benign": 4638,
+        "Brute Force -Web": 249,
+        "Brute Force -XSS": 79,
+        "SQL Injection": 34
+      },
+      "sample_errors": {
+        "invalid_required_numeric_cell": 40
+      },
+      "first_timestamp": "22/02/2018 08:26:03",
+      "non_csv_suffix": false,
+      "ends_with_newline": true,
+      "final_record_field_count": 80,
+      "changed_during_check": false
+    },
+    {
+      "file": "cic-ids2018-processed/Wednesday-14-02-2018_TrafficForML_CICFlowMeter.csv",
+      "bytes": 358223333,
+      "columns": 80,
+      "missing_required": [
+        "src_ip",
+        "dst_ip"
+      ],
+      "duplicate_header_names": [],
+      "sampled_rows": 5000,
+      "sample_labels": {
+        "Benign": 95,
+        "FTP-BruteForce": 4905
+      },
+      "sample_errors": {},
+      "first_timestamp": "14/02/2018 08:31:01",
+      "non_csv_suffix": false,
+      "ends_with_newline": true,
+      "final_record_field_count": 80,
+      "changed_during_check": false
+    },
+    {
+      "file": "cic-ids2018-processed/Wednesday-21-02-2018_TrafficForML_CICFlowMeter.csv",
+      "bytes": 328893673,
+      "columns": 80,
+      "missing_required": [
+        "src_ip",
+        "dst_ip"
+      ],
+      "duplicate_header_names": [],
+      "sampled_rows": 5000,
+      "sample_labels": {
+        "Benign": 2200,
+        "DDOS attack-LOIC-UDP": 1730,
+        "DDOS attack-HOIC": 1070
+      },
+      "sample_errors": {},
+      "first_timestamp": "21/02/2018 08:33:25",
+      "non_csv_suffix": false,
+      "ends_with_newline": true,
+      "final_record_field_count": 80,
+      "changed_during_check": false
+    },
+    {
+      "file": "cic-ids2018-processed/Wednesday-28-02-2018_TrafficForML_CICFlowMeter.csv",
+      "bytes": 209249758,
+      "columns": 80,
+      "missing_required": [
+        "src_ip",
+        "dst_ip"
+      ],
+      "duplicate_header_names": [],
+      "sampled_rows": 5000,
+      "sample_labels": {
+        "Benign": 5000
+      },
+      "sample_errors": {
+        "invalid_required_numeric_cell": 188
+      },
+      "first_timestamp": "28/02/2018 08:22:13",
+      "non_csv_suffix": false,
+      "ends_with_newline": true,
+      "final_record_field_count": 80,
+      "changed_during_check": false
+    }
+  ],
+  "manifest_paths": [
+    {
+      "split": "train",
+      "exists": false
+    },
+    {
+      "split": "validation",
+      "exists": false
+    },
+    {
+      "split": "calibration",
+      "exists": false
+    },
+    {
+      "split": "test",
+      "exists": false
+    }
+  ]
+}

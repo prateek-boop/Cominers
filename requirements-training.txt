@@ -1,0 +1,2 @@
+-r requirements-inference.txt
+# Training uses the existing PyTorch/PyG/NumPy stack and Python's CSV/SQLite tools.

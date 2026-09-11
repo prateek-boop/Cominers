@@ -1,0 +1,17 @@
+/home/lucifer/Projects/combiners/venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+test_calibration_is_bound_to_checkpoint_protocol_and_class_count (test_model_integration.ModelIntegrationTests.test_calibration_is_bound_to_checkpoint_protocol_and_class_count) ... ok
+test_explanations_match_prediction_and_cannot_change_serving_state (test_model_integration.ModelIntegrationTests.test_explanations_match_prediction_and_cannot_change_serving_state) ... ok
+test_forecast_training_keeps_capture_boundaries_and_rejects_changed_sources (test_model_integration.ModelIntegrationTests.test_forecast_training_keeps_capture_boundaries_and_rejects_changed_sources) ... ok
+test_forecasts_correct_only_matching_closed_window_and_reset_gaps (test_model_integration.ModelIntegrationTests.test_forecasts_correct_only_matching_closed_window_and_reset_gaps) ... ok
+test_idle_flow_reordering_does_not_leak_newer_windows (test_model_integration.ModelIntegrationTests.test_idle_flow_reordering_does_not_leak_newer_windows) ... ok
+test_pcap_export_produces_compatible_windows_without_incidents (test_model_integration.ModelIntegrationTests.test_pcap_export_produces_compatible_windows_without_incidents) ... ok
+test_pipeline_retains_dns_and_closes_windows_without_random_forecasts (test_model_integration.ModelIntegrationTests.test_pipeline_retains_dns_and_closes_windows_without_random_forecasts) ... ok
+test_shapley_matches_additive_model_and_null_feature (test_model_integration.ModelIntegrationTests.test_shapley_matches_additive_model_and_null_feature) ... ok
+test_soar_requires_model_and_stage_evidence_and_rejects_ambiguous_sets (test_model_integration.ModelIntegrationTests.test_soar_requires_model_and_stage_evidence_and_rejects_ambiguous_sets) ... [SOAR ACTIVATION] High-Risk Alert test | Attacker: 192.0.2.1 -> Victim: 192.0.2.2 | Stage: lateral_movement | Prob: 0.9900
+ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 2.047s
+
+OK
