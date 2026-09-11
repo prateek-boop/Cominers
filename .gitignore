@@ -8,3 +8,22 @@ predictions.json
 # Local training data and candidate models (never replace deployed checkpoints automatically).
 data/
 training-runs/
+
+# Raw / processed dataset directories
+MachineLearningCVE/
+TrafficLabelling */
+cic-ids2018-processed/
+
+# Large data file formats
+*.csv
+!examples/**/*.csv
+*.npz
+*.npy
+*.pkl
+*.pickle
+*.h5
+*.hdf5
+*.parquet
+*.feather
+*.tfrecord
+*.jsonl
